@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>博客Go on | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="今日修改纪录 资源目录管理 //使用目录名作为文章的分类名 USE_FOLDER_AS_CATEGORY = True //使用文件名作为文章或页面的slug（url） FILENAME_METADATA = '(?P<slug>.*)' //页面的显示路径和保存路径 ARTICLE_URL = '{category}/{slug}.html' ARTICLE_SAVE_AS = ARTICLE_URL PAGE_URL = '{slug}.html' PAGE_SAVE_AS = PAGE_URL CATEGORY_URL = '{slug}/index.html' CATEGORY_SAVE_AS = CATEGORY_URL 主题替换为storm //Theme Storm configuration THEME = 'pelican-themes/storm' SITESUBTITLE = "Torikku's life" CSS_FILE = 'screen.css' METADATA = 'Meta description is the home page' //Pages …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">Archive</a></li>
+  <li><a href="https://torikku.github.io/about/">About</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201801270140.html">博客Go on</a></h2>
+<h5><i class="icon-feather"></i> 六 27 一月 2018
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>今日修改纪录</h1>
+<h2>资源目录管理</h2>
+<div class="highlight"><pre><span></span>//使用目录名作为文章的分类名
+
+<span class="nv">USE_FOLDER_AS_CATEGORY</span> <span class="o">=</span> True
+//使用文件名作为文章或页面的slug（url）
+
+<span class="nv">FILENAME_METADATA</span> <span class="o">=</span> <span class="s1">&#39;(?P&lt;slug&gt;.*)&#39;</span>
+//页面的显示路径和保存路径
+
+<span class="nv">ARTICLE_URL</span> <span class="o">=</span> <span class="s1">&#39;{category}/{slug}.html&#39;</span>
+<span class="nv">ARTICLE_SAVE_AS</span> <span class="o">=</span> ARTICLE_URL
+<span class="nv">PAGE_URL</span> <span class="o">=</span> <span class="s1">&#39;{slug}.html&#39;</span>
+<span class="nv">PAGE_SAVE_AS</span> <span class="o">=</span> PAGE_URL
+<span class="nv">CATEGORY_URL</span> <span class="o">=</span> <span class="s1">&#39;{slug}/index.html&#39;</span>
+<span class="nv">CATEGORY_SAVE_AS</span> <span class="o">=</span> CATEGORY_URL
+</pre></div>
+
+
+<h2>主题替换为storm</h2>
+<div class="highlight"><pre><span></span>//Theme Storm configuration
+<span class="nv">THEME</span> <span class="o">=</span> <span class="s1">&#39;pelican-themes/storm&#39;</span>
+<span class="nv">SITESUBTITLE</span> <span class="o">=</span> <span class="s2">&quot;Torikku&#39;s life&quot;</span>
+<span class="nv">CSS_FILE</span> <span class="o">=</span> <span class="s1">&#39;screen.css&#39;</span>
+<span class="nv">METADATA</span> <span class="o">=</span> <span class="s1">&#39;Meta description is the home page&#39;</span>
+
+//Pages settings
+<span class="nv">DIRECT_TEMPLATES</span> <span class="o">=</span> <span class="o">(</span><span class="s1">&#39;about&#39;</span>,<span class="s1">&#39;archives&#39;</span>,<span class="s1">&#39;404&#39;</span>,<span class="s1">&#39;index&#39;</span><span class="o">)</span>
+<span class="nv">DISPLAY_PAGES_ON_MENU</span> <span class="o">=</span> True
+<span class="nv">ARCHIVES_URL</span> <span class="o">=</span> <span class="s1">&#39;archives/&#39;</span>
+<span class="nv">ARCHIVES_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;archives/index.html&#39;</span>
+<span class="nv">ABOUT_URL</span> <span class="o">=</span> <span class="s1">&#39;about/&#39;</span>
+<span class="nv">ABOUT_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;about/index.html&#39;</span>
+
+<span class="nv">MENUITEMS</span> <span class="o">=</span> <span class="o">((</span><span class="s1">&#39;Archive&#39;</span>,<span class="s1">&#39;archives/&#39;</span><span class="o">)</span>,
+             <span class="o">(</span><span class="s1">&#39;About&#39;</span>,<span class="s1">&#39;about/&#39;</span><span class="o">)</span>,<span class="o">)</span>
+</pre></div>
+
+
+<p>同时删除旧主题配置。</p>
+<h2>安装sass compass</h2>
+<div class="highlight"><pre><span></span>$ emerge -av ruby    //Mac 自带ruby，不用装
+$ gem install sass compass    //切换源  gem -remove url <span class="p">&amp;</span> gem <span class="nb">source</span> -a new url 
+$ <span class="nb">cd</span> static  //主题更新css
+$ compass compile <span class="o">&amp;&amp;</span> rm -rf .sass-cache
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
