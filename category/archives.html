@@ -20,7 +20,7 @@
   <li><a href="https://torikku.github.io/about/">About</a></li>
     </div>
 </div>    <div id="main">
-<h2><a href="https://torikku.github.io/archives/201801280103.html">博客回顾---virtualenv</a></h2>
+<h2><a href="https://torikku.github.io/archives/201801280103.html">博客回顾－－－virtualenv</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－virtualenv 在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。 如下做一些简单的纪录，以备后续博客维护以及修改用。 刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上: sudo easy_install pip 想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下： //首先安装virtualenv sudo pip install virtualenv //创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。 virtualenv myBlogEnv //开始使用这个虚拟环境 cd myBlogEnv source …
 <h2><a href="https://torikku.github.io/archives/201801280139.html">博客回顾－－－pelican</a></h2>
@@ -32,12 +32,12 @@
 <h2><a href="https://torikku.github.io/archives/201801280347.html">博客回顾－－－安装主题</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－安装主题 之前已经写了怎么把一个基本的站点搞出来了，但是基本就是一个页面，什么都没有，甚至主题也没有，接下来讲下主题的安装 这里以主题bootstrap2为例，同样还在myBlog目录下： //进入到目录 cd myBlog //获取主题git git clone https://github.com/getpelican/pelican-themes.git //进入下载到主题目录 cd pelican-themes //使用主题，pelican的主题为一个主题一个目录，如果发现对应的主题的目录是空的，则直接去github里面找到相应主题，git下来，然后执行 pelican-themes -i bootstrap2 对应在在pelicanconf.py中添加主题选择条目： //文件中找到这个字段，如果没有就添加一个 THEME = 'bootstrap2' 在如下路径可以查看主题效果 http://www.pelicanthemes.com/ 对于使用主题后pelicanconf.py的配置可以参考官方文档 http://docs.getpelican.com …
+<h2><a href="https://torikku.github.io/archives/201801280401.html">阴</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+随笔 听了一晚上的歌，似乎慢慢好了，不过缺少一些时间段还真有点不爽，被忽悠的感觉真糟糕！ Tonight, We are young !
 <h2><a href="https://torikku.github.io/archives/201801270140.html">博客Go on</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
 今日修改纪录 资源目录管理 //使用目录名作为文章的分类名 USE_FOLDER_AS_CATEGORY = True //使用文件名作为文章或页面的slug（url） FILENAME_METADATA = '(?P<slug>.*)' //页面的显示路径和保存路径 ARTICLE_URL = '{category}/{slug}.html' ARTICLE_SAVE_AS = ARTICLE_URL PAGE_URL = '{slug}.html' PAGE_SAVE_AS = PAGE_URL CATEGORY_URL = '{slug}/index.html' CATEGORY_SAVE_AS = CATEGORY_URL 主题替换为storm //Theme Storm configuration THEME = 'pelican-themes/storm' SITESUBTITLE = "Torikku's life" CSS_FILE = 'screen.css' METADATA = 'Meta description is the home page' //Pages …
-<h2><a href="https://torikku.github.io/archives/201801270210.html">雨</a></h2>
-<h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
-极度难受 听了一晚上的歌，似乎比较容易被带进去吧，
 <div class="pagination">
     page 1 of 2.
         <a href="https://torikku.github.io/category/archives2.html">Next&rarr;</a>
