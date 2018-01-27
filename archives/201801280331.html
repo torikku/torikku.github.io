@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>博客回顾－－－MarkDown | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="博客回顾－－－MarkDown 前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具 首先需要安装MarkDown //pip安装MarkDown sudo pip install MarkDown 安装完成后，就可以使用MarkDown语法了 安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用 该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了 比如用该工具创建个about.md 页面 在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下 Title: About Me Date: 2018-01-28 随便写点什么都可以！ 然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。 make publish make serve 如果要发布到github，则 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">Archive</a></li>
+  <li><a href="https://torikku.github.io/about/">About</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201801280331.html">博客回顾－－－MarkDown</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>博客回顾－－－MarkDown</h1>
+<p>前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具</p>
+<p>首先需要安装MarkDown </p>
+<div class="highlight"><pre><span></span>//pip安装MarkDown
+sudo pip install MarkDown
+</pre></div>
+
+
+<p>安装完成后，就可以使用MarkDown语法了</p>
+<p>安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用</p>
+<p>该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了</p>
+<p>比如用该工具创建个about.md 页面 </p>
+<p>在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下</p>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">About</span> <span class="n">Me</span>        
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">28</span>
+
+<span class="err">随便写点什么都可以！</span>
+</pre></div>
+
+
+<p>然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。</p>
+<div class="highlight"><pre><span></span>make publish
+make serve
+</pre></div>
+
+
+<p>如果要发布到github，则</p>
+<div class="highlight"><pre><span></span>make github
+</pre></div>
+
+
+<p>以下是编写md文件的一些关键字</p>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">Pelican</span><span class="o">+</span><span class="n">Github</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">07</span> <span class="mi">00</span><span class="o">:</span><span class="mi">00</span>
+<span class="n">Modified</span><span class="o">:</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">07</span> <span class="mi">00</span><span class="o">:</span><span class="mi">00</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">python</span><span class="o">,</span> <span class="n">pelican</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">build</span><span class="o">-</span><span class="n">blog</span><span class="o">-</span><span class="n">system</span><span class="o">-</span><span class="n">by</span><span class="o">-</span><span class="n">pelican</span>
+<span class="n">Authors</span><span class="o">:</span> <span class="n">torikku</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">blablablablablablablabla</span><span class="o">...</span>
+<span class="n">Status</span><span class="o">:</span> <span class="n">draft</span>
+</pre></div>
+
+
+<p>其中前两似乎是必须要的，当前为发现是这样的，其他似乎可以不用。</p>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

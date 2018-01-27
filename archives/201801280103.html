@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>博客回顾---virtualenv | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="博客回忆－－－virtualenv 在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。 如下做一些简单的纪录，以备后续博客维护以及修改用。 刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上: sudo easy_install pip 想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下： //首先安装virtualenv sudo pip install virtualenv //创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。 virtualenv myBlogEnv //开始使用这个虚拟环境 cd myBlogEnv source …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">Archive</a></li>
+  <li><a href="https://torikku.github.io/about/">About</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201801280103.html">博客回顾---virtualenv</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>博客回忆－－－virtualenv</h1>
+<p>在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。</p>
+<p>如下做一些简单的纪录，以备后续博客维护以及修改用。</p>
+<p>刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上:</p>
+<div class="highlight"><pre><span></span>sudo easy_install pip
+</pre></div>
+
+
+<p>想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下：</p>
+<div class="highlight"><pre><span></span>//首先安装virtualenv
+sudo pip install virtualenv
+//创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。
+virtualenv myBlogEnv
+//开始使用这个虚拟环境
+cd myBlogEnv
+source ./bin/activate
+//然后就会在命令行的前面多了一个括号内容为myBlogEnv，就可以开始使用这个环境了。要退出则直接去激活
+deactivate
+</pre></div>
+
+
+<p>至此，virtualenv就完成了，后续在在这个虚拟环境中直接pip安装软件就可以了。</p>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
