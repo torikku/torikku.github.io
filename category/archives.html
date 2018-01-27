@@ -22,10 +22,10 @@
 </div>    <div id="main">
 <h2><a href="https://torikku.github.io/archives/201801280103.html">博客回顾---virtualenv</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
-博客回忆－－－virtualenv 在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。 如下做一些简单的纪录，以备后续博客维护以及修改用。 刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上: sudo easy_install pip 想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下： //首先安装virtualenv sudo pip install virtualenv //创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。 virtualenv myBlogEnv //开始使用这个虚拟环境 cd myBlogEnv source …
-<h2><a href="https://torikku.github.io/archives/201801280139.html">博客回忆－－－pelican</a></h2>
+博客回顾－－－virtualenv 在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。 如下做一些简单的纪录，以备后续博客维护以及修改用。 刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上: sudo easy_install pip 想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下： //首先安装virtualenv sudo pip install virtualenv //创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。 virtualenv myBlogEnv //开始使用这个虚拟环境 cd myBlogEnv source …
+<h2><a href="https://torikku.github.io/archives/201801280139.html">博客回顾－－－pelican</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
-博客回忆－－－pelican virtualenv 篇中介绍啦virtualenv这个工具的使用，它实际上就是开辟一个虚拟环境，把其中的环境变量改掉，使你输入命令的时候直接调用虚拟环境中的位置，而不用系统中的，所以新建出来的环境是非常干净的，所以我们在开辟了这个虚拟环境中，直接安装我们想要的软件，就是今天要使用的pelican //进入虚拟环境不再赘述，直接安装pelican，源码安装，在我们的虚拟环境目录中 cd myBlogEnv //下载源码 git clone git://github.com/getpelican/pelican.git //进入源码目录 cd pelican //执行安装 python setup.py install 完成上面的操作，pelican就安装完啦，可以直接使用pelican来快速创建一个框架 //创建博客目录 mkdir myblog //进入 cd myblog //创建框架 pelican-quickstart 可以看到目录树如下： . |-- content # 所有文章放于此目录 │ └── (pages …
+博客回顾－－－pelican virtualenv 篇中介绍啦virtualenv这个工具的使用，它实际上就是开辟一个虚拟环境，把其中的环境变量改掉，使你输入命令的时候直接调用虚拟环境中的位置，而不用系统中的，所以新建出来的环境是非常干净的，所以我们在开辟了这个虚拟环境中，直接安装我们想要的软件，就是今天要使用的pelican //进入虚拟环境不再赘述，直接安装pelican，源码安装，在我们的虚拟环境目录中 cd myBlogEnv //下载源码 git clone git://github.com/getpelican/pelican.git //进入源码目录 cd pelican //执行安装 python setup.py install 完成上面的操作，pelican就安装完啦，可以直接使用pelican来快速创建一个框架 //创建博客目录 mkdir myblog //进入 cd myblog //创建框架 pelican-quickstart 可以看到目录树如下： . |-- content # 所有文章放于此目录 │ └── (pages …
 <h2><a href="https://torikku.github.io/archives/201801280331.html">博客回顾－－－MarkDown</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－MarkDown 前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具 首先需要安装MarkDown //pip安装MarkDown sudo pip install MarkDown 安装完成后，就可以使用MarkDown语法了 安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用 该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了 比如用该工具创建个about.md 页面 在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下 Title: About Me Date: 2018-01-28 随便写点什么都可以！ 然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。 make publish make serve 如果要发布到github，则 …
@@ -38,11 +38,9 @@
 <h2><a href="https://torikku.github.io/archives/201801270210.html">雨</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
 极度难受 听了一晚上的歌，似乎比较容易被带进去吧，
-<h2><a href="https://torikku.github.io/archives/201801210635.html">Blog计划</a></h2>
-<h5><i class="icon-feather"></i> 2018年01月21日(星期日) </h5>
-终于抽了点时间把这个玩意初步搭建完成，后续会继续完善网站，同时还会写一些Blog、并上传一些纪录照片，纪录生活
 <div class="pagination">
-    page 1 of 1.
+    page 1 of 2.
+        <a href="https://torikku.github.io/category/archives2.html">Next&rarr;</a>
 </div>    </div>
 </div>
 <div id="footer-wrapper">
