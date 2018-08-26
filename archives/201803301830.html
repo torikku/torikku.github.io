@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python循环控制进阶 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python循环控制进阶 循环控制语句可以更改语句执行的顺序。Python支持以下循环控制语句 continue语句 break语句 pass语句 continue语句 continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。 continue语句用在while和for循环中。 eg.单词Python中按序输出字母，当字母为h时，不输出 for letter in 'Python': if letter == 'h': continue print '当前字母 :', letter 输出结果为： 当前字母 : P 当前字母 : y 当前字母 : t 当前字母 : o 当前字母 : n break语句 break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。 break语句用在while和for循环中。 eg.单词Python中按序输出字母，当字母为h时，停止输出 for letter in 'Python …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201803301830.html">Python循环控制进阶</a></h2>
+<h5><i class="icon-feather"></i> 2018年03月30日(星期五)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python循环控制进阶</h1>
+<p>循环控制语句可以更改语句执行的顺序。Python支持以下循环控制语句</p>
+<ul>
+<li>continue语句</li>
+<li>break语句</li>
+<li>pass语句</li>
+</ul>
+<h2>continue语句</h2>
+<blockquote>
+<p>continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。</p>
+<p>continue语句用在while和for循环中。</p>
+</blockquote>
+<p>eg.单词Python中按序输出字母，当字母为h时，不输出</p>
+<div class="highlight"><pre><span></span>for letter in &#39;Python&#39;:    
+   if letter == &#39;h&#39;:
+      continue
+   print &#39;当前字母 :&#39;, letter
+</pre></div>
+
+
+<p>输出结果为：</p>
+<blockquote>
+<p>当前字母 : P</p>
+<p>当前字母 : y</p>
+<p>当前字母 : t</p>
+<p>当前字母 : o</p>
+<p>当前字母 : n</p>
+</blockquote>
+<h2>break语句</h2>
+<blockquote>
+<p>break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。</p>
+<p>break语句用在while和for循环中。</p>
+</blockquote>
+<p>eg.单词Python中按序输出字母，当字母为h时，停止输出</p>
+<div class="highlight"><pre><span></span>for letter in &#39;Python&#39;:     
+   if letter == &#39;h&#39;:
+      break
+   print &#39;当前字母 :&#39;, letter
+</pre></div>
+
+
+<p>输出结果为：</p>
+<blockquote>
+<p>当前字母 : P</p>
+<p>当前字母 : y</p>
+<p>当前字母 : t</p>
+</blockquote>
+<h2>pass语句</h2>
+<blockquote>
+<p>Python pass是空语句，是为了保持程序结构的完整性。</p>
+<p>pass 不做任何事情，一般用做占位语句。</p>
+</blockquote>
+<p>eg.输出 Python 的每个字母</p>
+<div class="highlight"><pre><span></span>for letter in &#39;Python&#39;:
+   if letter == &#39;h&#39;:
+      pass
+      print &#39;这是 pass 块&#39;
+   print &#39;当前字母 :&#39;, letter
+</pre></div>
+
+
+<p>输出结果为：</p>
+<blockquote>
+<p>当前字母 : P</p>
+<p>当前字母 : y</p>
+<p>当前字母 : t</p>
+<p>这是 pass 块</p>
+<p>当前字母 : h</p>
+<p>当前字母 : o</p>
+<p>当前字母 : n</p>
+</blockquote>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

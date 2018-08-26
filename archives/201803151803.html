@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python运算符 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python运算符 算术运算符 以下假设：a=10，b=20： 运算符 描述 实例 + 加 - 两个对象相加 a + b 输出结果 30 - 减 - 得到负数或是一个数减去另一个数 a - b 输出结果 -10 * 乘 - 两个数相乘或是返回一个被重复若干次的字符串 a * b 输出结果 200 / 除 - x除以y b / a 输出结果 2 % 取模 - 返回除法的余数 b % a 输出结果 0 ** 幂 - 返回x的y次幂 a**b 为10的5次方， 输出结果 100000000000000000000 // 取整除 - 返回商的整数部分（向下取整 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201803151803.html">Python运算符</a></h2>
+<h5><i class="icon-feather"></i> 2018年03月15日(星期四)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python运算符</h1>
+<h2>算术运算符</h2>
+<p>以下假设：a=10，b=20：</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">+</td>
+<td align="left">加 - 两个对象相加</td>
+<td align="left">a + b 输出结果 30</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="left">减 - 得到负数或是一个数减去另一个数</td>
+<td align="left">a - b 输出结果 -10</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="left">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
+<td align="left">a * b 输出结果 200</td>
+</tr>
+<tr>
+<td align="center">/</td>
+<td align="left">除 - x除以y</td>
+<td align="left">b / a 输出结果 2</td>
+</tr>
+<tr>
+<td align="center">%</td>
+<td align="left">取模 - 返回除法的余数</td>
+<td align="left">b % a 输出结果 0</td>
+</tr>
+<tr>
+<td align="center">**</td>
+<td align="left">幂 - 返回x的y次幂</td>
+<td align="left">a**b 为10的5次方， 输出结果 100000000000000000000</td>
+</tr>
+<tr>
+<td align="center">//</td>
+<td align="left">取整除 - 返回商的整数部分（向下取整）</td>
+<td align="left">9//2 输出结果 4 , 9.0//2.0 输出结果 4.0</td>
+</tr>
+</tbody>
+</table>
+<h2>Python比较运算符</h2>
+<p>以下假设:a=10，b=20：</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">==</td>
+<td align="left">等于 - 比较对象是否相等</td>
+<td align="left">(a == b) 返回 False。</td>
+</tr>
+<tr>
+<td align="center">!=</td>
+<td align="left">不等于 - 比较两个对象是否不相等</td>
+<td align="left">(a != b) 返回 true.</td>
+</tr>
+<tr>
+<td align="center">&lt;&gt;</td>
+<td align="left">不等于 - 比较两个对象是否不相等</td>
+<td align="left">(a &lt;&gt; b) 返回 true。这个运算符类似 != 。</td>
+</tr>
+<tr>
+<td align="center">&gt;</td>
+<td align="left">大于 - 返回x是否大于y</td>
+<td align="left">(a &gt; b) 返回 False。</td>
+</tr>
+<tr>
+<td align="center">&lt;</td>
+<td align="left">小于 - 返回x是否小于y。所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价。</td>
+<td align="left">(a &lt; b) 返回 true。</td>
+</tr>
+<tr>
+<td align="center">&gt;=</td>
+<td align="left">大于等于    - 返回x是否大于等于y。</td>
+<td align="left">(a &gt;= b) 返回 False。</td>
+</tr>
+<tr>
+<td align="center">&lt;=</td>
+<td align="left">小于等于 -  返回x是否小于等于y。</td>
+<td align="left">(a &lt;= b) 返回 true。</td>
+</tr>
+</tbody>
+</table>
+<h2>Python赋值运算符</h2>
+<p>以下假设:a=10，b=20：</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">=</td>
+<td align="left">简单的赋值运算符</td>
+<td align="left">c = a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td align="center">+=</td>
+<td align="left">加法赋值运算符</td>
+<td align="left">c += a 等效于 c = c + a</td>
+</tr>
+<tr>
+<td align="center">-=</td>
+<td align="left">减法赋值运算符</td>
+<td align="left">c -= a 等效于 c = c - a</td>
+</tr>
+<tr>
+<td align="center">*=</td>
+<td align="left">乘法赋值运算符</td>
+<td align="left">c *= a 等效于 c = c * a</td>
+</tr>
+<tr>
+<td align="center">/=</td>
+<td align="left">除法赋值运算符</td>
+<td align="left">c /= a 等效于 c = c / a</td>
+</tr>
+<tr>
+<td align="center">%=</td>
+<td align="left">取模赋值运算符</td>
+<td align="left">c %= a 等效于 c = c % a</td>
+</tr>
+<tr>
+<td align="center">**=</td>
+<td align="left">幂赋值运算符</td>
+<td align="left">c <strong>= a 等效于 c = c </strong> a</td>
+</tr>
+<tr>
+<td align="center">//=</td>
+<td align="left">取整除赋值运算符</td>
+<td align="left">c //= a 等效于 c = c // a</td>
+</tr>
+</tbody>
+</table>
+<h2>Python位运算符</h2>
+<p>按位运算符是把数字看作二进制来进行计算的。Python中的按位运算法则如下：</p>
+<p>下表中变量 a = 60，b = 13，二进制格式如下：</p>
+<blockquote>
+<p>a = 0011 1100</p>
+<p>b = 0000 1101</p>
+<hr>
+<p>a&amp;b = 0000 1100</p>
+<p>a|b = 0011 1101</p>
+<p>a^b = 0011 0001</p>
+<p>~a  = 1100 0011</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">&amp;</td>
+<td align="left">按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td>
+<td align="left">(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td align="center">｜</td>
+<td align="left">按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td>
+<td align="left">(a ｜ b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="left">按位异或运算符：当两对应的二进位相异时，结果为1</td>
+<td align="left">(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td align="left">按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1 。~x 类似于 -x-1</td>
+<td align="left">(~a ) 输出结果 -61 ，二进制解释： 1100 0011，在一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td align="center">&lt;&lt;</td>
+<td align="left">左移动运算符：运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数字指定了移动的位数，高位丢弃，低位补0。</td>
+<td align="left">a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt;</td>
+<td align="left">右移动运算符：把"&gt;&gt;"左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数字指定了移动的位数</td>
+<td align="left">a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody>
+</table>
+<h2>Python逻辑运算符</h2>
+<p>Python语言支持逻辑运算符，以下假设变量 a = 10, b = 20:</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">逻辑表达式</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">and</td>
+<td align="left">x and y</td>
+<td align="left">布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。</td>
+<td align="left">(a and b) 返回 20。</td>
+</tr>
+<tr>
+<td align="center">or</td>
+<td align="left">x or y</td>
+<td align="left">布尔"或"    - 如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值。</td>
+<td align="left">(a or b) 返回 10。</td>
+</tr>
+<tr>
+<td align="center">not</td>
+<td align="left">not x</td>
+<td align="left">布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+<td align="left">not(a and b) 返回 False</td>
+</tr>
+</tbody>
+</table>
+<h2>Python成员运算符</h2>
+<p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">in</td>
+<td align="left">如果在指定的序列中找到值返回 True，否则返回 False。</td>
+<td align="left">x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td>
+</tr>
+<tr>
+<td align="center">not in</td>
+<td align="left">如果在指定的序列中没有找到值返回 True，否则返回 False。</td>
+<td align="left">x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
+</tr>
+</tbody>
+</table>
+<h2>Python身份运算符</h2>
+<p>身份运算符用于比较两个对象的存储单元</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">is</td>
+<td align="left">is 是判断两个标识符是不是引用自一个对象</td>
+<td align="left">x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td align="center">is not</td>
+<td align="left">is not 是判断两个标识符是不是引用自不同对象</td>
+<td align="left">x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False。</td>
+</tr>
+</tbody>
+</table>
+<h2>Python运算符优先级</h2>
+<p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">**</td>
+<td align="left">指数 (最高优先级)</td>
+</tr>
+<tr>
+<td align="center">~ + -</td>
+<td align="left">按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td>
+</tr>
+<tr>
+<td align="center">* / % //</td>
+<td align="left">乘，除，取模和取整除</td>
+</tr>
+<tr>
+<td align="center">+ -</td>
+<td align="left">加法减法</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt; &lt;&lt;</td>
+<td align="left">右移，左移运算符</td>
+</tr>
+<tr>
+<td align="center">&amp;</td>
+<td align="left">位 'AND'</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="center">&lt;= &lt; &gt; &gt;=</td>
+<td align="left">比较运算符</td>
+</tr>
+<tr>
+<td align="center">&lt;&gt; == !=</td>
+<td align="left">等于运算符</td>
+</tr>
+<tr>
+<td align="center">= %= /= //= -= += <em>= </em>*=</td>
+<td align="left">赋值运算符</td>
+</tr>
+<tr>
+<td align="center">is is not</td>
+<td align="left">身份运算符</td>
+</tr>
+<tr>
+<td align="center">in not in</td>
+<td align="left">成员运算符</td>
+</tr>
+<tr>
+<td align="center">not and or</td>
+<td align="left">逻辑运算符</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

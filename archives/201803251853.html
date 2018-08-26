@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python循环控制 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python循环控制 程序在一般情况下是按顺序执行的，但编程语言也提供了各种控制结构，允许更复杂的执行路径。循环语句允许我们执行一个语句或语句组多次。 while循环 在给定的判断条件为 true 时执行循环体，否则退出循环体。 eg.输出0到4的数字 count = 0 while (count < 5): print 'The count is:', count count = count + 1 for循环 重复执行语句 eg.输出python的每一个字母 for letter in 'Python': print '当前字母 :', letter 循环嵌套 可以在循环体(while/for)中嵌套循环(while/for) eg.嵌套循环输出2~100之间的素数 i = 2 while(i …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201803251853.html">Python循环控制</a></h2>
+<h5><i class="icon-feather"></i> 2018年03月25日(星期日)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python循环控制</h1>
+<p>程序在一般情况下是按顺序执行的，但编程语言也提供了各种控制结构，允许更复杂的执行路径。循环语句允许我们执行一个语句或语句组多次。</p>
+<h2>while循环</h2>
+<blockquote>
+<p>在给定的判断条件为 true 时执行循环体，否则退出循环体。</p>
+</blockquote>
+<p>eg.输出0到4的数字</p>
+<div class="highlight"><pre><span></span>count = 0
+while (count &lt; 5):
+   print &#39;The count is:&#39;, count
+   count = count + 1
+</pre></div>
+
+
+<h2>for循环</h2>
+<blockquote>
+<p>重复执行语句</p>
+</blockquote>
+<p>eg.输出python的每一个字母</p>
+<div class="highlight"><pre><span></span>for letter in &#39;Python&#39;: 
+   print &#39;当前字母 :&#39;, letter
+</pre></div>
+
+
+<h2>循环嵌套</h2>
+<blockquote>
+<p>可以在循环体(while/for)中嵌套循环(while/for)</p>
+</blockquote>
+<p>eg.嵌套循环输出2~100之间的素数</p>
+<div class="highlight"><pre><span></span>i = 2
+while(i &lt; 100):
+   j = 2
+   while(j &lt;= (i/j)):
+      if not(i%j): break
+      j = j + 1
+   if (j &gt; i/j) : print i, &quot; 是素数&quot;
+   i = i + 1
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
