@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python条件控制 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python条件控制 Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块。 if...else...语句 eg. a = input('a:') b = input('b:') if(a>b): print a,'>',b else: print a,'<',b if...elif...else...语句 eg. score = raw_input('score:') score = int(score) if(score >= 90) and (score <= 100): print 'A' elif(score >= 80): print 'B' elif(score …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201803201840.html">Python条件控制</a></h2>
+<h5><i class="icon-feather"></i> 2018年03月20日(星期二)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python条件控制</h1>
+<p>Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块。</p>
+<h2>if...else...语句</h2>
+<p>eg. </p>
+<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;a:&#39;</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;b:&#39;</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="s1">&#39;&gt;&#39;</span><span class="p">,</span><span class="n">b</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">a</span><span class="p">,</span><span class="s1">&#39;&lt;&#39;</span><span class="p">,</span><span class="n">b</span>
+</pre></div>
+
+
+<h2>if...elif...else...语句</h2>
+<p>eg.</p>
+<div class="highlight"><pre><span></span>score = raw_input(&#39;score:&#39;)
+score = int(score)
+if(score &gt;= 90) and (score &lt;= 100):
+    print &#39;A&#39;
+elif(score &gt;= 80):
+    print &#39;B&#39;
+elif(score &gt;= 60):
+    print &#39;C&#39;
+else:
+    print &#39;D&#39;
+</pre></div>
+
+
+<h2>if语句嵌套</h2>
+<p>eg.</p>
+<div class="highlight"><pre><span></span>x = -1 
+y = 99
+if(x &gt;= 0): 
+    if(x &gt; 0): # 嵌套的if语句
+        y = 1
+    else:
+        y = 0
+else:
+    y = -1
+print &#39;y=&#39;,y
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

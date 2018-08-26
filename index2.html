@@ -20,6 +20,9 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201803011610.html">分割章节</a></h2>
+<h5><i class="icon-feather"></i> 2018年03月01日(星期四) </h5>
+分割章节 后续文章主要以技术文章介绍为主。 使用过的东西以及感兴趣学习过的东西会陆续补充。 由于工作原因，经常出差，更新可能不会很及时，不过尽力而为！
 <h2><a href="https://torikku.github.io/archives/201802231935.html">年后上班第一天</a></h2>
 <h5><i class="icon-feather"></i> 2018年02月23日(星期五) </h5>
 技术 博客基本也就部署完了，零零散散的写了一些指导，希望有用，后续记起来漏了什么在补充吧，后续主要以工作内容为主，这次调整正好调到一个可以发挥自己的位置上。 生活 新的一年新气象，后续还是以工作为主吧
@@ -35,9 +38,6 @@
 <h2><a href="https://torikku.github.io/archives/201801280103.html">博客回顾－－－virtualenv</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－virtualenv 在博客环境搭建之初，碰到了很多的问题，在一些博主的文章指导下，对pelican搭建博客有了一定的了解。 如下做一些简单的纪录，以备后续博客维护以及修改用。 刚开始想在环境下直接安装一堆的东西，但想到自己环境里面同时装了python2.7 以及python3.4，同时pip也只装了3的，所以在操作过程中太麻烦，平常在使用的过程中也分为python3 和pip3 使用，而2.7 才是用python，但是却没有装pip，所以这次，我们先把pip装上: sudo easy_install pip 想到要在环境上要装那么多packet，会把自己的环境搞的非常的复杂，偶然在某个博主的搭建过程中看到了一个virtualenv 工具，可以把环境独立出来，可以尝试一下： //首先安装virtualenv sudo pip install virtualenv //创建一个虚拟python环境，virtualenv实际上就是设置了一个环境，其中环境变量全部于系统中的独立开来，所以开辟的空间时非常干净的，我们可以利用这个，在独立的空间里面安装我们自己想要的包。 virtualenv myBlogEnv //开始使用这个虚拟环境 cd myBlogEnv source …
-<h2><a href="https://torikku.github.io/archives/201801280139.html">博客回顾－－－pelican</a></h2>
-<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
-博客回顾－－－pelican virtualenv 篇中介绍啦virtualenv这个工具的使用，它实际上就是开辟一个虚拟环境，把其中的环境变量改掉，使你输入命令的时候直接调用虚拟环境中的位置，而不用系统中的，所以新建出来的环境是非常干净的，所以我们在开辟了这个虚拟环境中，直接安装我们想要的软件，就是今天要使用的pelican //进入虚拟环境不再赘述，直接安装pelican，源码安装，在我们的虚拟环境目录中 cd myBlogEnv //下载源码 git clone git://github.com/getpelican/pelican.git //进入源码目录 cd pelican //执行安装 python setup.py install 完成上面的操作，pelican就安装完啦，可以直接使用pelican来快速创建一个框架 //创建博客目录 mkdir myblog //进入 cd myblog //创建框架 pelican-quickstart 可以看到目录树如下： . |-- content # 所有文章放于此目录 │ └── (pages …
 <div class="pagination">
         <a href="https://torikku.github.io/index.html">&larr;Prev</a>
     page 2 of 4.
