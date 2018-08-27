@@ -20,6 +20,9 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201801280139.html">博客回顾－－－pelican</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+博客回顾－－－pelican virtualenv 篇中介绍啦virtualenv这个工具的使用，它实际上就是开辟一个虚拟环境，把其中的环境变量改掉，使你输入命令的时候直接调用虚拟环境中的位置，而不用系统中的，所以新建出来的环境是非常干净的，所以我们在开辟了这个虚拟环境中，直接安装我们想要的软件，就是今天要使用的pelican //进入虚拟环境不再赘述，直接安装pelican，源码安装，在我们的虚拟环境目录中 cd myBlogEnv //下载源码 git clone git://github.com/getpelican/pelican.git //进入源码目录 cd pelican //执行安装 python setup.py install 完成上面的操作，pelican就安装完啦，可以直接使用pelican来快速创建一个框架 //创建博客目录 mkdir myblog //进入 cd myblog //创建框架 pelican-quickstart 可以看到目录树如下： . |-- content # 所有文章放于此目录 │ └── (pages …
 <h2><a href="https://torikku.github.io/archives/201801280331.html">博客回顾－－－MarkDown</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－MarkDown 前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具 首先需要安装MarkDown //pip安装MarkDown sudo pip install MarkDown 安装完成后，就可以使用MarkDown语法了 安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用 该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了 比如用该工具创建个about.md 页面 在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下 Title: About Me Date: 2018-01-28 随便写点什么都可以！ 然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。 make publish make serve 如果要发布到github，则 …
@@ -35,9 +38,6 @@
 <h2><a href="https://torikku.github.io/archives/201801270210.html">雨</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
 极度难受 听了一晚上的歌，似乎比较容易被带进去吧，
-<h2><a href="https://torikku.github.io/archives/201801210635.html">Blog计划</a></h2>
-<h5><i class="icon-feather"></i> 2018年01月21日(星期日) </h5>
-终于抽了点时间把这个玩意初步搭建完成，后续会继续完善网站，同时还会写一些Blog、并上传一些纪录照片，纪录生活
 <div class="pagination">
         <a href="https://torikku.github.io/index3.html">&larr;Prev</a>
     page 4 of 5.

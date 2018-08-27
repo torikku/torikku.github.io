@@ -20,6 +20,9 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201805121805.html">MySpider</a></h2>
+<h5><i class="icon-feather"></i> 2018年05月12日(星期六) </h5>
+MySpider just for test ,to be continue!! #!/usr/bin/python # -*- coding: utf-8 -*- # encoding=utf-8 from urllib import request import os from bs4 import BeautifulSoup import ssl def getAllLink(): ssl._create_default_https_context = ssl._create_unverified_context weburl = 'https://movie.douban.com/chart' webheader = { 'Connection': 'keep-alive', 'Accept': 'text/html, application/xhtml+xml, application/xml;q …
 <h2><a href="https://torikku.github.io/archives/201805051850.html">Python Socket</a></h2>
 <h5><i class="icon-feather"></i> 2018年05月05日(星期六) </h5>
 Python Socket There is a demo between server and client in python. Server #!/usr/bin/python # -*- coding: UTF-8 -*- # file: server.py import socket # import socket s = socket.socket() # create socket host = socket.gethostname() # get host name port = 12345 # set port s.bind((host, port)) # bind host name and port s …
@@ -35,9 +38,6 @@ Python列表 创建一个列表，只要把逗号分隔的不同的数据项使�
 <h2><a href="https://torikku.github.io/archives/201804071830.html">正则表达式</a></h2>
 <h5><i class="icon-feather"></i> 2018年04月07日(星期六) </h5>
 正则表达式 模式字符串使用特殊的语法来表示一个正则表达式： 字母和数字表示他们自身。一个正则表达式模式中的字母和数字匹配同样的字符串。 多数字母和数字前加一个反斜杠时会拥有不同的含义。 标点符号只有被转义时才匹配自身，否则它们表示特殊的含义。 反斜杠本身需要使用反斜杠转义。 由于正则表达式通常都包含反斜杠，所以你最好使用原始字符串来表示它们。模式元素(如 r'\t'，等价于 '\t')匹配相应的特殊字符。 下表列出了正则表达式模式语法中的特殊元素。如果你使用模式的同时提供了可选的标志参数，某些模式元素的含义会改变。 模式 描述 ^ 匹配字符串的开头 $ 匹配字符串的末尾。 . 匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。 [...] 用来表示一组字符,单独列出：[amk] 匹配 'a'，'m'或'k' [^...] 不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。 re* 匹配0个或多个的表达式。 re+ 匹配1个或多个的表达式。 re? 匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式 re 精确匹配 …
-<h2><a href="https://torikku.github.io/archives/201803301830.html">Python循环控制进阶</a></h2>
-<h5><i class="icon-feather"></i> 2018年03月30日(星期五) </h5>
-Python循环控制进阶 循环控制语句可以更改语句执行的顺序。Python支持以下循环控制语句 continue语句 break语句 pass语句 continue语句 continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。 continue语句用在while和for循环中。 eg.单词Python中按序输出字母，当字母为h时，不输出 for letter in 'Python': if letter == 'h': continue print '当前字母 :', letter 输出结果为： 当前字母 : P 当前字母 : y 当前字母 : t 当前字母 : o 当前字母 : n break语句 break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。 break语句用在while和for循环中。 eg.单词Python中按序输出字母，当字母为h时，停止输出 for letter in 'Python …
 <div class="pagination">
     page 1 of 5.
         <a href="https://torikku.github.io/index2.html">Next&rarr;</a>
