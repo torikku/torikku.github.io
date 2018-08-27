@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python列表 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python列表 创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示： list1 = ['physics', 'chemistry', 1997, 2000] list2 = [1, 2, 3, 4, 5 ] list3 = ["a", "b", "c", "d"] 与字符串的索引一样，列表索引从0开始。列表可以进行截取、组合等。 访问列表中的值 使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符，如下所示： #!/usr/bin/python list1 = ['physics', 'chemistry', 1997, 2000] list2 = [1, 2, 3, 4, 5, 6, 7 ] print "list1[0]: ", list1[0] print …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201804141850.html">Python列表</a></h2>
+<h5><i class="icon-feather"></i> 2018年04月14日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python列表</h1>
+<p>创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示：</p>
+<div class="highlight"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;physics&#39;</span><span class="p">,</span> <span class="s1">&#39;chemistry&#39;</span><span class="p">,</span> <span class="mi">1997</span><span class="p">,</span> <span class="mi">2000</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">]</span>
+<span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>与字符串的索引一样，列表索引从0开始。列表可以进行截取、组合等。</p>
+<h2>访问列表中的值</h2>
+<blockquote>
+<p>使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符，如下所示：</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;physics&#39;</span><span class="p">,</span> <span class="s1">&#39;chemistry&#39;</span><span class="p">,</span> <span class="mi">1997</span><span class="p">,</span> <span class="mi">2000</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
+
+<span class="k">print</span> <span class="s2">&quot;list1[0]: &quot;</span><span class="p">,</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s2">&quot;list2[1:5]: &quot;</span><span class="p">,</span> <span class="n">list2</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>list1[0]:  physics</p>
+<p>list2[1:5]:  [2, 3, 4, 5]</p>
+</blockquote>
+<h2>更新列表</h2>
+<blockquote>
+<p>你可以对列表的数据项进行修改或更新，你也可以使用append()方法来添加列表项</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>          <span class="c1">## 空列表</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Google&#39;</span><span class="p">)</span>   <span class="c1">## 使用 append() 添加元素</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Runoob&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="nb">list</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>['Google', 'Runoob']</p>
+</blockquote>
+<h2>删除列表元素</h2>
+<blockquote>
+<p>可以使用 del 语句来删除列表的元素，如下实例：</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;physics&#39;</span><span class="p">,</span> <span class="s1">&#39;chemistry&#39;</span><span class="p">,</span> <span class="mi">1997</span><span class="p">,</span> <span class="mi">2000</span><span class="p">]</span>
+
+<span class="k">print</span> <span class="n">list1</span>
+<span class="k">del</span> <span class="n">list1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span> <span class="s2">&quot;After deleting value at index 2 : &quot;</span>
+<span class="k">print</span> <span class="n">list1</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>['physics', 'chemistry', 1997, 2000]</p>
+<p>After deleting value at index 2 :</p>
+<p>['physics', 'chemistry', 2000]</p>
+</blockquote>
+<h2>Python列表脚本操作符</h2>
+<blockquote>
+<p>列表对 + 和 * 的操作符与字符串相似。+ 号用于组合列表，* 号用于重复列表。</p>
+</blockquote>
+<p>如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center">Python</th>
+<th align="center">表达式</th>
+<th align="center">结果</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">len([1, 2, 3])</td>
+<td align="center">3</td>
+<td align="center">长度</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">[1, 2, 3] + [4, 5, 6]</td>
+<td align="center">[1, 2, 3, 4, 5, 6]</td>
+<td align="center">组合</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">['Hi!'] * 4</td>
+<td align="center">['Hi!', 'Hi!', 'Hi!', 'Hi!']</td>
+<td align="center">重复</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3 in [1, 2, 3]</td>
+<td align="center">True</td>
+<td align="center">元素是否存在于列表中</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">for x in [1, 2, 3]: print x,</td>
+<td align="center">1 2 3</td>
+<td align="center">迭代</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2>Python列表截取</h2>
+<p>Python 的列表截取实例如下：</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Google&#39;</span><span class="p">,</span> <span class="s1">&#39;Runoob&#39;</span><span class="p">,</span> <span class="s1">&#39;Taobao&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">L</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="s1">&#39;Taobao&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">L</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="s1">&#39;Runoob&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">L</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="p">[</span><span class="s1">&#39;Runoob&#39;</span><span class="p">,</span> <span class="s1">&#39;Taobao&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span>
+</pre></div>
+
+
+<p>描述：</p>
+<table>
+<thead>
+<tr>
+<th align="center">Python表达式</th>
+<th align="center">结果</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">L[2]</td>
+<td align="center">'Taobao'</td>
+<td align="center">读取列表中第三个元素</td>
+</tr>
+<tr>
+<td align="center">L[-2]</td>
+<td align="center">'Runoob'</td>
+<td align="center">读取列表中倒数第二个元素</td>
+</tr>
+<tr>
+<td align="center">L[1:]</td>
+<td align="center">['Runoob','Taobao']</td>
+<td align="center">从第二个元素开始截取列表</td>
+</tr>
+</tbody>
+</table>
+<h2>Python列表函数&amp;方法</h2>
+<p>Python包含以下函数:</p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">cmp(list1, list2)</td>
+<td align="center">比较两个列表的元素</td>
+</tr>
+<tr>
+<td align="center">len(list)</td>
+<td align="center">列表元素个数</td>
+</tr>
+<tr>
+<td align="center">max(list)</td>
+<td align="center">返回列表元素最大值</td>
+</tr>
+<tr>
+<td align="center">min(list)</td>
+<td align="center">返回列表元素最小值</td>
+</tr>
+<tr>
+<td align="center">list(seq)</td>
+<td align="center">将元组转换为列表</td>
+</tr>
+</tbody>
+</table>
+<p>Python包含以下方法:</p>
+<table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">list.append(obj)</td>
+<td align="center">在列表末尾添加新的对象</td>
+</tr>
+<tr>
+<td align="center">list.count(obj)</td>
+<td align="center">统计某个元素在列表中出现的次数</td>
+</tr>
+<tr>
+<td align="center">list.extend(seq)</td>
+<td align="center">在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）</td>
+</tr>
+<tr>
+<td align="center">list.index(obj)</td>
+<td align="center">从列表中找出某个值第一个匹配项的索引位置</td>
+</tr>
+<tr>
+<td align="center">list.insert(index, obj)</td>
+<td align="center">将对象插入列表</td>
+</tr>
+<tr>
+<td align="center">list.pop([index=-1])</td>
+<td align="center">移除列表中的一个元素（默认最后一个元素），并且返回该元素的值</td>
+</tr>
+<tr>
+<td align="center">list.remove(obj)</td>
+<td align="center">移除列表中某个值的第一个匹配项</td>
+</tr>
+<tr>
+<td align="center">list.reverse()</td>
+<td align="center">反向列表中元素</td>
+</tr>
+<tr>
+<td align="center">list.sort(cmp=None, key=None, reverse=False)</td>
+<td align="center">对原列表进行排序</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

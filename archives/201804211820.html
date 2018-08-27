@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python字典 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python字典 字典的每个键值 key=>value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示： d = {key1 : value1, key2 : value2 } 访问字典里的值 把相应的键放入熟悉的方括弧，如下实例: #!/usr/bin/python dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}; print "dict['Name']: ", dict['Name']; print "dict['Age']: ", dict['Age']; 以上实例输出结果： dict['Name']: Zara dict['Age']: 7 如果用字典里没有的键访问数据，会输出错误如下： #!/usr/bin …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201804211820.html">Python字典</a></h2>
+<h5><i class="icon-feather"></i> 2018年04月21日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python字典</h1>
+<p>字典的每个键值 key=&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：</p>
+<div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">key1</span> <span class="p">:</span> <span class="n">value1</span><span class="p">,</span> <span class="n">key2</span> <span class="p">:</span> <span class="n">value2</span> <span class="p">}</span>
+</pre></div>
+
+
+<h2>访问字典里的值</h2>
+<p>把相应的键放入熟悉的方括弧，如下实例:</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">:</span> <span class="s1">&#39;First&#39;</span><span class="p">};</span>
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Name&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">];</span>
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Age&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>dict['Name']:  Zara</p>
+<p>dict['Age']:  7</p>
+</blockquote>
+<p>如果用字典里没有的键访问数据，会输出错误如下：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">:</span> <span class="s1">&#39;First&#39;</span><span class="p">};</span>
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Alice&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>dict['Alice']: </p>
+<p>Traceback (most recent call last):</p>
+<p>File "test.py", line 5, in <module></p>
+<p>print "dict['Alice']: ", dict['Alice'];</p>
+<p>KeyError: 'Alice'</p>
+</blockquote>
+<h2>修改字典</h2>
+<p>向字典添加新内容的方法是增加新的键/值对，修改或删除已有键/值对如下实例:</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">:</span> <span class="s1">&#39;First&#39;</span><span class="p">};</span>
+
+<span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span> <span class="c1"># update existing entry</span>
+<span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;School&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;DPS School&quot;</span><span class="p">;</span> <span class="c1"># Add new entry</span>
+
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Age&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">];</span>
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;School&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;School&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>dict['Age']:  8</p>
+<p>dict['School']:  DPS School</p>
+</blockquote>
+<h2>删除字典元素</h2>
+<p>能删单一的元素也能清空字典，清空只需一项操作。</p>
+<p>显示删除一个字典用del命令，如下实例：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">:</span> <span class="s1">&#39;First&#39;</span><span class="p">};</span>
+
+<span class="k">del</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">];</span> <span class="c1"># 删除键是&#39;Name&#39;的条目</span>
+<span class="nb">dict</span><span class="o">.</span><span class="n">clear</span><span class="p">();</span>     <span class="c1"># 清空词典所有条目</span>
+<span class="k">del</span> <span class="nb">dict</span> <span class="p">;</span>        <span class="c1"># 删除词典</span>
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Age&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">];</span>
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;School&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;School&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>但这会引发一个异常，因为用del后字典不再存在：</p>
+<blockquote>
+<p>dict['Age']:</p>
+<p>Traceback (most recent call last):</p>
+<p>File "test.py", line 8, in <module></p>
+<p>print "dict['Age']: ", dict['Age'];</p>
+<p>TypeError: 'type' object is unsubscriptable</p>
+</blockquote>
+<h2>字典键的特性</h2>
+<p>字典值可以没有限制地取任何python对象，既可以是标准的对象，也可以是用户定义的，但键不行。</p>
+<p>重点：</p>
+<p>1）不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，如下实例：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">:</span> <span class="s1">&#39;Manni&#39;</span><span class="p">};</span>
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Name&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>dict['Name']:  Manni</p>
+</blockquote>
+<p>2）键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行，如下实例：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="nb">dict</span> <span class="o">=</span> <span class="p">{[</span><span class="s1">&#39;Name&#39;</span><span class="p">]:</span> <span class="s1">&#39;Zara&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">};</span>
+
+<span class="k">print</span> <span class="s2">&quot;dict[&#39;Name&#39;]: &quot;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>Traceback (most recent call last):</p>
+<p>File "test.py", line 3, in <module></p>
+<p>dict = {['Name']: 'Zara', 'Age': 7};</p>
+<p>TypeError: list objects are unhashable</p>
+</blockquote>
+<h2>字典内置函数&amp;方法</h2>
+<p>Python字典包含了以下内置函数：</p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">cmp(dict1, dict2)</td>
+<td align="center">比较两个字典元素。</td>
+</tr>
+<tr>
+<td align="center">len(dict)</td>
+<td align="center">计算字典元素个数，即键的总数。</td>
+</tr>
+<tr>
+<td align="center">str(dict)</td>
+<td align="center">输出字典可打印的字符串表示。</td>
+</tr>
+<tr>
+<td align="center">type(variable)</td>
+<td align="center">返回输入的变量类型，如果变量是字典就返回字典类型。</td>
+</tr>
+</tbody>
+</table>
+<p>Python字典包含了以下内置方法：</p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">dict.clear()</td>
+<td align="center">删除字典内所有元素</td>
+</tr>
+<tr>
+<td align="center">dict.copy()</td>
+<td align="center">返回一个字典的浅复制</td>
+</tr>
+<tr>
+<td align="center">dict.fromkeys(seq[, val])</td>
+<td align="center">创建一个新字典，以序列 seq 中元素做字典的键，val 为字典所有键对应的初始值</td>
+</tr>
+<tr>
+<td align="center">dict.get(key, default=None)</td>
+<td align="center">返回指定键的值，如果值不在字典中返回default值</td>
+</tr>
+<tr>
+<td align="center">dict.has_key(key)</td>
+<td align="center">如果键在字典dict里返回true，否则返回false</td>
+</tr>
+<tr>
+<td align="center">dict.items()</td>
+<td align="center">以列表返回可遍历的(键, 值) 元组数组</td>
+</tr>
+<tr>
+<td align="center">dict.keys()</td>
+<td align="center">以列表返回一个字典所有的键</td>
+</tr>
+<tr>
+<td align="center">dict.setdefault(key, default=None)</td>
+<td align="center">和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default</td>
+</tr>
+<tr>
+<td align="center">dict.update(dict2)</td>
+<td align="center">把字典dict2的键/值对更新到dict里</td>
+</tr>
+<tr>
+<td align="center">dict.values()</td>
+<td align="center">以列表返回字典中的所有值</td>
+</tr>
+<tr>
+<td align="center">pop(key[,default])</td>
+<td align="center">删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</td>
+</tr>
+<tr>
+<td align="center">popitem()</td>
+<td align="center">随机返回并删除字典中的一对键和值。</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

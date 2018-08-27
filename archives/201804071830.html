@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>正则表达式 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="正则表达式 模式字符串使用特殊的语法来表示一个正则表达式： 字母和数字表示他们自身。一个正则表达式模式中的字母和数字匹配同样的字符串。 多数字母和数字前加一个反斜杠时会拥有不同的含义。 标点符号只有被转义时才匹配自身，否则它们表示特殊的含义。 反斜杠本身需要使用反斜杠转义。 由于正则表达式通常都包含反斜杠，所以你最好使用原始字符串来表示它们。模式元素(如 r'\t'，等价于 '\t')匹配相应的特殊字符。 下表列出了正则表达式模式语法中的特殊元素。如果你使用模式的同时提供了可选的标志参数，某些模式元素的含义会改变。 模式 描述 ^ 匹配字符串的开头 $ 匹配字符串的末尾。 . 匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。 [...] 用来表示一组字符,单独列出：[amk] 匹配 'a'，'m'或'k' [^...] 不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。 re* 匹配0个或多个的表达式。 re+ 匹配1个或多个的表达式。 re? 匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式 re 精确匹配 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201804071830.html">正则表达式</a></h2>
+<h5><i class="icon-feather"></i> 2018年04月07日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>正则表达式</h1>
+<p>模式字符串使用特殊的语法来表示一个正则表达式：</p>
+<blockquote>
+<p>字母和数字表示他们自身。一个正则表达式模式中的字母和数字匹配同样的字符串。</p>
+<p>多数字母和数字前加一个反斜杠时会拥有不同的含义。</p>
+<p>标点符号只有被转义时才匹配自身，否则它们表示特殊的含义。</p>
+<p>反斜杠本身需要使用反斜杠转义。</p>
+<p>由于正则表达式通常都包含反斜杠，所以你最好使用原始字符串来表示它们。模式元素(如 r'\t'，等价于 '\t')匹配相应的特殊字符。</p>
+</blockquote>
+<p>下表列出了正则表达式模式语法中的特殊元素。如果你使用模式的同时提供了可选的标志参数，某些模式元素的含义会改变。</p>
+<table>
+<thead>
+<tr>
+<th align="center">模式</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">^</td>
+<td align="center">匹配字符串的开头</td>
+</tr>
+<tr>
+<td align="center">$</td>
+<td align="center">匹配字符串的末尾。</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="center">匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。</td>
+</tr>
+<tr>
+<td align="center">[...]</td>
+<td align="center">用来表示一组字符,单独列出：[amk] 匹配 'a'，'m'或'k'</td>
+</tr>
+<tr>
+<td align="center">[^...]</td>
+<td align="center">不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。</td>
+</tr>
+<tr>
+<td align="center">re*</td>
+<td align="center">匹配0个或多个的表达式。</td>
+</tr>
+<tr>
+<td align="center">re+</td>
+<td align="center">匹配1个或多个的表达式。</td>
+</tr>
+<tr>
+<td align="center">re?</td>
+<td align="center">匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式</td>
+</tr>
+<tr>
+<td align="center" n>re</td>
+<td 2 align="center">精确匹配 n 个前面表达式。例如， o</td>
+</tr>
+<tr>
+<td align="center" n_="n,">re</td>
+<td 2_="2," align="center">匹配 n 个前面表达式。例如， o</td>
+</tr>
+<tr>
+<td align="center" m n_="n,">re</td>
+<td align="center">匹配 n 到 m 次由前面的正则表达式定义的片段，贪婪方式</td>
+</tr>
+<tr>
+<td align="center">a｜b</td>
+<td align="center">匹配a或b</td>
+</tr>
+<tr>
+<td align="center">(re)</td>
+<td align="center">匹配括号内的表达式，也表示一个组</td>
+</tr>
+<tr>
+<td align="center">(?imx)</td>
+<td align="center">正则表达式包含三种可选标志：i, m, 或 x 。只影响括号中的区域。</td>
+</tr>
+<tr>
+<td align="center">(?-imx)</td>
+<td align="center">正则表达式关闭 i, m, 或 x 可选标志。只影响括号中的区域。</td>
+</tr>
+<tr>
+<td align="center">(?: re)</td>
+<td align="center">类似 (...), 但是不表示一个组</td>
+</tr>
+<tr>
+<td align="center">(?imx: re)</td>
+<td align="center">在括号中使用i, m, 或 x 可选标志</td>
+</tr>
+<tr>
+<td align="center">(?-imx: re)</td>
+<td align="center">在括号中不使用i, m, 或 x 可选标志</td>
+</tr>
+<tr>
+<td align="center">(?#...)</td>
+<td align="center">注释.</td>
+</tr>
+<tr>
+<td align="center">(?= re)</td>
+<td align="center">前向肯定界定符。如果所含正则表达式，以 ... 表示，在当前位置成功匹配时成功，否则失败。但一旦所含表达式已经尝试，匹配引擎根本没有提高；模式的剩余部分还要尝试界定符的右边。</td>
+</tr>
+<tr>
+<td align="center">(?! re)</td>
+<td align="center">前向否定界定符。与肯定界定符相反；当所含表达式不能在字符串当前位置匹配时成功</td>
+</tr>
+<tr>
+<td align="center">(?&gt; re)</td>
+<td align="center">匹配的独立模式，省去回溯。</td>
+</tr>
+<tr>
+<td align="center">\w</td>
+<td align="center">匹配字母数字及下划线</td>
+</tr>
+<tr>
+<td align="center">\W</td>
+<td align="center">匹配非字母数字及下划线</td>
+</tr>
+<tr>
+<td align="center">\s</td>
+<td align="center">匹配任意空白字符，等价于 [\t\n\r\f].</td>
+</tr>
+<tr>
+<td align="center">\S</td>
+<td align="center">匹配任意非空字符</td>
+</tr>
+<tr>
+<td align="center">\d</td>
+<td align="center">匹配任意数字，等价于 [0-9].</td>
+</tr>
+<tr>
+<td align="center">\D</td>
+<td align="center">匹配任意非数字</td>
+</tr>
+<tr>
+<td align="center">\A</td>
+<td align="center">匹配字符串开始</td>
+</tr>
+<tr>
+<td align="center">\Z</td>
+<td align="center">匹配字符串结束，如果是存在换行，只匹配到换行前的结束字符串。</td>
+</tr>
+<tr>
+<td align="center">\z</td>
+<td align="center">匹配字符串结束</td>
+</tr>
+<tr>
+<td align="center">\G</td>
+<td align="center">匹配最后匹配完成的位置。</td>
+</tr>
+<tr>
+<td align="center">\b</td>
+<td align="center">匹配一个单词边界，也就是指单词和空格间的位置。例如， 'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'。</td>
+</tr>
+<tr>
+<td align="center">\B</td>
+<td align="center">匹配非单词边界。'er\B' 能匹配 "verb" 中的 'er'，但不能匹配 "never" 中的 'er'。</td>
+</tr>
+<tr>
+<td align="center">\n, \t, 等.</td>
+<td align="center">匹配一个换行符。匹配一个制表符。等</td>
+</tr>
+<tr>
+<td align="center">\1...\9</td>
+<td align="center">匹配第n个分组的内容。</td>
+</tr>
+<tr>
+<td align="center">\10</td>
+<td align="center">匹配第n个分组的内容，如果它经匹配。否则指的是八进制字符码的表达式。</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
