@@ -20,6 +20,9 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201801280331.html">博客回顾－－－MarkDown</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+博客回顾－－－MarkDown 前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具 首先需要安装MarkDown //pip安装MarkDown sudo pip install MarkDown 安装完成后，就可以使用MarkDown语法了 安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用 该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了 比如用该工具创建个about.md 页面 在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下 Title: About Me Date: 2018-01-28 随便写点什么都可以！ 然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。 make publish make serve 如果要发布到github，则 …
 <h2><a href="https://torikku.github.io/archives/201801280347.html">博客回顾－－－安装主题</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
 博客回顾－－－安装主题 之前已经写了怎么把一个基本的站点搞出来了，但是基本就是一个页面，什么都没有，甚至主题也没有，接下来讲下主题的安装 这里以主题bootstrap2为例，同样还在myBlog目录下： //进入到目录 cd myBlog //获取主题git git clone https://github.com/getpelican/pelican-themes.git //进入下载到主题目录 cd pelican-themes //使用主题，pelican的主题为一个主题一个目录，如果发现对应的主题的目录是空的，则直接去github里面找到相应主题，git下来，然后执行 pelican-themes -i bootstrap2 对应在在pelicanconf.py中添加主题选择条目： //文件中找到这个字段，如果没有就添加一个 THEME = 'bootstrap2' 在如下路径可以查看主题效果 http://www.pelicanthemes.com/ 对于使用主题后pelicanconf.py的配置可以参考官方文档 http://docs.getpelican.com …
@@ -35,12 +38,10 @@
 <h2><a href="https://torikku.github.io/archives/201801210635.html">Blog计划</a></h2>
 <h5><i class="icon-feather"></i> 2018年01月21日(星期日) </h5>
 终于抽了点时间把这个玩意初步搭建完成，后续会继续完善网站，同时还会写一些Blog、并上传一些纪录照片，纪录生活
-<h2><a href="https://torikku.github.io/about/About.html">About me</a></h2>
-<h5><i class="icon-feather"></i> 2018年01月21日(星期日) </h5>
-About me
 <div class="pagination">
         <a href="https://torikku.github.io/index3.html">&larr;Prev</a>
-    page 4 of 4.
+    page 4 of 5.
+        <a href="https://torikku.github.io/index5.html">Next&rarr;</a>
 </div>    </div>
 </div>
 <div id="footer-wrapper">

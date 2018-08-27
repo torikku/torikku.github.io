@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Socket | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python Socket There is a demo between server and client in python. Server #!/usr/bin/python # -*- coding: UTF-8 -*- # file: server.py import socket # import socket s = socket.socket() # create socket host = socket.gethostname() # get host name port = 12345 # set port s.bind((host, port)) # bind host name and port s …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201805051850.html">Python Socket</a></h2>
+<h5><i class="icon-feather"></i> 2018年05月05日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python Socket</h1>
+<p>There is a demo between server and client in python.</p>
+<h2>Server</h2>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+<span class="c1"># file: server.py</span>
+
+<span class="kn">import</span> <span class="nn">socket</span>               <span class="c1"># import socket</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>         <span class="c1"># create socket </span>
+<span class="n">host</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">()</span> <span class="c1"># get host name</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">12345</span>                <span class="c1"># set port </span>
+<span class="n">s</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>        <span class="c1"># bind host name and port </span>
+
+<span class="n">s</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>                 <span class="c1"># waiting for client</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">c</span><span class="p">,</span> <span class="n">addr</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>     <span class="c1"># create connection with client </span>
+    <span class="k">print</span> <span class="s1">&#39;Host:&#39;</span><span class="p">,</span> <span class="n">addr</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;Welcome to Server!&#39;</span><span class="p">)</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>                <span class="c1"># close</span>
+</pre></div>
+
+
+<h2>Client</h2>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+<span class="c1"># file:client.py</span>
+
+<span class="kn">import</span> <span class="nn">socket</span>               <span class="c1"># import socket</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>         <span class="c1"># create socket</span>
+<span class="n">host</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">()</span> <span class="c1"># get host name</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">12345</span>                <span class="c1"># set port </span>
+
+<span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  
+</pre></div>
+
+
+<h2>Some function</h2>
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">()</span> <span class="c1"># send TCP data</span>
+<span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">()</span> <span class="c1"># recv TCP data</span>
+<span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">()</span> <span class="c1"># send TCP data complete</span>
+<span class="n">s</span><span class="o">.</span><span class="n">recvfrom</span><span class="p">()</span> <span class="c1"># recv UDP data</span>
+<span class="n">s</span><span class="o">.</span><span class="n">sendto</span><span class="p">()</span> <span class="c1"># send UDP data</span>
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
