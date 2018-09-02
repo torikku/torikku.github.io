@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python JSON | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python JSON 工具之间对接使用，总结一下 JSON 函数 使用 JSON 函数需要导入 json 库：import json。 函数 描述 json.dumps 将 Python 对象编码成 JSON 字符串 json.loads 将已编码的 JSON 字符串解码为 Python 对象 json.dumps json.dumps 用于将 Python 对象编码成 JSON 字符串。 语法 json.dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201805261840.html">Python JSON</a></h2>
+<h5><i class="icon-feather"></i> 2018年05月26日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python JSON</h1>
+<blockquote>
+<p>工具之间对接使用，总结一下</p>
+</blockquote>
+<h2>JSON 函数</h2>
+<p>使用 JSON 函数需要导入 json 库：import json。</p>
+<table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">json.dumps</td>
+<td align="center">将 Python 对象编码成 JSON 字符串</td>
+</tr>
+<tr>
+<td align="center">json.loads</td>
+<td align="center">将已编码的 JSON 字符串解码为 Python 对象</td>
+</tr>
+</tbody>
+</table>
+<h3>json.dumps</h3>
+<p>json.dumps 用于将 Python 对象编码成 JSON 字符串。</p>
+<h4>语法</h4>
+<div class="highlight"><pre><span></span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">skipkeys</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">check_circular</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">allow_nan</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="bp">cls</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+
+
+<h4>实例</h4>
+<p>以下实例将数组编码为 JSON 格式数据：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span> <span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span> <span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span> <span class="p">:</span> <span class="mi">5</span> <span class="p">}</span> <span class="p">]</span>
+
+<span class="n">json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">json</span>
+</pre></div>
+
+
+<p>以上代码执行结果为：</p>
+<blockquote>
+<p>[{"a": 1, "c": 3, "b": 2, "e": 5, "d": 4}]</p>
+</blockquote>
+<p>使用参数让 JSON 数据格式化输出：</p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">json</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;Runoob&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span> <span class="n">sort_keys</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">separators</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;: &#39;</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="s2">&quot;Runoob&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>python 原始类型向 json 类型的转化对照表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">Python</th>
+<th align="center">JSON</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">dict</td>
+<td align="center">object</td>
+</tr>
+<tr>
+<td align="center">list, tuple</td>
+<td align="center">array</td>
+</tr>
+<tr>
+<td align="center">str, unicode</td>
+<td align="center">string</td>
+</tr>
+<tr>
+<td align="center">int, long, float</td>
+<td align="center">number</td>
+</tr>
+<tr>
+<td align="center">True</td>
+<td align="center">true</td>
+</tr>
+<tr>
+<td align="center">False</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td align="center">None</td>
+<td align="center">null</td>
+</tr>
+</tbody>
+</table>
+<h3>json.loads</h3>
+<p>json.loads 用于解码 JSON 数据。该函数返回 Python 字段的数据类型。</p>
+<h4>语法</h4>
+<div class="highlight"><pre><span></span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">s</span><span class="p">[,</span> <span class="n">encoding</span><span class="p">[,</span> <span class="bp">cls</span><span class="p">[,</span> <span class="n">object_hook</span><span class="p">[,</span> <span class="n">parse_float</span><span class="p">[,</span> <span class="n">parse_int</span><span class="p">[,</span> <span class="n">parse_constant</span><span class="p">[,</span> <span class="n">object_pairs_hook</span><span class="p">[,</span> <span class="o">**</span><span class="n">kw</span><span class="p">]]]]]]]])</span>
+</pre></div>
+
+
+<h4>实例</h4>
+<p>以下实例展示了Python 如何解码 JSON 对象：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">jsonData</span> <span class="o">=</span> <span class="s1">&#39;{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5}&#39;</span><span class="p">;</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">jsonData</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">text</span>
+</pre></div>
+
+
+<p>以上代码执行结果为：</p>
+<blockquote>
+<p>{u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}</p>
+</blockquote>
+<p>json 类型转换到 python 的类型对照表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">JSON</th>
+<th align="center">Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">object</td>
+<td align="center">dict</td>
+</tr>
+<tr>
+<td align="center">array</td>
+<td align="center">list</td>
+</tr>
+<tr>
+<td align="center">string</td>
+<td align="center">unicode</td>
+</tr>
+<tr>
+<td align="center">number (int)</td>
+<td align="center">int, long</td>
+</tr>
+<tr>
+<td align="center">number (real)</td>
+<td align="center">float</td>
+</tr>
+<tr>
+<td align="center">true</td>
+<td align="center">True</td>
+</tr>
+<tr>
+<td align="center">false</td>
+<td align="center">False</td>
+</tr>
+<tr>
+<td align="center">null</td>
+<td align="center">None</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
