@@ -20,6 +20,12 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201806021850.html">Python OS</a></h2>
+<h5><i class="icon-feather"></i> 2018年06月02日(星期六) </h5>
+Python OS 文件/目录方法 os 模块提供了非常丰富的方法用来处理文件和目录。 备忘，供查询 os.access(path, mode) 检验权限模式 os.chdir(path) 改变当前工作目录 os.chflags(path, flags) 设置路径的标记为数字标记。 os.chmod(path, mode) 更改权限 os.chown(path, uid, gid) 更改文件所有者 os.chroot(path) 改变当前进程的根目录 os.close(fd) 关闭文件描述符 fd os.closerange(fd_low, fd_high) 关闭所有文件描述符，从 fd_low (包含 …
+<h2><a href="https://torikku.github.io/archives/201805261840.html">Python JSON</a></h2>
+<h5><i class="icon-feather"></i> 2018年05月26日(星期六) </h5>
+Python JSON 工具之间对接使用，总结一下 JSON 函数 使用 JSON 函数需要导入 json 库：import json。 函数 描述 json.dumps 将 Python 对象编码成 JSON 字符串 json.loads 将已编码的 JSON 字符串解码为 Python 对象 json.dumps json.dumps 用于将 Python 对象编码成 JSON 字符串。 语法 json.dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True …
 <h2><a href="https://torikku.github.io/archives/201805191850.html">Python MySQL</a></h2>
 <h5><i class="icon-feather"></i> 2018年05月19日(星期六) </h5>
 Python MySQL Python DB-API使用流程： 引入 API 模块。 获取与数据库的连接。 执行SQL语句和存储过程。 关闭数据库连接。 Operation # SQL删除记录语句 sql = "DELETE FROM EMPLOYEE WHERE AGE > '%d'" % (20) try: # 执行SQL语句 cursor.execute(sql) # 向数据库提交 db.commit() except: # 发生错误时回滚 db.rollback() Connect to DB #!/usr/bin/python # -*- coding: UTF-8 -*- import MySQLdb # 打开数据库连接 db = MySQLdb.connect("localhost", "testuser", "test123", "TESTDB …
@@ -32,12 +38,6 @@ Python Socket There is a demo between server and client in python. Server #!/usr
 <h2><a href="https://torikku.github.io/archives/201804281856.html">Python元组</a></h2>
 <h5><i class="icon-feather"></i> 2018年04月28日(星期六) </h5>
 Python元组 Python的元组与列表类似，不同之处在于元组的元素不能修改。 如下实例： tup1 = ('physics', 'chemistry', 1997, 2000) tup2 = (1, 2, 3, 4, 5 ) tup3 = "a", "b", "c", "d" 访问元组 元组可以使用下标索引来访问元组中的值，如下实例: #!/usr/bin/python tup1 = ('physics', 'chemistry', 1997, 2000) tup2 = (1, 2, 3, 4, 5, 6, 7 ) print "tup1[0]: ", tup1[0] print "tup2[1:5]: ", tup2[1 …
-<h2><a href="https://torikku.github.io/archives/201804211820.html">Python字典</a></h2>
-<h5><i class="icon-feather"></i> 2018年04月21日(星期六) </h5>
-Python字典 字典的每个键值 key=>value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示： d = {key1 : value1, key2 : value2 } 访问字典里的值 把相应的键放入熟悉的方括弧，如下实例: #!/usr/bin/python dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}; print "dict['Name']: ", dict['Name']; print "dict['Age']: ", dict['Age']; 以上实例输出结果： dict['Name']: Zara dict['Age']: 7 如果用字典里没有的键访问数据，会输出错误如下： #!/usr/bin …
-<h2><a href="https://torikku.github.io/archives/201804141850.html">Python列表</a></h2>
-<h5><i class="icon-feather"></i> 2018年04月14日(星期六) </h5>
-Python列表 创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示： list1 = ['physics', 'chemistry', 1997, 2000] list2 = [1, 2, 3, 4, 5 ] list3 = ["a", "b", "c", "d"] 与字符串的索引一样，列表索引从0开始。列表可以进行截取、组合等。 访问列表中的值 使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符，如下所示： #!/usr/bin/python list1 = ['physics', 'chemistry', 1997, 2000] list2 = [1, 2, 3, 4, 5, 6, 7 ] print "list1[0]: ", list1[0] print …
 <div class="pagination">
         <a href="https://torikku.github.io/index.html">&larr;Prev</a>
     page 2 of 6.

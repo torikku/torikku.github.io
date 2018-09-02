@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SQL and NoSQL 1 | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="SQL and NoSQL 1 SQL and NoSQL 初探 概念 SQL (Structured Query Language) 数据库，指关系型数据库。主要代表：SQL Server，Oracle，MySQL(开源)，PostgreSQL(开源)。 NoSQL（Not Only SQL）泛指非关系型数据库。主要代表：MongoDB，Redis，CouchDB。 区别 存储方式 SQL数据存在特定结构的表中； 学号 姓名 书名 时间 001 张三 《活着》 20180404 002 李四 《意义》 20180304 而NoSQL则更加灵活和可扩展，存储方式可以是类JSON、哈希表或者其他方式 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201807061854.html">SQL and NoSQL 1</a></h2>
+<h5><i class="icon-feather"></i> 2018年07月06日(星期五)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>SQL and NoSQL 1</h1>
+<blockquote>
+<p>SQL and NoSQL 初探</p>
+</blockquote>
+<h2>概念</h2>
+<p>SQL (Structured Query Language) 数据库，指关系型数据库。主要代表：SQL Server，Oracle，MySQL(开源)，PostgreSQL(开源)。</p>
+<p>NoSQL（Not Only SQL）泛指非关系型数据库。主要代表：MongoDB，Redis，CouchDB。</p>
+<h2>区别</h2>
+<h3>存储方式</h3>
+<p>SQL数据存在特定结构的表中；</p>
+<table>
+<thead>
+<tr>
+<th align="center">学号</th>
+<th align="center">姓名</th>
+<th align="center">书名</th>
+<th align="center">时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">001</td>
+<td align="center">张三</td>
+<td align="center">《活着》</td>
+<td align="center">20180404</td>
+</tr>
+<tr>
+<td align="center">002</td>
+<td align="center">李四</td>
+<td align="center">《意义》</td>
+<td align="center">20180304</td>
+</tr>
+</tbody>
+</table>
+<p>而NoSQL则更加灵活和可扩展，存储方式可以是类JSON、哈希表或者其他方式。 </p>
+<div class="highlight"><pre><span></span>{
+    学号：001
+    姓名：张三
+    书名：《活着》
+    时间：20180404
+}
+</pre></div>
+
+
+<h3>表/数据集合的数据的关系</h3>
+<p>在SQL中，必须定义好表和字段结构后才能添加数据，例如定义表的主键(primary key)，索引(index),触发器(trigger),存储过程(stored procedure)等。表结构可以在被定义之后更新，但是如果有比较大的结构变更的话就会变得比较复杂。</p>
+<p>在NoSQL中，数据可以在任何时候任何地方添加，不需要先定义表。</p>
+<h3>外部数据存储</h3>
+<p>SQL中如何需要增加外部关联数据的话，规范化做法是在原表中增加一个外键，关联外部数据表。</p>
+<p>而在NoSQL中除了这种规范化的外部数据表做法以外，我们还能用如下的非规范化方式把外部数据直接放到原数据集中，以提高查询效率。缺点也比较明显，更新审核人数据的时候将会比较麻烦。</p>
+<h3>SQL中的JOIN查询</h3>
+<p>SQL中可以使用JOIN表链接方式将多个关系数据表中的数据用一条简单的查询语句查询出来。</p>
+<p>NoSQL暂未提供类似JOIN的查询方式对多个数据集中的数据做查询。所以大部分NoSQL使用非规范化的数据存储方式存储数据。</p>
+<h3>数据耦合性</h3>
+<p>SQL中不允许删除已经被使用的外部数据，以保证数据完整性。</p>
+<p>而NoSQL中则没有这种强耦合的概念，可以随时删除任何数据。</p>
+<h3>事务</h3>
+<p>SQL中如果多张表数据需要同批次被更新，即如果其中一张表更新失败的话其他表也不能更新成功。</p>
+<p>而NoSQL中没有事务这个概念，每一个数据集的操作都是原子级的。</p>
+<h3>增删改查语法</h3>
+<p>依赖数据库
+　　</p>
+<h3>查询性能</h3>
+<p>在相同水平的系统设计的前提下，因为NoSQL中省略了JOIN查询的消耗，故理论上性能上是优于SQL的。</p>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
