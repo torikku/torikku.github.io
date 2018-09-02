@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Exception | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python Exception 简单的try....except...else的语法： try: <语句> #运行别的代码 except <名字>： <语句> #如果在try部份引发了'name'异常 except <名字>，<数据>: <语句> #如果引发了'name'异常，获得附加的数据 else: <语句> #如果没有异常发生 finally: <语句> #无论是否异常，最后都执行 Demo: #!/usr/bin/python # -*- coding: UTF-8 -*- try: 1 / 0 except Exception as e: '''异常的父类，可以捕获所有的异常''' print "0不能被除" else: '''保护不抛出异常的代码''' print "没有异常 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201806091805.html">Python Exception</a></h2>
+<h5><i class="icon-feather"></i> 2018年06月09日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python Exception</h1>
+<p>简单的try....except...else的语法：</p>
+<div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="err">语句</span><span class="o">&gt;</span>        <span class="c1">#运行别的代码</span>
+<span class="k">except</span> <span class="o">&lt;</span><span class="err">名字</span><span class="o">&gt;</span><span class="err">：</span>
+    <span class="o">&lt;</span><span class="err">语句</span><span class="o">&gt;</span>        <span class="c1">#如果在try部份引发了&#39;name&#39;异常</span>
+<span class="k">except</span> <span class="o">&lt;</span><span class="err">名字</span><span class="o">&gt;</span><span class="err">，</span><span class="o">&lt;</span><span class="err">数据</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="err">语句</span><span class="o">&gt;</span>        <span class="c1">#如果引发了&#39;name&#39;异常，获得附加的数据</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="err">语句</span><span class="o">&gt;</span>        <span class="c1">#如果没有异常发生</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="err">语句</span><span class="o">&gt;</span>        <span class="c1">#无论是否异常，最后都执行</span>
+</pre></div>
+
+
+<p>Demo:</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;异常的父类，可以捕获所有的异常&#39;&#39;&#39;</span>
+    <span class="k">print</span> <span class="s2">&quot;0不能被除&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;保护不抛出异常的代码&#39;&#39;&#39;</span>
+    <span class="k">print</span> <span class="s2">&quot;没有异常&quot;</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">&quot;最后总是要执行我&quot;</span>
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

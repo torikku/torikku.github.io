@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Class | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python Class Demo: #!/usr/bin/python # -*- coding: UTF-8 -*- class Parent: # 定义父类 parentAttr = 100 def __init__(self): print "调用父类构造函数" def parentMethod(self): print '调用父类方法' def setAttr(self, attr): Parent.parentAttr = attr def getAttr(self): print "父类属性 :", Parent.parentAttr class Child(Parent): # 定义子类 def __init__(self): print "调用子类构造方法" def childMethod(self): print …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201806301830.html">Python Class</a></h2>
+<h5><i class="icon-feather"></i> 2018年06月30日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python Class</h1>
+<h2>Demo:</h2>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span>        <span class="c1"># 定义父类</span>
+   <span class="n">parentAttr</span> <span class="o">=</span> <span class="mi">100</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">print</span> <span class="s2">&quot;调用父类构造函数&quot;</span>
+
+   <span class="k">def</span> <span class="nf">parentMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">print</span> <span class="s1">&#39;调用父类方法&#39;</span>
+
+   <span class="k">def</span> <span class="nf">setAttr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
+      <span class="n">Parent</span><span class="o">.</span><span class="n">parentAttr</span> <span class="o">=</span> <span class="n">attr</span>
+
+   <span class="k">def</span> <span class="nf">getAttr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">print</span> <span class="s2">&quot;父类属性 :&quot;</span><span class="p">,</span> <span class="n">Parent</span><span class="o">.</span><span class="n">parentAttr</span>
+
+<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Parent</span><span class="p">):</span> <span class="c1"># 定义子类</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">print</span> <span class="s2">&quot;调用子类构造方法&quot;</span>
+
+   <span class="k">def</span> <span class="nf">childMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">print</span> <span class="s1">&#39;调用子类方法&#39;</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>          <span class="c1"># 实例化子类</span>
+<span class="n">c</span><span class="o">.</span><span class="n">childMethod</span><span class="p">()</span>      <span class="c1"># 调用子类的方法</span>
+<span class="n">c</span><span class="o">.</span><span class="n">parentMethod</span><span class="p">()</span>     <span class="c1"># 调用父类方法</span>
+<span class="n">c</span><span class="o">.</span><span class="n">setAttr</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>       <span class="c1"># 再次调用父类的方法 - 设置属性值</span>
+<span class="n">c</span><span class="o">.</span><span class="n">getAttr</span><span class="p">()</span>          <span class="c1"># 再次调用父类的方法 - 获取属性值</span>
+</pre></div>
+
+
+<p>以上代码执行结果如下：</p>
+<blockquote>
+<p>调用子类构造方法</p>
+<p>调用子类方法</p>
+<p>调用父类方法</p>
+<p>父类属性 : 200</p>
+</blockquote>
+<h2>基础重载方法</h2>
+<ul>
+<li>
+<p><strong>init</strong> ( self [,args...] )</p>
+<p>构造函数</p>
+<p>简单的调用方法: obj = className(args)</p>
+</li>
+<li>
+<p><strong>del</strong>( self )</p>
+<p>析构方法, 删除一个对象</p>
+<p>简单的调用方法 : del obj</p>
+</li>
+<li>
+<p><strong>repr</strong>( self )</p>
+<p>转化为供解释器读取的形式</p>
+<p>简单的调用方法 : repr(obj)</p>
+</li>
+<li>
+<p><strong>str</strong>( self )</p>
+<p>用于将值转化为适于人阅读的形式</p>
+<p>简单的调用方法 : str(obj)</p>
+</li>
+<li>
+<p><strong>cmp</strong> ( self, x )</p>
+<p>对象比较</p>
+<p>简单的调用方法 : cmp(obj, x)</p>
+</li>
+</ul>
+<h2>类属性与方法</h2>
+<h3>类的私有属性</h3>
+<p>__private_attrs：两个下划线开头，声明该属性为私有，不能在类的外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs。</p>
+<h3>类的方法</h3>
+<p>在类的内部，使用 def 关键字可以为类定义一个方法，与一般函数定义不同，类方法必须包含参数 self,且为第一个参数</p>
+<h3>类的私有方法</h3>
+<p>__private_method：两个下划线开头，声明该方法为私有方法，不能在类的外部调用。在类的内部调用 self.__private_methods</p>
+<p>实例</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="k">class</span> <span class="nc">JustCounter</span><span class="p">:</span>
+    <span class="n">__secretCount</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># 私有变量</span>
+    <span class="n">publicCount</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># 公开变量</span>
+
+    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__secretCount</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publicCount</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">print</span> <span class="bp">self</span><span class="o">.</span><span class="n">__secretCount</span>
+
+<span class="n">counter</span> <span class="o">=</span> <span class="n">JustCounter</span><span class="p">()</span>
+<span class="n">counter</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">counter</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">counter</span><span class="o">.</span><span class="n">publicCount</span>
+<span class="k">print</span> <span class="n">counter</span><span class="o">.</span><span class="n">__secretCount</span>  <span class="c1"># 报错，实例不能访问私有变量</span>
+</pre></div>
+
+
+<p>Python 通过改变名称来包含类名:</p>
+<blockquote>
+<p>1</p>
+<p>2</p>
+<p>2</p>
+<p>Traceback (most recent call last):</p>
+<p>File "test.py", line 17, in <module></p>
+<p>print counter.__secretCount  # 报错，实例不能访问私有变量</p>
+<p>AttributeError: JustCounter instance has no attribute '__secretCount'</p>
+</blockquote>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

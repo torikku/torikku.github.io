@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python File | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Python File open()方法 语法： file object = open(file_name [, access_mode][, buffering]) 不同模式打开文件的完全列表： 模式 r r+ w w+ a a+ 读 + + + + 写 + + + + + 创建 + + + + 覆盖 + + 指针在开始 + + + + 指针在结尾 + + 如下实例： #!/usr/bin/python # -*- coding: UTF-8 -*- # 打开一个文件 fo = open("foo.txt", "w") print "文件名: ", fo.name print "是否已关闭 : ", fo.closed print "访问模式 : ", fo.mode print …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201806161843.html">Python File</a></h2>
+<h5><i class="icon-feather"></i> 2018年06月16日(星期六)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Python File</h1>
+<h2>open()方法</h2>
+<p>语法：</p>
+<blockquote>
+<p>file object = open(file_name [, access_mode][, buffering])</p>
+</blockquote>
+<p>不同模式打开文件的完全列表：</p>
+<table>
+<thead>
+<tr>
+<th align="center">模式</th>
+<th align="center">r</th>
+<th align="center">r+</th>
+<th align="center">w</th>
+<th align="center">w+</th>
+<th align="center">a</th>
+<th align="center">a+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">读</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center"></td>
+<td align="center">+</td>
+<td align="center"></td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td align="center">写</td>
+<td align="center"></td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td align="center">创建</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td align="center">覆盖</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">指针在开始</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">指针在结尾</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+</tbody>
+</table>
+<p>如下实例：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="c1"># 打开一个文件</span>
+<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;foo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;文件名: &quot;</span><span class="p">,</span> <span class="n">fo</span><span class="o">.</span><span class="n">name</span>
+<span class="k">print</span> <span class="s2">&quot;是否已关闭 : &quot;</span><span class="p">,</span> <span class="n">fo</span><span class="o">.</span><span class="n">closed</span>
+<span class="k">print</span> <span class="s2">&quot;访问模式 : &quot;</span><span class="p">,</span> <span class="n">fo</span><span class="o">.</span><span class="n">mode</span>
+<span class="k">print</span> <span class="s2">&quot;末尾是否强制加空格 : &quot;</span><span class="p">,</span> <span class="n">fo</span><span class="o">.</span><span class="n">softspace</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>文件名:  foo.txt</p>
+<p>是否已关闭 :  False</p>
+<p>访问模式 :  w</p>
+<p>末尾是否强制加空格 :  0</p>
+</blockquote>
+<h2>close()方法</h2>
+<p>语法：</p>
+<blockquote>
+<p>fileObject.close()
+例子：</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="c1"># 打开一个文件</span>
+<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;foo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;文件名: &quot;</span><span class="p">,</span> <span class="n">fo</span><span class="o">.</span><span class="n">name</span>
+
+<span class="c1"># 关闭打开的文件</span>
+<span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>文件名:  foo.txt</p>
+</blockquote>
+<h2>write()方法</h2>
+<p>语法：</p>
+<blockquote>
+<p>fileObject.write(string)</p>
+</blockquote>
+<p>例子：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="c1"># 打开一个文件</span>
+<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;foo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s2">&quot;www.toriku.com!</span><span class="se">\n</span><span class="s2">Very good site!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 关闭打开的文件</span>
+<span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>上述方法会创建foo.txt文件，并将收到的内容写入该文件，并最终关闭文件。如果你打开这个文件，将看到以下内容:</p>
+<blockquote>
+<p>$ cat foo.txt </p>
+<p>www.toriku.com!</p>
+<p>Very good site!</p>
+</blockquote>
+<h2>read()方法</h2>
+<p>语法：</p>
+<blockquote>
+<p>fileObject.read([count])</p>
+</blockquote>
+<p>例子：</p>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="c1"># 打开一个文件</span>
+<span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;foo.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r+&quot;</span><span class="p">)</span>
+<span class="nb">str</span> <span class="o">=</span> <span class="n">fo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;读取的字符串是 : &quot;</span><span class="p">,</span> <span class="nb">str</span>
+<span class="c1"># 关闭打开的文件</span>
+<span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+
+<p>以上实例输出结果：</p>
+<blockquote>
+<p>读取的字符串是 :  www.toriku</p>
+</blockquote>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>
