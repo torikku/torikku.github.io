@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Docker centos | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Docker centos Last login: Tue Sep 18 21:36:41 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker search redis NAME DESCRIPTION STARS OFFICIAL AUTOMATED redis Redis is an open source key-value store that… 5756 [OK] bitnami/redis Bitnami Redis Docker Image 89 [OK] sameersbn/redis 71 [OK] hypriot/rpi …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201808310831.html">Docker centos</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月31日(星期五)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Docker centos</h1>
+<div class="highlight"><pre><span></span><span class="nv">Last</span> <span class="nn">login</span><span class="p">:</span> <span class="nv">Tue</span> <span class="nv">Sep</span> <span class="mi">18</span> <span class="mi">21</span><span class="s s-Atom">:</span><span class="mi">36</span><span class="s s-Atom">:</span><span class="mi">41</span> <span class="s s-Atom">on</span> <span class="s s-Atom">ttys000</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">search</span> <span class="s s-Atom">redis</span>
+<span class="nv">NAME</span>                              <span class="nv">DESCRIPTION</span>                                     <span class="nv">STARS</span>               <span class="nv">OFFICIAL</span>            <span class="nv">AUTOMATED</span>
+<span class="s s-Atom">redis</span>                             <span class="nv">Redis</span> <span class="o">is</span> <span class="s s-Atom">an</span> <span class="s s-Atom">open</span> <span class="s s-Atom">source</span> <span class="s s-Atom">key</span><span class="o">-</span><span class="s s-Atom">value</span> <span class="s s-Atom">store</span> <span class="s s-Atom">that…</span>   <span class="mi">5756</span>                <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>                
+<span class="s s-Atom">bitnami</span><span class="o">/</span><span class="s s-Atom">redis</span>                     <span class="nv">Bitnami</span> <span class="nv">Redis</span> <span class="nv">Docker</span> <span class="nv">Image</span>                      <span class="mi">89</span>                                      <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">sameersbn</span><span class="o">/</span><span class="s s-Atom">redis</span>                                                                   <span class="mi">71</span>                                      <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">hypriot</span><span class="o">/</span><span class="s s-Atom">rpi</span><span class="o">-</span><span class="s s-Atom">redis</span>                 <span class="nv">Raspberry</span> <span class="nv">Pi</span> <span class="s s-Atom">compatible</span> <span class="s s-Atom">redis</span> <span class="s s-Atom">image</span>             <span class="mi">34</span>                                      
+<span class="s s-Atom">kubeguide</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">master</span>            <span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">master</span> <span class="s s-Atom">with</span> <span class="s2">&quot;Hello World!&quot;</span>                <span class="mi">26</span>                                      
+<span class="s s-Atom">kubeguide</span><span class="o">/</span><span class="s s-Atom">guestbook</span><span class="o">-</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">slave</span>   <span class="nv">Guestbook</span> <span class="s s-Atom">redis</span> <span class="s s-Atom">slave</span>                           <span class="mi">20</span>                                      
+<span class="s s-Atom">redislabs</span><span class="o">/</span><span class="s s-Atom">redis</span>                   <span class="nv">Clustered</span> <span class="s s-Atom">in</span><span class="o">-</span><span class="s s-Atom">memory</span> <span class="s s-Atom">database</span> <span class="s s-Atom">engine</span> <span class="s s-Atom">compatib…</span>   <span class="mi">15</span>                                      
+<span class="s s-Atom">webhippie</span><span class="o">/</span><span class="s s-Atom">redis</span>                   <span class="nv">Docker</span> <span class="s s-Atom">images</span> <span class="s s-Atom">for</span> <span class="s s-Atom">redis</span>                         <span class="mi">9</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">rediscommander</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">commander</span>    <span class="nv">Alpine</span> <span class="s s-Atom">image</span> <span class="s s-Atom">for</span> <span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">commander</span> <span class="o">-</span> <span class="nv">Redis</span> <span class="s s-Atom">man…</span>   <span class="mi">9</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">arm32v7</span><span class="o">/</span><span class="s s-Atom">redis</span>                     <span class="nv">Redis</span> <span class="o">is</span> <span class="s s-Atom">an</span> <span class="s s-Atom">open</span> <span class="s s-Atom">source</span> <span class="s s-Atom">key</span><span class="o">-</span><span class="s s-Atom">value</span> <span class="s s-Atom">store</span> <span class="s s-Atom">that…</span>   <span class="mi">8</span>                                       
+<span class="s s-Atom">oliver006</span><span class="o">/</span><span class="s s-Atom">redis_exporter</span>           <span class="nv">Prometheus</span> <span class="nv">Exporter</span> <span class="s s-Atom">for</span> <span class="nv">Redis</span> <span class="nv">Metrics</span><span class="p">.</span> <span class="nv">Supp</span><span class="s s-Atom">…</span>   <span class="mi">6</span>                                       
+<span class="s s-Atom">rtoma</span><span class="o">/</span><span class="s s-Atom">logspout</span><span class="o">-</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">logstash</span>     <span class="nv">Logspout</span> <span class="s s-Atom">including</span> <span class="nv">Redis</span> <span class="s s-Atom">adapter</span> <span class="s s-Atom">for</span> <span class="s s-Atom">sending…</span>   <span class="mi">5</span>                                       
+<span class="s s-Atom">centos</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="mi">32</span><span class="o">-</span><span class="s s-Atom">centos7</span>           <span class="nv">Redis</span> <span class="s s-Atom">in</span><span class="o">-</span><span class="s s-Atom">memory</span> <span class="s s-Atom">data</span> <span class="s s-Atom">structure</span> <span class="s s-Atom">store</span><span class="p">,</span> <span class="s s-Atom">used</span> <span class="s s-Atom">a…</span>   <span class="mi">3</span>                                       
+<span class="s s-Atom">tomesar</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">arm</span>                 <span class="nv">Redis</span> <span class="s s-Atom">for</span> <span class="nv">ARM</span><span class="p">!</span>                                  <span class="mi">2</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">dynomitedb</span><span class="o">/</span><span class="s s-Atom">redis</span>                  <span class="nv">Redis</span> <span class="s s-Atom">backend</span> <span class="s s-Atom">for</span> <span class="nv">DynomiteDB</span><span class="p">.</span>                   <span class="mi">2</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">arm64v8</span><span class="o">/</span><span class="s s-Atom">redis</span>                     <span class="nv">Redis</span> <span class="o">is</span> <span class="s s-Atom">an</span> <span class="s s-Atom">open</span> <span class="s s-Atom">source</span> <span class="s s-Atom">key</span><span class="o">-</span><span class="s s-Atom">value</span> <span class="s s-Atom">store</span> <span class="s s-Atom">that…</span>   <span class="mi">2</span>                                       
+<span class="s s-Atom">frodenas</span><span class="o">/</span><span class="s s-Atom">redis</span>                    <span class="nv">A</span> <span class="nv">Docker</span> <span class="nv">Image</span> <span class="s s-Atom">for</span> <span class="nv">Redis</span>                        <span class="mi">2</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">google</span><span class="o">/</span><span class="s s-Atom">guestbook</span><span class="o">-</span><span class="s s-Atom">python</span><span class="o">-</span><span class="s s-Atom">redis</span>     <span class="nv">A</span> <span class="s s-Atom">simple</span> <span class="s s-Atom">guestbook</span> <span class="s s-Atom">example</span> <span class="s s-Atom">written</span> <span class="s s-Atom">in</span> <span class="nv">Python</span><span class="s s-Atom">…</span>   <span class="mi">1</span>                                       
+<span class="s s-Atom">kilsoo75</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">master</span>             <span class="nv">This</span> <span class="s s-Atom">image</span> <span class="o">is</span> <span class="s s-Atom">for</span> <span class="s s-Atom">the</span> <span class="s s-Atom">redis</span> <span class="s s-Atom">master</span> <span class="s s-Atom">of</span> <span class="nv">SK</span> <span class="nv">Clo</span><span class="s s-Atom">…</span>   <span class="mi">1</span>                                       
+<span class="s s-Atom">tiredofit</span><span class="o">/</span><span class="s s-Atom">redis</span>                   <span class="nv">Redis</span> <span class="nv">Server</span> <span class="s s-Atom">w</span><span class="o">/</span> <span class="nv">Zabbix</span> <span class="s s-Atom">monitoring</span> <span class="s s-Atom">and</span> <span class="nv">S6</span> <span class="nv">Ove</span><span class="s s-Atom">…</span>   <span class="mi">1</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">circleci</span><span class="o">/</span><span class="s s-Atom">redis</span>                    <span class="nv">CircleCI</span> <span class="s s-Atom">images</span> <span class="s s-Atom">for</span> <span class="nv">Redis</span>                       <span class="mi">1</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">wodby</span><span class="o">/</span><span class="s s-Atom">redis</span>                       <span class="nv">Redis</span> <span class="s s-Atom">container</span> <span class="s s-Atom">image</span> <span class="s s-Atom">with</span> <span class="s s-Atom">orchestration</span>        <span class="mi">1</span>                                       <span class="p">[</span><span class="nv">OK</span><span class="p">]</span>
+<span class="s s-Atom">anchorfree</span><span class="o">/</span><span class="s s-Atom">redis</span>                  <span class="s s-Atom">redis</span> <span class="s s-Atom">cache</span> <span class="s s-Atom">server</span> <span class="s s-Atom">for</span> <span class="s s-Atom">logging</span>                  <span class="mi">0</span>                                       
+<span class="s s-Atom">iadvize</span><span class="o">/</span><span class="s s-Atom">redis</span>                                                                     <span class="mi">0</span>                                       
+<span class="s s-Atom">cflondonservices</span><span class="o">/</span><span class="s s-Atom">redis</span>            <span class="nv">Docker</span> <span class="s s-Atom">image</span> <span class="s s-Atom">for</span> <span class="s s-Atom">running</span> <span class="s s-Atom">redis</span>                  <span class="mi">0</span>                                       
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">pull</span> <span class="s s-Atom">redis</span>
+<span class="nv">Using</span> <span class="s s-Atom">default</span> <span class="nn">tag</span><span class="p">:</span> <span class="s s-Atom">latest</span>
+<span class="nn">latest</span><span class="p">:</span> <span class="nv">Pulling</span> <span class="s s-Atom">from</span> <span class="s s-Atom">library</span><span class="o">/</span><span class="s s-Atom">redis</span>
+<span class="mi">802</span><span class="s s-Atom">b00ed6f79:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="mi">8</span><span class="s s-Atom">b4a21f633de:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="mi">92</span><span class="s s-Atom">e244f8ff14:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="s s-Atom">fbf4770cd9d6:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="mi">1479</span><span class="s s-Atom">f3bcce09:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="s s-Atom">b4020173179f:</span> <span class="nv">Pull</span> <span class="s s-Atom">complete</span> 
+<span class="nv">Digest</span><span class="s s-Atom">:</span> <span class="s s-Atom">sha256:b77926b30ca2f126431e4c2055efcf2891ebd4b4c4a86a53cf85ec3d4c98a4c9</span>
+<span class="nv">Status</span><span class="s s-Atom">:</span> <span class="nv">Downloaded</span> <span class="s s-Atom">newer</span> <span class="s s-Atom">image</span> <span class="s s-Atom">for</span> <span class="nn">redis</span><span class="p">:</span><span class="s s-Atom">latest</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">info</span> 
+<span class="nv">Error</span> <span class="s s-Atom">response</span> <span class="s s-Atom">from</span> <span class="nn">daemon</span><span class="p">:</span> <span class="nv">Bad</span> <span class="s s-Atom">response</span> <span class="s s-Atom">from</span> <span class="nv">Docker</span> <span class="s s-Atom">engine</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">info</span> 
+<span class="nv">Containers</span><span class="s s-Atom">:</span> <span class="mi">2</span>
+ <span class="nv">Running</span><span class="s s-Atom">:</span> <span class="mi">0</span>
+ <span class="nv">Paused</span><span class="s s-Atom">:</span> <span class="mi">0</span>
+ <span class="nv">Stopped</span><span class="s s-Atom">:</span> <span class="mi">2</span>
+<span class="nv">Images</span><span class="s s-Atom">:</span> <span class="mi">2</span>
+<span class="nv">Server</span> <span class="nv">Version</span><span class="s s-Atom">:</span> <span class="mf">18.06.1</span><span class="o">-</span><span class="s s-Atom">ce</span>
+<span class="nv">Storage</span> <span class="nv">Driver</span><span class="s s-Atom">:</span> <span class="s s-Atom">overlay2</span>
+ <span class="nv">Backing</span> <span class="nv">Filesystem</span><span class="s s-Atom">:</span> <span class="s s-Atom">extfs</span>
+ <span class="nv">Supports</span> <span class="s s-Atom">d_type:</span> <span class="s s-Atom">true</span>
+ <span class="nv">Native</span> <span class="nv">Overlay</span> <span class="nv">Diff</span><span class="s s-Atom">:</span> <span class="s s-Atom">true</span>
+<span class="nv">Logging</span> <span class="nv">Driver</span><span class="s s-Atom">:</span> <span class="s s-Atom">json</span><span class="o">-</span><span class="s s-Atom">file</span>
+<span class="nv">Cgroup</span> <span class="nv">Driver</span><span class="s s-Atom">:</span> <span class="s s-Atom">cgroupfs</span>
+<span class="nv">Plugins</span><span class="s s-Atom">:</span>
+ <span class="nv">Volume</span><span class="s s-Atom">:</span> <span class="s s-Atom">local</span>
+ <span class="nv">Network</span><span class="s s-Atom">:</span> <span class="s s-Atom">bridge</span> <span class="s s-Atom">host</span> <span class="s s-Atom">ipvlan</span> <span class="s s-Atom">macvlan</span> <span class="s s-Atom">null</span> <span class="s s-Atom">overlay</span>
+ <span class="nv">Log</span><span class="s s-Atom">:</span> <span class="s s-Atom">awslogs</span> <span class="s s-Atom">fluentd</span> <span class="s s-Atom">gcplogs</span> <span class="s s-Atom">gelf</span> <span class="s s-Atom">journald</span> <span class="s s-Atom">json</span><span class="o">-</span><span class="s s-Atom">file</span> <span class="s s-Atom">logentries</span> <span class="s s-Atom">splunk</span> <span class="s s-Atom">syslog</span>
+<span class="nv">Swarm</span><span class="s s-Atom">:</span> <span class="s s-Atom">inactive</span>
+<span class="nv">Runtimes</span><span class="s s-Atom">:</span> <span class="s s-Atom">runc</span>
+<span class="nv">Default</span> <span class="nv">Runtime</span><span class="s s-Atom">:</span> <span class="s s-Atom">runc</span>
+<span class="nv">Init</span> <span class="nv">Binary</span><span class="s s-Atom">:</span> <span class="s s-Atom">docker</span><span class="o">-</span><span class="s s-Atom">init</span>
+<span class="s s-Atom">containerd</span> <span class="nn">version</span><span class="p">:</span> <span class="mi">468</span><span class="s s-Atom">a545b9edcd5932818eb9de8e72413e616e86e</span>
+<span class="s s-Atom">runc</span> <span class="nn">version</span><span class="p">:</span> <span class="mi">69663</span><span class="s s-Atom">f0bd4b60df09991c08812a60108003fa340</span>
+<span class="s s-Atom">init</span> <span class="nn">version</span><span class="p">:</span> <span class="s s-Atom">fec3683</span>
+<span class="nv">Security</span> <span class="nv">Options</span><span class="s s-Atom">:</span>
+ <span class="s s-Atom">seccomp</span>
+  <span class="nv">Profile</span><span class="s s-Atom">:</span> <span class="s s-Atom">default</span>
+<span class="nv">Kernel</span> <span class="nv">Version</span><span class="s s-Atom">:</span> <span class="mf">4.9.93</span><span class="o">-</span><span class="s s-Atom">linuxkit</span><span class="o">-</span><span class="s s-Atom">aufs</span>
+<span class="nv">Operating</span> <span class="nv">System</span><span class="s s-Atom">:</span> <span class="nv">Docker</span> <span class="s s-Atom">for</span> <span class="nv">Mac</span>
+<span class="nv">OSType</span><span class="s s-Atom">:</span> <span class="s s-Atom">linux</span>
+<span class="nv">Architecture</span><span class="s s-Atom">:</span> <span class="s s-Atom">x86_64</span>
+<span class="nv">CPUs</span><span class="s s-Atom">:</span> <span class="mi">2</span>
+<span class="nv">Total</span> <span class="nv">Memory</span><span class="s s-Atom">:</span> <span class="mf">1.952</span><span class="nv">GiB</span>
+<span class="nv">Name</span><span class="s s-Atom">:</span> <span class="s s-Atom">linuxkit</span><span class="o">-</span><span class="mi">025000000001</span>
+<span class="nv">ID</span><span class="s s-Atom">:</span> <span class="nv">FZUZ</span><span class="s s-Atom">:</span><span class="nv">KIND</span><span class="s s-Atom">:</span><span class="mi">5</span><span class="nv">V6G</span><span class="s s-Atom">:</span><span class="mi">64</span><span class="nv">EO</span><span class="s s-Atom">:</span><span class="nv">KDEG</span><span class="s s-Atom">:</span><span class="nv">YQ5S</span><span class="s s-Atom">:</span><span class="mi">7</span><span class="nv">M22</span><span class="s s-Atom">:</span><span class="nv">DFKN</span><span class="s s-Atom">:</span><span class="nv">DKSI</span><span class="s s-Atom">:</span><span class="mi">6</span><span class="nv">OAZ</span><span class="s s-Atom">:</span><span class="nv">BSJZ</span><span class="s s-Atom">:</span><span class="nv">ELGV</span>
+<span class="nv">Docker</span> <span class="nv">Root</span> <span class="nv">Dir</span><span class="s s-Atom">:</span> <span class="o">/</span><span class="s s-Atom">var</span><span class="o">/</span><span class="s s-Atom">lib</span><span class="o">/</span><span class="s s-Atom">docker</span>
+<span class="nv">Debug</span> <span class="nv">Mode</span> <span class="p">(</span><span class="s s-Atom">client</span><span class="p">)</span><span class="s s-Atom">:</span> <span class="s s-Atom">false</span>
+<span class="nv">Debug</span> <span class="nv">Mode</span> <span class="p">(</span><span class="s s-Atom">server</span><span class="p">)</span><span class="s s-Atom">:</span> <span class="s s-Atom">true</span>
+ <span class="nv">File</span> <span class="nv">Descriptors</span><span class="s s-Atom">:</span> <span class="mi">24</span>
+ <span class="nv">Goroutines</span><span class="s s-Atom">:</span> <span class="mi">50</span>
+ <span class="nv">System</span> <span class="nv">Time</span><span class="s s-Atom">:</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">18</span><span class="nv">T14</span><span class="s s-Atom">:</span><span class="mi">20</span><span class="s s-Atom">:</span><span class="mf">47.069871637</span><span class="nv">Z</span>
+ <span class="nv">EventsListeners</span><span class="s s-Atom">:</span> <span class="mi">2</span>
+<span class="nv">HTTP</span> <span class="nv">Proxy</span><span class="s s-Atom">:</span> <span class="s s-Atom">gateway</span><span class="p">.</span><span class="s s-Atom">docker</span><span class="p">.</span><span class="nn">internal</span><span class="p">:</span><span class="mi">3128</span>
+<span class="nv">HTTPS</span> <span class="nv">Proxy</span><span class="s s-Atom">:</span> <span class="s s-Atom">gateway</span><span class="p">.</span><span class="s s-Atom">docker</span><span class="p">.</span><span class="nn">internal</span><span class="p">:</span><span class="mi">3129</span>
+<span class="nv">Registry</span><span class="s s-Atom">:</span> <span class="nn">https</span><span class="p">:</span><span class="o">//</span><span class="s s-Atom">index</span><span class="p">.</span><span class="s s-Atom">docker</span><span class="p">.</span><span class="s s-Atom">io</span><span class="o">/</span><span class="s s-Atom">v1</span><span class="o">/</span>
+<span class="nv">Labels</span><span class="s s-Atom">:</span>
+<span class="nv">Experimental</span><span class="s s-Atom">:</span> <span class="s s-Atom">true</span>
+<span class="nv">Insecure</span> <span class="nv">Registries</span><span class="s s-Atom">:</span>
+ <span class="mf">127.0.0.0</span><span class="o">/</span><span class="mi">8</span>
+<span class="nv">Registry</span> <span class="nv">Mirrors</span><span class="s s-Atom">:</span>
+ <span class="nn">http</span><span class="p">:</span><span class="o">//</span><span class="s s-Atom">hub</span><span class="o">-</span><span class="s s-Atom">mirror</span><span class="p">.</span><span class="s s-Atom">c</span><span class="mf">.163</span><span class="p">.</span><span class="s s-Atom">com</span><span class="o">/</span>
+<span class="nv">Live</span> <span class="nv">Restore</span> <span class="nv">Enabled</span><span class="s s-Atom">:</span> <span class="s s-Atom">false</span>
+
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">images</span> <span class="s s-Atom">redis</span>
+<span class="nv">REPOSITORY</span>          <span class="nv">TAG</span>                 <span class="nv">IMAGE</span> <span class="nv">ID</span>            <span class="nv">CREATED</span>             <span class="nv">SIZE</span>
+<span class="s s-Atom">redis</span>               <span class="s s-Atom">latest</span>              <span class="s s-Atom">e1a73233e3be</span>        <span class="mi">13</span> <span class="s s-Atom">days</span> <span class="s s-Atom">ago</span>         <span class="mf">83.4</span><span class="nv">MB</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">run</span> <span class="o">-</span><span class="s s-Atom">d</span> <span class="o">-</span><span class="nv">P</span> <span class="s s-Atom">redis</span> <span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">server</span> <span class="s s-Atom">--appendonly</span> <span class="s s-Atom">yes</span>
+<span class="s s-Atom">edd8d01f7a8ec0f1ebafb2e947527cd9a612d31ffa690a71ce5243306bd51f31</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">ps</span>
+<span class="nv">CONTAINER</span> <span class="nv">ID</span>        <span class="nv">IMAGE</span>               <span class="nv">COMMAND</span>                  <span class="nv">CREATED</span>             <span class="nv">STATUS</span>              <span class="nv">PORTS</span>                     <span class="nv">NAMES</span>
+<span class="s s-Atom">edd8d01f7a8e</span>        <span class="s s-Atom">redis</span>               <span class="s2">&quot;docker-entrypoint.s…&quot;</span>   <span class="mi">7</span> <span class="s s-Atom">seconds</span> <span class="s s-Atom">ago</span>       <span class="nv">Up</span> <span class="mi">6</span> <span class="s s-Atom">seconds</span>        <span class="mf">0.0.0.0</span><span class="s s-Atom">:</span><span class="mi">32768</span><span class="s s-Atom">-&gt;</span><span class="mi">6379</span><span class="o">/</span><span class="s s-Atom">tcp</span>   <span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">exec</span> <span class="o">-</span><span class="s s-Atom">it</span> <span class="s s-Atom">edd8d01f7a8e</span> <span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">cli</span>
+<span class="mf">127.0.0.1</span><span class="s s-Atom">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="s s-Atom">info</span> 
+<span class="c1"># Server</span>
+<span class="s s-Atom">redis_version:</span><span class="mf">4.0.11</span>
+<span class="s s-Atom">redis_git_sha1:</span><span class="mi">00000000</span>
+<span class="s s-Atom">redis_git_dirty:</span><span class="mi">0</span>
+<span class="s s-Atom">redis_build_id:</span><span class="mi">7</span><span class="s s-Atom">ea3906e8169550b</span>
+<span class="s s-Atom">redis_mode:standalone</span>
+<span class="nn">os</span><span class="p">:</span><span class="nv">Linux</span> <span class="mf">4.9.93</span><span class="o">-</span><span class="s s-Atom">linuxkit</span><span class="o">-</span><span class="s s-Atom">aufs</span> <span class="s s-Atom">x86_64</span>
+<span class="s s-Atom">arch_bits:</span><span class="mi">64</span>
+<span class="s s-Atom">multiplexing_api:epoll</span>
+<span class="s s-Atom">atomicvar_api:atomic</span><span class="o">-</span><span class="s s-Atom">builtin</span>
+<span class="s s-Atom">gcc_version:</span><span class="mf">6.3.0</span>
+<span class="s s-Atom">process_id:</span><span class="mi">1</span>
+<span class="s s-Atom">run_id:</span><span class="mi">20</span><span class="s s-Atom">d49a99b260f387f8855ccd5c64d29f154990f9</span>
+<span class="s s-Atom">tcp_port:</span><span class="mi">6379</span>
+<span class="s s-Atom">uptime_in_seconds:</span><span class="mi">55</span>
+<span class="s s-Atom">uptime_in_days:</span><span class="mi">0</span>
+<span class="nn">hz</span><span class="p">:</span><span class="mi">10</span>
+<span class="s s-Atom">lru_clock:</span><span class="mi">10554011</span>
+<span class="nn">executable</span><span class="p">:</span><span class="o">/</span><span class="s s-Atom">data</span><span class="o">/</span><span class="s s-Atom">redis</span><span class="o">-</span><span class="s s-Atom">server</span>
+<span class="s s-Atom">config_file:</span>
+
+<span class="c1"># Clients</span>
+<span class="s s-Atom">connected_clients:</span><span class="mi">1</span>
+<span class="s s-Atom">client_longest_output_list:</span><span class="mi">0</span>
+<span class="s s-Atom">client_biggest_input_buf:</span><span class="mi">0</span>
+<span class="s s-Atom">blocked_clients:</span><span class="mi">0</span>
+
+<span class="c1"># Memory</span>
+<span class="s s-Atom">used_memory:</span><span class="mi">849312</span>
+<span class="s s-Atom">used_memory_human:</span><span class="mf">829.41</span><span class="nv">K</span>
+<span class="s s-Atom">used_memory_rss:</span><span class="mi">3481600</span>
+<span class="s s-Atom">used_memory_rss_human:</span><span class="mf">3.32</span><span class="nv">M</span>
+<span class="s s-Atom">used_memory_peak:</span><span class="mi">849312</span>
+<span class="s s-Atom">used_memory_peak_human:</span><span class="mf">829.41</span><span class="nv">K</span>
+<span class="s s-Atom">used_memory_peak_perc:</span><span class="mf">100.12</span><span class="c1">%</span>
+<span class="s s-Atom">used_memory_overhead:</span><span class="mi">836078</span>
+<span class="s s-Atom">used_memory_startup:</span><span class="mi">786448</span>
+<span class="s s-Atom">used_memory_dataset:</span><span class="mi">13234</span>
+<span class="s s-Atom">used_memory_dataset_perc:</span><span class="mf">21.05</span><span class="c1">%</span>
+<span class="s s-Atom">total_system_memory:</span><span class="mi">2096058368</span>
+<span class="s s-Atom">total_system_memory_human:</span><span class="mf">1.95</span><span class="nv">G</span>
+<span class="s s-Atom">used_memory_lua:</span><span class="mi">37888</span>
+<span class="s s-Atom">used_memory_lua_human:</span><span class="mf">37.00</span><span class="nv">K</span>
+<span class="nn">maxmemory</span><span class="p">:</span><span class="mi">0</span>
+<span class="s s-Atom">maxmemory_human:</span><span class="mi">0</span><span class="nv">B</span>
+<span class="s s-Atom">maxmemory_policy:noeviction</span>
+<span class="s s-Atom">mem_fragmentation_ratio:</span><span class="mf">4.10</span>
+<span class="s s-Atom">mem_allocator:jemalloc</span><span class="o">-</span><span class="mf">4.0.3</span>
+<span class="s s-Atom">active_defrag_running:</span><span class="mi">0</span>
+<span class="s s-Atom">lazyfree_pending_objects:</span><span class="mi">0</span>
+
+<span class="c1"># Persistence</span>
+<span class="nn">loading</span><span class="p">:</span><span class="mi">0</span>
+<span class="s s-Atom">rdb_changes_since_last_save:</span><span class="mi">0</span>
+<span class="s s-Atom">rdb_bgsave_in_progress:</span><span class="mi">0</span>
+<span class="s s-Atom">rdb_last_save_time:</span><span class="mi">1537280612</span>
+<span class="s s-Atom">rdb_last_bgsave_status:ok</span>
+<span class="nf">rdb_last_bgsave_time_sec</span><span class="o">:-</span><span class="mi">1</span>
+<span class="nf">rdb_current_bgsave_time_sec</span><span class="o">:-</span><span class="mi">1</span>
+<span class="s s-Atom">rdb_last_cow_size:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_enabled:</span><span class="mi">1</span>
+<span class="s s-Atom">aof_rewrite_in_progress:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_rewrite_scheduled:</span><span class="mi">0</span>
+<span class="nf">aof_last_rewrite_time_sec</span><span class="o">:-</span><span class="mi">1</span>
+<span class="nf">aof_current_rewrite_time_sec</span><span class="o">:-</span><span class="mi">1</span>
+<span class="s s-Atom">aof_last_bgrewrite_status:ok</span>
+<span class="s s-Atom">aof_last_write_status:ok</span>
+<span class="s s-Atom">aof_last_cow_size:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_current_size:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_base_size:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_pending_rewrite:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_buffer_length:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_rewrite_buffer_length:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_pending_bio_fsync:</span><span class="mi">0</span>
+<span class="s s-Atom">aof_delayed_fsync:</span><span class="mi">0</span>
+
+<span class="c1"># Stats</span>
+<span class="s s-Atom">total_connections_received:</span><span class="mi">1</span>
+<span class="s s-Atom">total_commands_processed:</span><span class="mi">1</span>
+<span class="s s-Atom">instantaneous_ops_per_sec:</span><span class="mi">0</span>
+<span class="s s-Atom">total_net_input_bytes:</span><span class="mi">31</span>
+<span class="s s-Atom">total_net_output_bytes:</span><span class="mi">10163</span>
+<span class="s s-Atom">instantaneous_input_kbps:</span><span class="mf">0.00</span>
+<span class="s s-Atom">instantaneous_output_kbps:</span><span class="mf">0.00</span>
+<span class="s s-Atom">rejected_connections:</span><span class="mi">0</span>
+<span class="s s-Atom">sync_full:</span><span class="mi">0</span>
+<span class="s s-Atom">sync_partial_ok:</span><span class="mi">0</span>
+<span class="s s-Atom">sync_partial_err:</span><span class="mi">0</span>
+<span class="s s-Atom">expired_keys:</span><span class="mi">0</span>
+<span class="s s-Atom">expired_stale_perc:</span><span class="mf">0.00</span>
+<span class="s s-Atom">expired_time_cap_reached_count:</span><span class="mi">0</span>
+<span class="s s-Atom">evicted_keys:</span><span class="mi">0</span>
+<span class="s s-Atom">keyspace_hits:</span><span class="mi">0</span>
+<span class="s s-Atom">keyspace_misses:</span><span class="mi">0</span>
+<span class="s s-Atom">pubsub_channels:</span><span class="mi">0</span>
+<span class="s s-Atom">pubsub_patterns:</span><span class="mi">0</span>
+<span class="s s-Atom">latest_fork_usec:</span><span class="mi">0</span>
+<span class="s s-Atom">migrate_cached_sockets:</span><span class="mi">0</span>
+<span class="s s-Atom">slave_expires_tracked_keys:</span><span class="mi">0</span>
+<span class="s s-Atom">active_defrag_hits:</span><span class="mi">0</span>
+<span class="s s-Atom">active_defrag_misses:</span><span class="mi">0</span>
+<span class="s s-Atom">active_defrag_key_hits:</span><span class="mi">0</span>
+<span class="s s-Atom">active_defrag_key_misses:</span><span class="mi">0</span>
+
+<span class="c1"># Replication</span>
+<span class="nn">role</span><span class="p">:</span><span class="s s-Atom">master</span>
+<span class="s s-Atom">connected_slaves:</span><span class="mi">0</span>
+<span class="s s-Atom">master_replid:</span><span class="mi">6718</span><span class="s s-Atom">f51e8d592437bc0bf282401e49640c627787</span>
+<span class="s s-Atom">master_replid2:</span><span class="mi">0000000000000000000000000000000000000000</span>
+<span class="s s-Atom">master_repl_offset:</span><span class="mi">0</span>
+<span class="nf">second_repl_offset</span><span class="o">:-</span><span class="mi">1</span>
+<span class="s s-Atom">repl_backlog_active:</span><span class="mi">0</span>
+<span class="s s-Atom">repl_backlog_size:</span><span class="mi">1048576</span>
+<span class="s s-Atom">repl_backlog_first_byte_offset:</span><span class="mi">0</span>
+<span class="s s-Atom">repl_backlog_histlen:</span><span class="mi">0</span>
+
+<span class="c1"># CPU</span>
+<span class="s s-Atom">used_cpu_sys:</span><span class="mf">0.02</span>
+<span class="s s-Atom">used_cpu_user:</span><span class="mf">0.09</span>
+<span class="s s-Atom">used_cpu_sys_children:</span><span class="mf">0.00</span>
+<span class="s s-Atom">used_cpu_user_children:</span><span class="mf">0.00</span>
+
+<span class="c1"># Cluster</span>
+<span class="s s-Atom">cluster_enabled:</span><span class="mi">0</span>
+
+<span class="c1"># Keyspace</span>
+<span class="mf">127.0.0.1</span><span class="s s-Atom">:</span><span class="mi">6379</span><span class="o">&gt;</span> <span class="s s-Atom">exit</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> 
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> 
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">stop</span> <span class="s s-Atom">redis</span> 
+<span class="nv">Error</span> <span class="s s-Atom">response</span> <span class="s s-Atom">from</span> <span class="nn">daemon</span><span class="p">:</span> <span class="nv">No</span> <span class="s s-Atom">such</span> <span class="nn">container</span><span class="p">:</span> <span class="s s-Atom">redis</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">ps</span>
+<span class="nv">CONTAINER</span> <span class="nv">ID</span>        <span class="nv">IMAGE</span>               <span class="nv">COMMAND</span>                  <span class="nv">CREATED</span>             <span class="nv">STATUS</span>              <span class="nv">PORTS</span>                     <span class="nv">NAMES</span>
+<span class="s s-Atom">edd8d01f7a8e</span>        <span class="s s-Atom">redis</span>               <span class="s2">&quot;docker-entrypoint.s…&quot;</span>   <span class="mi">7</span> <span class="s s-Atom">minutes</span> <span class="s s-Atom">ago</span>       <span class="nv">Up</span> <span class="mi">7</span> <span class="s s-Atom">minutes</span>        <span class="mf">0.0.0.0</span><span class="s s-Atom">:</span><span class="mi">32768</span><span class="s s-Atom">-&gt;</span><span class="mi">6379</span><span class="o">/</span><span class="s s-Atom">tcp</span>   <span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">stop</span> <span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">start</span> <span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">stop</span> <span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">login</span> <span class="o">-</span><span class="s s-Atom">u</span> <span class="s s-Atom">torikku</span> <span class="o">-</span><span class="s s-Atom">p</span> <span class="nv">Hryj99m7j</span><span class="s s-Atom">@</span>
+<span class="nv">WARNING</span><span class="p">!</span> <span class="nv">Using</span> <span class="s s-Atom">--password</span> <span class="s s-Atom">via</span> <span class="s s-Atom">the</span> <span class="nv">CLI</span> <span class="o">is</span> <span class="s s-Atom">insecure</span><span class="p">.</span> <span class="nv">Use</span> <span class="s s-Atom">--password</span><span class="o">-</span><span class="s s-Atom">stdin</span><span class="p">.</span>
+<span class="nv">Login</span> <span class="nv">Succeeded</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">images</span>
+<span class="nv">REPOSITORY</span>          <span class="nv">TAG</span>                 <span class="nv">IMAGE</span> <span class="nv">ID</span>            <span class="nv">CREATED</span>             <span class="nv">SIZE</span>
+<span class="s s-Atom">hello</span><span class="o">-</span><span class="s s-Atom">world</span>         <span class="s s-Atom">latest</span>              <span class="mi">4</span><span class="s s-Atom">ab4c602aa5e</span>        <span class="mi">10</span> <span class="s s-Atom">days</span> <span class="s s-Atom">ago</span>         <span class="mf">1.84</span><span class="s s-Atom">kB</span>
+<span class="s s-Atom">redis</span>               <span class="s s-Atom">latest</span>              <span class="s s-Atom">e1a73233e3be</span>        <span class="mi">13</span> <span class="s s-Atom">days</span> <span class="s s-Atom">ago</span>         <span class="mf">83.4</span><span class="nv">MB</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">logout</span>
+<span class="nv">Removing</span> <span class="s s-Atom">login</span> <span class="s s-Atom">credentials</span> <span class="s s-Atom">for</span> <span class="nn">https</span><span class="p">:</span><span class="o">//</span><span class="s s-Atom">index</span><span class="p">.</span><span class="s s-Atom">docker</span><span class="p">.</span><span class="s s-Atom">io</span><span class="o">/</span><span class="s s-Atom">v1</span><span class="o">/</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">images</span>
+<span class="nv">REPOSITORY</span>          <span class="nv">TAG</span>                 <span class="nv">IMAGE</span> <span class="nv">ID</span>            <span class="nv">CREATED</span>             <span class="nv">SIZE</span>
+<span class="s s-Atom">hello</span><span class="o">-</span><span class="s s-Atom">world</span>         <span class="s s-Atom">latest</span>              <span class="mi">4</span><span class="s s-Atom">ab4c602aa5e</span>        <span class="mi">10</span> <span class="s s-Atom">days</span> <span class="s s-Atom">ago</span>         <span class="mf">1.84</span><span class="s s-Atom">kB</span>
+<span class="s s-Atom">redis</span>               <span class="s s-Atom">latest</span>              <span class="s s-Atom">e1a73233e3be</span>        <span class="mi">13</span> <span class="s s-Atom">days</span> <span class="s s-Atom">ago</span>         <span class="mf">83.4</span><span class="nv">MB</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">login</span> <span class="o">-</span><span class="s s-Atom">u</span> <span class="s s-Atom">torikku</span> <span class="o">-</span><span class="s s-Atom">p</span> <span class="nv">Hryj99m7j</span><span class="s s-Atom">@</span>
+<span class="nv">WARNING</span><span class="p">!</span> <span class="nv">Using</span> <span class="s s-Atom">--password</span> <span class="s s-Atom">via</span> <span class="s s-Atom">the</span> <span class="nv">CLI</span> <span class="o">is</span> <span class="s s-Atom">insecure</span><span class="p">.</span> <span class="nv">Use</span> <span class="s s-Atom">--password</span><span class="o">-</span><span class="s s-Atom">stdin</span><span class="p">.</span>
+<span class="nv">Login</span> <span class="nv">Succeeded</span>
+<span class="s s-Atom">admindeMacBook</span><span class="o">-</span><span class="nv">Pro</span><span class="s s-Atom">:~</span> <span class="s s-Atom">sean</span><span class="p">.</span><span class="s s-Atom">zhao$</span> <span class="s s-Atom">docker</span> <span class="s s-Atom">commit</span> <span class="o">-</span><span class="s s-Atom">a</span> <span class="s2">&quot;zsh&quot;</span> <span class="o">-</span><span class="s s-Atom">m</span> <span class="s2">&quot;test&quot;</span>
+<span class="s2">&quot;docker commit&quot;</span> <span class="s s-Atom">requires</span> <span class="s s-Atom">at</span> <span class="s s-Atom">least</span> <span class="mi">1</span> <span class="s s-Atom">and</span> <span class="s s-Atom">at</span> <span class="s s-Atom">most</span> <span class="mi">2</span> <span class="s s-Atom">arguments</span><span class="p">.</span>
+<span class="nv">See</span> <span class="s s-Atom">&#39;docker commit --help&#39;</span><span class="p">.</span>
+
+<span class="nv">Usage</span><span class="s s-Atom">:</span>  <span class="s s-Atom">docker</span> <span class="s s-Atom">commit</span> <span class="p">[</span><span class="nv">OPTIONS</span><span class="p">]</span> <span class="nv">CONTAINER</span> <span class="p">[</span><span class="nv">REPOSITORY</span><span class="p">[</span><span class="s s-Atom">:</span><span class="nv">TAG</span><span class="p">]]</span>
+
+<span class="nv">Create</span> <span class="s s-Atom">a</span> <span class="s s-Atom">new</span> <span class="s s-Atom">image</span> <span class="s s-Atom">from</span> <span class="s s-Atom">a</span> <span class="s s-Atom">container&#39;s changes</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker logout</span>
+<span class="s s-Atom">Removing login credentials for https://index.docker.io/v1/</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker stop tender_kilby</span>
+<span class="s s-Atom">tender_kilby</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker search ansible </span>
+<span class="s s-Atom">NAME                                                  DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span>
+<span class="s s-Atom">williamyeh/ansible                                    Docker images for Ansible software, installe…   181                                     [OK]</span>
+<span class="s s-Atom">ansible/ansible                                       Images for automated testing of Ansible. The…   143                                     [OK]</span>
+<span class="s s-Atom">ansible/centos7-ansible                               Ansible on Centos7                              118                                     [OK]</span>
+<span class="s s-Atom">ansible/ubuntu14.04-ansible                           Ubuntu 14.04 LTS with ansible                   95                                      [OK]</span>
+<span class="s s-Atom">ansible/awx_web                                       Official Development Web component image for…   47                                      </span>
+<span class="s s-Atom">ansible/awx_task                                      Official Development Task component image of…   36                                      </span>
+<span class="s s-Atom">openshift/origin-ansible                              Ansible runtime and playbooks for OpenShift     5                                       </span>
+<span class="s s-Atom">ansible/ansible-container-builder                     The builder image for ansible-container. See…   4                                       </span>
+<span class="s s-Atom">ansiblecheck/ansiblecheck                             A One Stop Solution For Checking Your Ansibl…   3                                       [OK]</span>
+<span class="s s-Atom">danvaida/ansible-docker-images                        Docker images used for testing Ansible roles.   3                                       [OK]</span>
+<span class="s s-Atom">webdevops/ansible                                     Ansible image for CentOS, Ubunty, Debian and…   3                                       [OK]</span>
+<span class="s s-Atom">ansible/galaxy                                        Ansible Galaxy images                           2                                       </span>
+<span class="s s-Atom">ansibleplaybookbundle/origin-ansible-service-broker   Auto builds for the broker                      2                                       [OK]</span>
+<span class="s s-Atom">gaahrdner/packer-ansible-resource                     Concourse CI resource to build machine image…   1                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/hello-world-apb                 An APB which deploys a sample Hello World! a…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/mariadb-apb                     An APB which deploys RHSCL MariaDB              0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/rocketchat-apb                  An APB which deploys RocketChat backed by Mo…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/mysql-apb                       An APB which deploys RHSCL MySQL                0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/s2i-apb                         S2I builder image for Ansible-Playbook-Bundle   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/hastebin-apb                    An APB which deploys Hastebin                   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/jenkins-apb                     An APB which deploys Jenkins CI                 0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/rds-postgres-apb                An APB that deploys an RDS instance of Postg…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/wordpress-ha-apb                An APB which deploys Wordpress HA               0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/pyzip-demo-apb                  An APB which deploys a sample Python zipcode…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/postgresql-apb                  An APB which deploys RHSCL PostgreSQL           0                                       [OK]</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ </span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ </span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker pull ansible/ansible</span>
+<span class="s s-Atom">Using default tag: latest</span>
+<span class="s s-Atom">Error response from daemon: manifest for ansible/ansible:latest not found</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker search redis</span>
+<span class="s s-Atom">NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span>
+<span class="s s-Atom">redis                             Redis is an open source key-value store that…   5756                [OK]                </span>
+<span class="s s-Atom">bitnami/redis                     Bitnami Redis Docker Image                      89                                      [OK]</span>
+<span class="s s-Atom">sameersbn/redis                                                                   71                                      [OK]</span>
+<span class="s s-Atom">hypriot/rpi-redis                 Raspberry Pi compatible redis image             34                                      </span>
+<span class="s s-Atom">kubeguide/redis-master            redis-master with &quot;Hello World!&quot;                26                                      </span>
+<span class="s s-Atom">kubeguide/guestbook-redis-slave   Guestbook redis slave                           20                                      </span>
+<span class="s s-Atom">redislabs/redis                   Clustered in-memory database engine compatib…   15                                      </span>
+<span class="s s-Atom">webhippie/redis                   Docker images for redis                         9                                       [OK]</span>
+<span class="s s-Atom">rediscommander/redis-commander    Alpine image for redis-commander - Redis man…   9                                       [OK]</span>
+<span class="s s-Atom">arm32v7/redis                     Redis is an open source key-value store that…   8                                       </span>
+<span class="s s-Atom">oliver006/redis_exporter           Prometheus Exporter for Redis Metrics. Supp…   6                                       </span>
+<span class="s s-Atom">rtoma/logspout-redis-logstash     Logspout including Redis adapter for sending…   5                                       </span>
+<span class="s s-Atom">centos/redis-32-centos7           Redis in-memory data structure store, used a…   3                                       </span>
+<span class="s s-Atom">dynomitedb/redis                  Redis backend for DynomiteDB.                   2                                       [OK]</span>
+<span class="s s-Atom">tomesar/redis-arm                 Redis for ARM!                                  2                                       [OK]</span>
+<span class="s s-Atom">arm64v8/redis                     Redis is an open source key-value store that…   2                                       </span>
+<span class="s s-Atom">frodenas/redis                    A Docker Image for Redis                        2                                       [OK]</span>
+<span class="s s-Atom">kilsoo75/redis-master             This image is for the redis master of SK Clo…   1                                       </span>
+<span class="s s-Atom">wodby/redis                       Redis container image with orchestration        1                                       [OK]</span>
+<span class="s s-Atom">google/guestbook-python-redis     A simple guestbook example written in Python…   1                                       </span>
+<span class="s s-Atom">tiredofit/redis                   Redis Server w/ Zabbix monitoring and S6 Ove…   1                                       [OK]</span>
+<span class="s s-Atom">circleci/redis                    CircleCI images for Redis                       1                                       [OK]</span>
+<span class="s s-Atom">iadvize/redis                                                                     0                                       </span>
+<span class="s s-Atom">cflondonservices/redis            Docker image for running redis                  0                                       </span>
+<span class="s s-Atom">anchorfree/redis                  redis cache server for logging                  0                                       </span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker pull ansible</span>
+<span class="s s-Atom">Using default tag: latest</span>
+<span class="s s-Atom">Error response from daemon: Get https://registry-1.docker.io/v2/library/ansible/manifests/latest: Get https://auth.docker.io/token?scope=repository%3Alibrary%2Fansible%3Apull&amp;service=registry.docker.io: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker search ansible</span>
+<span class="s s-Atom">NAME                                                  DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span>
+<span class="s s-Atom">williamyeh/ansible                                    Docker images for Ansible software, installe…   181                                     [OK]</span>
+<span class="s s-Atom">ansible/ansible                                       Images for automated testing of Ansible. The…   143                                     [OK]</span>
+<span class="s s-Atom">ansible/centos7-ansible                               Ansible on Centos7                              118                                     [OK]</span>
+<span class="s s-Atom">ansible/ubuntu14.04-ansible                           Ubuntu 14.04 LTS with ansible                   95                                      [OK]</span>
+<span class="s s-Atom">ansible/awx_web                                       Official Development Web component image for…   47                                      </span>
+<span class="s s-Atom">ansible/awx_task                                      Official Development Task component image of…   36                                      </span>
+<span class="s s-Atom">openshift/origin-ansible                              Ansible runtime and playbooks for OpenShift     5                                       </span>
+<span class="s s-Atom">ansible/ansible-container-builder                     The builder image for ansible-container. See…   4                                       </span>
+<span class="s s-Atom">ansiblecheck/ansiblecheck                             A One Stop Solution For Checking Your Ansibl…   3                                       [OK]</span>
+<span class="s s-Atom">danvaida/ansible-docker-images                        Docker images used for testing Ansible roles.   3                                       [OK]</span>
+<span class="s s-Atom">webdevops/ansible                                     Ansible image for CentOS, Ubunty, Debian and…   3                                       [OK]</span>
+<span class="s s-Atom">ansible/galaxy                                        Ansible Galaxy images                           2                                       </span>
+<span class="s s-Atom">ansibleplaybookbundle/origin-ansible-service-broker   Auto builds for the broker                      2                                       [OK]</span>
+<span class="s s-Atom">gaahrdner/packer-ansible-resource                     Concourse CI resource to build machine image…   1                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/hello-world-apb                 An APB which deploys a sample Hello World! a…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/mariadb-apb                     An APB which deploys RHSCL MariaDB              0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/rocketchat-apb                  An APB which deploys RocketChat backed by Mo…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/mysql-apb                       An APB which deploys RHSCL MySQL                0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/s2i-apb                         S2I builder image for Ansible-Playbook-Bundle   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/hastebin-apb                    An APB which deploys Hastebin                   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/jenkins-apb                     An APB which deploys Jenkins CI                 0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/rds-postgres-apb                An APB that deploys an RDS instance of Postg…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/wordpress-ha-apb                An APB which deploys Wordpress HA               0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/pyzip-demo-apb                  An APB which deploys a sample Python zipcode…   0                                       [OK]</span>
+<span class="s s-Atom">ansibleplaybookbundle/postgresql-apb                  An APB which deploys RHSCL PostgreSQL           0                                       [OK]</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker pull centos</span>
+<span class="s s-Atom">Using default tag: latest</span>
+<span class="s s-Atom">latest: Pulling from library/centos</span>
+<span class="s s-Atom">256b176beaff: Pull complete </span>
+<span class="s s-Atom">Digest: sha256:6f6d986d425aeabdc3a02cb61c02abb2e78e57357e92417d6d58332856024faf</span>
+<span class="s s-Atom">Status: Downloaded newer image for centos:latest</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker search centos</span>
+<span class="s s-Atom">NAME                               DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span>
+<span class="s s-Atom">centos                             The official build of CentOS.                   4716                [OK]                </span>
+<span class="s s-Atom">ansible/centos7-ansible            Ansible on Centos7                              118                                     [OK]</span>
+<span class="s s-Atom">jdeathe/centos-ssh                 CentOS-6 6.10 x86_64 / CentOS-7 7.5.1804 x86…   99                                      [OK]</span>
+<span class="s s-Atom">consol/centos-xfce-vnc             Centos container with &quot;headless&quot; VNC session…   63                                      [OK]</span>
+<span class="s s-Atom">imagine10255/centos6-lnmp-php56    centos6-lnmp-php56                              45                                      [OK]</span>
+<span class="s s-Atom">tutum/centos                       Simple CentOS docker image with SSH access      43                                      </span>
+<span class="s s-Atom">centos/mysql-57-centos7            MySQL 5.7 SQL database server                   39                                      </span>
+<span class="s s-Atom">gluster/gluster-centos             Official GlusterFS Image [ CentOS-7 +  Glust…   34                                      [OK]</span>
+<span class="s s-Atom">openshift/base-centos7             A Centos7 derived base image for Source-To-I…   33                                      </span>
+<span class="s s-Atom">centos/python-35-centos7           Platform for building and running Python 3.5…   30                                      </span>
+<span class="s s-Atom">centos/postgresql-96-centos7       PostgreSQL is an advanced Object-Relational …   29                                      </span>
+<span class="s s-Atom">kinogmt/centos-ssh                 CentOS with SSH                                 22                                      [OK]</span>
+<span class="s s-Atom">openshift/jenkins-2-centos7        A Centos7 based Jenkins v2.x image for use w…   15                                      </span>
+<span class="s s-Atom">pivotaldata/centos-gpdb-dev        CentOS image for GPDB development. Tag names…   7                                       </span>
+<span class="s s-Atom">openshift/wildfly-101-centos7      A Centos7 based WildFly v10.1 image for use …   5                                       </span>
+<span class="s s-Atom">openshift/jenkins-1-centos7        DEPRECATED: A Centos7 based Jenkins v1.x ima…   4                                       </span>
+<span class="s s-Atom">darksheer/centos                   Base Centos Image -- Updated hourly             3                                       [OK]</span>
+<span class="s s-Atom">pivotaldata/centos-mingw           Using the mingw toolchain to cross-compile t…   2                                       </span>
+<span class="s s-Atom">pivotaldata/centos                 Base centos, freshened up a little with a Do…   2                                       </span>
+<span class="s s-Atom">blacklabelops/centos               CentOS Base Image! Built and Updates Daily!     1                                       [OK]</span>
+<span class="s s-Atom">pivotaldata/centos7-build          CentosOS 7 image for GPDB compilation           0                                       </span>
+<span class="s s-Atom">pivotaldata/centos-gcc-toolchain   CentOS with a toolchain, but unaffiliated wi…   0                                       </span>
+<span class="s s-Atom">smartentry/centos                  centos with smartentry                          0                                       [OK]</span>
+<span class="s s-Atom">jameseckersall/sonarr-centos       Sonarr on CentOS 7                              0                                       [OK]</span>
+<span class="s s-Atom">pivotaldata/centos7-test           CentosOS 7 image for GPDB testing               0                                       </span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker run -d -P centos</span>
+<span class="s s-Atom">b2b0d6b8eb0bacbd3ff2644162942e091134092f21c0b46b3aff57c4ececceb0</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker ps</span>
+<span class="s s-Atom">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker search image</span>
+<span class="s s-Atom">NAME                                         DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED</span>
+<span class="s s-Atom">alpine                                       A minimal Docker image based on Alpine Linux…   4275                [OK]                </span>
+<span class="s s-Atom">jenkins                                      Official Jenkins Docker image                   3821                [OK]                </span>
+<span class="s s-Atom">registry                                     The Docker Registry 2.0 implementation for s…   2201                [OK]                </span>
+<span class="s s-Atom">busybox                                      Busybox base image.                             1358                [OK]                </span>
+<span class="s s-Atom">websphere-liberty                            Official IBM WebSphere Application Server fo…   202                 [OK]                </span>
+<span class="s s-Atom">atlassian/default-image                      The default build environment of Bitbucket P…   42                                      </span>
+<span class="s s-Atom">ocsinventory/ocsinventory-docker-image       OCSInventory Official Docker Image              33                                      [OK]</span>
+<span class="s s-Atom">circleci/build-image                         Build container images                          11                                      </span>
+<span class="s s-Atom">willnorris/imageproxy                        A caching, resizing image proxy written in Go   9                                       [OK]</span>
+<span class="s s-Atom">iron/images                                  docker images                                   5                                       </span>
+<span class="s s-Atom">springci/spring-boot-ci-image                CI Image used to build spring-boot              4                                       </span>
+<span class="s s-Atom">danvaida/ansible-docker-images               Docker images used for testing Ansible roles.   3                                       [OK]</span>
+<span class="s s-Atom">concourse/docker-image-resource                                                              2                                       </span>
+<span class="s s-Atom">ebonharme/images                             Docker images built automatically               1                                       [OK]</span>
+<span class="s s-Atom">vshn/s2i-php56-imagemagick                   S2I build for PHP 5.6 with ImageMagick insta…   0                                       [OK]</span>
+<span class="s s-Atom">timotto/docker-image-resource                docker-image resource for Concourse with par…   0                                       [OK]</span>
+<span class="s s-Atom">boldcommerce/docker-image-resource           Fork of the official concourse/docker-image-…   0                                       </span>
+<span class="s s-Atom">manovotn/probe-docker-image                  Image of Weld sample app for OpenShift 3        0                                       </span>
+<span class="s s-Atom">eugenmayer/concourse-docker-image-resource   fork of docker-image-resource adding multi-l…   0                                       </span>
+<span class="s s-Atom">ryanmehta/docker-image                                                                       0                                       </span>
+<span class="s s-Atom">bo0tzz/imagefetchbot                         A telegram bot that lets you search google i…   0                                       [OK]</span>
+<span class="s s-Atom">codefreshio/dummy-test-image                                                                 0                                       </span>
+<span class="s s-Atom">dockereng/network-test-image                 Image used in E2E test focused on networking…   0                                       </span>
+<span class="s s-Atom">watawuwu/docker-image-resource               concourse custom docker image                   0                                       [OK]</span>
+<span class="s s-Atom">quetzacoalt/docker-internal-images           Preinstalled PrestaShop images for ModuleAut…   0                                       [OK]</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker ps</span>
+<span class="s s-Atom">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker image</span>
+
+<span class="s s-Atom">Usage:  docker image COMMAND</span>
+
+<span class="s s-Atom">Manage images</span>
+
+<span class="s s-Atom">Commands:</span>
+<span class="s s-Atom">  build       Build an image from a Dockerfile</span>
+<span class="s s-Atom">  history     Show the history of an image</span>
+<span class="s s-Atom">  import      Import the contents from a tarball to create a filesystem image</span>
+<span class="s s-Atom">  inspect     Display detailed information on one or more images</span>
+<span class="s s-Atom">  load        Load an image from a tar archive or STDIN</span>
+<span class="s s-Atom">  ls          List images</span>
+<span class="s s-Atom">  prune       Remove unused images</span>
+<span class="s s-Atom">  pull        Pull an image or a repository from a registry</span>
+<span class="s s-Atom">  push        Push an image or a repository to a registry</span>
+<span class="s s-Atom">  rm          Remove one or more images</span>
+<span class="s s-Atom">  save        Save one or more images to a tar archive (streamed to STDOUT by default)</span>
+<span class="s s-Atom">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE</span>
+
+<span class="s s-Atom">Run &#39;docker</span> <span class="s s-Atom">image</span> <span class="nv">COMMAND</span> <span class="s s-Atom">--help&#39; for more information on a command.</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker images </span>
+<span class="s s-Atom">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span>
+<span class="s s-Atom">hello-world         latest              4ab4c602aa5e        10 days ago         1.84kB</span>
+<span class="s s-Atom">redis               latest              e1a73233e3be        13 days ago         83.4MB</span>
+<span class="s s-Atom">centos              latest              5182e96772bf        6 weeks ago         200MB</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker run -d -P 5182e96772bf</span>
+<span class="s s-Atom">34ed24c26efab6ce67a87383b5fcdcf560662aab3eb9399f1e1025bdfd9bb98d</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker ps</span>
+<span class="s s-Atom">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ history</span>
+<span class="s s-Atom">   38  cd ..</span>
+<span class="s s-Atom">   39  cd bootstrap2</span>
+<span class="s s-Atom">   40  ls</span>
+<span class="s s-Atom">   41  cd ..</span>
+<span class="s s-Atom">   42  cd bootstrap</span>
+<span class="s s-Atom">   43  ls</span>
+<span class="s s-Atom">   44  cd ..</span>
+<span class="s s-Atom">   45  cd attila/</span>
+<span class="s s-Atom">   46  ls</span>
+<span class="s s-Atom">   47  cd ..</span>
+<span class="s s-Atom">   48  git clone https://github.com/arulrajnet/attila.git</span>
+<span class="s s-Atom">   49  cd attila/</span>
+<span class="s s-Atom">   50  ls</span>
+<span class="s s-Atom">   51  cd ..</span>
+<span class="s s-Atom">   52  pelican -i attila</span>
+<span class="s s-Atom">   53  pelican-themes -i attila</span>
+<span class="s s-Atom">   54  sudo pelican-themes -i attila</span>
+<span class="s s-Atom">   55  cd attila/</span>
+<span class="s s-Atom">   56  ls</span>
+<span class="s s-Atom">   57  make publish</span>
+<span class="s s-Atom">   58  make serve</span>
+<span class="s s-Atom">   59  cd ..</span>
+<span class="s s-Atom">   60  cd ..</span>
+<span class="s s-Atom">   61  make publish</span>
+<span class="s s-Atom">   62  make serve</span>
+<span class="s s-Atom">   63  make github</span>
+<span class="s s-Atom">   64  make github</span>
+<span class="s s-Atom">   65  make github</span>
+<span class="s s-Atom">   66  make github</span>
+<span class="s s-Atom">   67  make publish</span>
+<span class="s s-Atom">   68  make serve</span>
+<span class="s s-Atom">   69  make github</span>
+<span class="s s-Atom">   70  pwd</span>
+<span class="s s-Atom">   71  ls</span>
+<span class="s s-Atom">   72  vim pelicanconf.py</span>
+<span class="s s-Atom">   73  make publish</span>
+<span class="s s-Atom">   74  make serve</span>
+<span class="s s-Atom">   75  sudo pelican-themes -i storm</span>
+<span class="s s-Atom">   76  ls</span>
+<span class="s s-Atom">   77  cd ..</span>
+<span class="s s-Atom">   78  ls</span>
+<span class="s s-Atom">   79  cd myBlog/</span>
+<span class="s s-Atom">   80  ls</span>
+<span class="s s-Atom">   81  cd pelican</span>
+<span class="s s-Atom">   82  cd pelican-themes/</span>
+<span class="s s-Atom">   83  ls</span>
+<span class="s s-Atom">   84  cd storm</span>
+<span class="s s-Atom">   85  ls</span>
+<span class="s s-Atom">   86  pwd</span>
+<span class="s s-Atom">   87  ls</span>
+<span class="s s-Atom">   88  ls</span>
+<span class="s s-Atom">   89  cd storm/</span>
+<span class="s s-Atom">   90  ls</span>
+<span class="s s-Atom">   91  cd ..</span>
+<span class="s s-Atom">   92  ls</span>
+<span class="s s-Atom">   93  rm -rf storm/</span>
+<span class="s s-Atom">   94  ls</span>
+<span class="s s-Atom">   95  ls</span>
+<span class="s s-Atom">   96  cd ..</span>
+<span class="s s-Atom">   97  ls</span>
+<span class="s s-Atom">   98  cd storm/</span>
+<span class="s s-Atom">   99  ls</span>
+<span class="s s-Atom">  100  git clone</span>
+<span class="s s-Atom">  101  git clone https://github.com/redVi/storm.git</span>
+<span class="s s-Atom">  102  ls</span>
+<span class="s s-Atom">  103  rm -rf storm/</span>
+<span class="s s-Atom">  104  ls</span>
+<span class="s s-Atom">  105  cd ..</span>
+<span class="s s-Atom">  106  git clone https://github.com/redVi/storm.git</span>
+<span class="s s-Atom">  107  cd storm</span>
+<span class="s s-Atom">  108  ls</span>
+<span class="s s-Atom">  109  cd ..</span>
+<span class="s s-Atom">  110  cd ..</span>
+<span class="s s-Atom">  111  ls</span>
+<span class="s s-Atom">  112  make serve</span>
+<span class="s s-Atom">  113  make publish</span>
+<span class="s s-Atom">  114  make serve</span>
+<span class="s s-Atom">  115  ps aux</span>
+<span class="s s-Atom">  116  ps aux | grep 8000</span>
+<span class="s s-Atom">  117  make publish</span>
+<span class="s s-Atom">  118  make serve</span>
+<span class="s s-Atom">  119  pwd</span>
+<span class="s s-Atom">  120  make github</span>
+<span class="s s-Atom">  121  bg</span>
+<span class="s s-Atom">  122  virtualenv </span>
+<span class="s s-Atom">  123  ls</span>
+<span class="s s-Atom">  124  cd myBlogEnv/</span>
+<span class="s s-Atom">  125  ls</span>
+<span class="s s-Atom">  126  source ./bin/activate</span>
+<span class="s s-Atom">  127  ls</span>
+<span class="s s-Atom">  128  cd myBlog/</span>
+<span class="s s-Atom">  129  ls</span>
+<span class="s s-Atom">  130  cd pelican-themes/</span>
+<span class="s s-Atom">  131  pelican-themes -i storm</span>
+<span class="s s-Atom">  132  sudo pelican-themes -i storm</span>
+<span class="s s-Atom">  133  cd ..</span>
+<span class="s s-Atom">  134  vim pelicanconf.py</span>
+<span class="s s-Atom">  135  ls</span>
+<span class="s s-Atom">  136  make publish</span>
+<span class="s s-Atom">  137  make serve</span>
+<span class="s s-Atom">  138  bg</span>
+<span class="s s-Atom">  139  fg</span>
+<span class="s s-Atom">  140  bg</span>
+<span class="s s-Atom">  141  bg</span>
+<span class="s s-Atom">  142  fg</span>
+<span class="s s-Atom">  143  make publish</span>
+<span class="s s-Atom">  144  make serve</span>
+<span class="s s-Atom">  145  fg</span>
+<span class="s s-Atom">  146  ls</span>
+<span class="s s-Atom">  147  bg</span>
+<span class="s s-Atom">  148  ps</span>
+<span class="s s-Atom">  149  pwd</span>
+<span class="s s-Atom">  150  vim pelicanconf.py</span>
+<span class="s s-Atom">  151  ls</span>
+<span class="s s-Atom">  152  make publish</span>
+<span class="s s-Atom">  153  vim pelicanconf.py</span>
+<span class="s s-Atom">  154  make publish</span>
+<span class="s s-Atom">  155  vim pelicanconf.py</span>
+<span class="s s-Atom">  156  make publish</span>
+<span class="s s-Atom">  157  vim pelicanconf.py</span>
+<span class="s s-Atom">  158  make publish</span>
+<span class="s s-Atom">  159  make serve</span>
+<span class="s s-Atom">  160  vim pelicanconf.py</span>
+<span class="s s-Atom">  161  make publish</span>
+<span class="s s-Atom">  162  make serve</span>
+<span class="s s-Atom">  163  ls</span>
+<span class="s s-Atom">  164  cd output/</span>
+<span class="s s-Atom">  165  cd torikku.github.io/</span>
+<span class="s s-Atom">  166  cp pages/ archives/</span>
+<span class="s s-Atom">  167  cp -r pages/ archives/</span>
+<span class="s s-Atom">  168  cd ..</span>
+<span class="s s-Atom">  169  cd ..</span>
+<span class="s s-Atom">  170  make publish</span>
+<span class="s s-Atom">  171  make serve</span>
+<span class="s s-Atom">  172  make publish</span>
+<span class="s s-Atom">  173  make serve</span>
+<span class="s s-Atom">  174  cd pelican-themes/</span>
+<span class="s s-Atom">  175  pelican-themes -i strom</span>
+<span class="s s-Atom">  176  pelican-themes -i storm</span>
+<span class="s s-Atom">  177  cd ..</span>
+<span class="s s-Atom">  178  ls</span>
+<span class="s s-Atom">  179  vim pelicanconf.py</span>
+<span class="s s-Atom">  180  cd ..</span>
+<span class="s s-Atom">  181  make publish</span>
+<span class="s s-Atom">  182  ls</span>
+<span class="s s-Atom">  183  cd  myBlog/</span>
+<span class="s s-Atom">  184  make publish</span>
+<span class="s s-Atom">  185  make serve</span>
+<span class="s s-Atom">  186  vim pelicanconf.py</span>
+<span class="s s-Atom">  187  make publish</span>
+<span class="s s-Atom">  188  make serve</span>
+<span class="s s-Atom">  189  ls</span>
+<span class="s s-Atom">  190  vim Makefile </span>
+<span class="s s-Atom">  191  vim pelicanconf.py</span>
+<span class="s s-Atom">  192  cd content/</span>
+<span class="s s-Atom">  193  ls</span>
+<span class="s s-Atom">  194  cd pages/</span>
+<span class="s s-Atom">  195  ls</span>
+<span class="s s-Atom">  196  cd ..</span>
+<span class="s s-Atom">  197  ls</span>
+<span class="s s-Atom">  198  mkdir About</span>
+<span class="s s-Atom">  199  ls</span>
+<span class="s s-Atom">  200  mv pages/About.md About/</span>
+<span class="s s-Atom">  201  ls pages/</span>
+<span class="s s-Atom">  202  mv pages Archive</span>
+<span class="s s-Atom">  203  ls</span>
+<span class="s s-Atom">  204  cd A</span>
+<span class="s s-Atom">  205  cd Archive/</span>
+<span class="s s-Atom">  206  ls</span>
+<span class="s s-Atom">  207  cd ..</span>
+<span class="s s-Atom">  208  cd ..</span>
+<span class="s s-Atom">  209  vim pelican</span>
+<span class="s s-Atom">  210  vim pelicanconf.py</span>
+<span class="s s-Atom">  211  cd content/</span>
+<span class="s s-Atom">  212  ls</span>
+<span class="s s-Atom">  213  mv About/ about</span>
+<span class="s s-Atom">  214  ls</span>
+<span class="s s-Atom">  215  mv Archive/ archive</span>
+<span class="s s-Atom">  216  ls</span>
+<span class="s s-Atom">  217  tree</span>
+<span class="s s-Atom">  218  ls about/</span>
+<span class="s s-Atom">  219  ls archive/</span>
+<span class="s s-Atom">  220  cd ..</span>
+<span class="s s-Atom">  221  make publish</span>
+<span class="s s-Atom">  222  make serve</span>
+<span class="s s-Atom">  223  vim pelicanconf.py</span>
+<span class="s s-Atom">  224  make publish</span>
+<span class="s s-Atom">  225  make serve</span>
+<span class="s s-Atom">  226  bg</span>
+<span class="s s-Atom">  227  make github</span>
+<span class="s s-Atom">  228  make publish</span>
+<span class="s s-Atom">  229  make github</span>
+<span class="s s-Atom">  230  vim pelicanconf.py</span>
+<span class="s s-Atom">  231  ls</span>
+<span class="s s-Atom">  232  cd output/</span>
+<span class="s s-Atom">  233  cd torikku.github.io/</span>
+<span class="s s-Atom">  234  ls</span>
+<span class="s s-Atom">  235  ls -al</span>
+<span class="s s-Atom">  236  cd about</span>
+<span class="s s-Atom">  237  ls</span>
+<span class="s s-Atom">  238  vim index.html </span>
+<span class="s s-Atom">  239  emerge -av ruby</span>
+<span class="s s-Atom">  240  gem install sass compass</span>
+<span class="s s-Atom">  241  ls</span>
+<span class="s s-Atom">  242  cd ..</span>
+<span class="s s-Atom">  243  cd ..</span>
+<span class="s s-Atom">  244  cd ..</span>
+<span class="s s-Atom">  245  ls</span>
+<span class="s s-Atom">  246  cd pelican-themes/</span>
+<span class="s s-Atom">  247  cd storm/</span>
+<span class="s s-Atom">  248  ls</span>
+<span class="s s-Atom">  249  emerge -av ruby</span>
+<span class="s s-Atom">  250  gem install sass compass</span>
+<span class="s s-Atom">  251  gem sources -l</span>
+<span class="s s-Atom">  252  gem sources --remove https://rubygems.org/</span>
+<span class="s s-Atom">  253  gem sources -a https://ruby.taobao.org/</span>
+<span class="s s-Atom">  254  gem sources -l</span>
+<span class="s s-Atom">  255  gem install sass compass</span>
+<span class="s s-Atom">  256  sudo gem install sass compass</span>
+<span class="s s-Atom">  257  ls</span>
+<span class="s s-Atom">  258  cd static/</span>
+<span class="s s-Atom">  259  compass complie &amp;&amp; rm -rf .sass-cache</span>
+<span class="s s-Atom">  260  compass</span>
+<span class="s s-Atom">  261  compass compile &amp;&amp; rm -rf .sass-cache</span>
+<span class="s s-Atom">  262  cd ..</span>
+<span class="s s-Atom">  263  ls</span>
+<span class="s s-Atom">  264  cd ..</span>
+<span class="s s-Atom">  265  cd ..</span>
+<span class="s s-Atom">  266  make publishconf.py </span>
+<span class="s s-Atom">  267  make publish</span>
+<span class="s s-Atom">  268  make serve</span>
+<span class="s s-Atom">  269  ls</span>
+<span class="s s-Atom">  270  cd output/</span>
+<span class="s s-Atom">  271  ls</span>
+<span class="s s-Atom">  272  cd torikku.github.io/</span>
+<span class="s s-Atom">  273  ls</span>
+<span class="s s-Atom">  274  cd archives/</span>
+<span class="s s-Atom">  275  ls</span>
+<span class="s s-Atom">  276  vim index.html </span>
+<span class="s s-Atom">  277  cd ..</span>
+<span class="s s-Atom">  278  cd ..</span>
+<span class="s s-Atom">  279  ls</span>
+<span class="s s-Atom">  280  cd ..</span>
+<span class="s s-Atom">  281  ls</span>
+<span class="s s-Atom">  282  cd pelican-themes/</span>
+<span class="s s-Atom">  283  ls</span>
+<span class="s s-Atom">  284  cd storm/</span>
+<span class="s s-Atom">  285  ls</span>
+<span class="s s-Atom">  286  rm *.png</span>
+<span class="s s-Atom">  287  ls</span>
+<span class="s s-Atom">  288  cd templates/</span>
+<span class="s s-Atom">  289  ls</span>
+<span class="s s-Atom">  290  vim base.html </span>
+<span class="s s-Atom">  291  vim page.html </span>
+<span class="s s-Atom">  292  vim archives.html </span>
+<span class="s s-Atom">  293  vim index.html </span>
+<span class="s s-Atom">  294  cd ..</span>
+<span class="s s-Atom">  295  cd ..</span>
+<span class="s s-Atom">  296  cd ..</span>
+<span class="s s-Atom">  297  ls</span>
+<span class="s s-Atom">  298  vim content/</span>
+<span class="s s-Atom">  299  cd content/</span>
+<span class="s s-Atom">  300  ls</span>
+<span class="s s-Atom">  301  ls about/ archive/</span>
+<span class="s s-Atom">  302  cd ..</span>
+<span class="s s-Atom">  303  ls</span>
+<span class="s s-Atom">  304  vim pelicanconf.py</span>
+<span class="s s-Atom">  305  cd pelican-themes/</span>
+<span class="s s-Atom">  306  cd storm/</span>
+<span class="s s-Atom">  307  ls</span>
+<span class="s s-Atom">  308  vim example.html </span>
+<span class="s s-Atom">  309  cd templates/</span>
+<span class="s s-Atom">  310  ls</span>
+<span class="s s-Atom">  311  vim about.html </span>
+<span class="s s-Atom">  312  vim article.html </span>
+<span class="s s-Atom">  313  vim base.html </span>
+<span class="s s-Atom">  314  cd _includes/</span>
+<span class="s s-Atom">  315  ls</span>
+<span class="s s-Atom">  316  :q</span>
+<span class="s s-Atom">  317  cd ..</span>
+<span class="s s-Atom">  318  ls</span>
+<span class="s s-Atom">  319  vim page.html </span>
+<span class="s s-Atom">  320  vim article.html </span>
+<span class="s s-Atom">  321  cd ..</span>
+<span class="s s-Atom">  322  cd ..</span>
+<span class="s s-Atom">  323  cd ..</span>
+<span class="s s-Atom">  324  make publish</span>
+<span class="s s-Atom">  325  make serve</span>
+<span class="s s-Atom">  326  vim pelicanconf.py</span>
+<span class="s s-Atom">  327  cd pelican-themes/</span>
+<span class="s s-Atom">  328  cd storm/</span>
+<span class="s s-Atom">  329  ls</span>
+<span class="s s-Atom">  330  cd templates/</span>
+<span class="s s-Atom">  331  vim article.html </span>
+<span class="s s-Atom">  332  make publish</span>
+<span class="s s-Atom">  333  cd ..</span>
+<span class="s s-Atom">  334  cd ..</span>
+<span class="s s-Atom">  335  cd ..</span>
+<span class="s s-Atom">  336  make publish</span>
+<span class="s s-Atom">  337  vim Makefile </span>
+<span class="s s-Atom">  338  make publish</span>
+<span class="s s-Atom">  339  vim Makefile </span>
+<span class="s s-Atom">  340  ls</span>
+<span class="s s-Atom">  341  cd pelicanconf.py</span>
+<span class="s s-Atom">  342  vim pelicanconf.py</span>
+<span class="s s-Atom">  343  make publish</span>
+<span class="s s-Atom">  344  make publish</span>
+<span class="s s-Atom">  345  make publish</span>
+<span class="s s-Atom">  346  make publish</span>
+<span class="s s-Atom">  347  make publish</span>
+<span class="s s-Atom">  348  vim pelicanconf.py</span>
+<span class="s s-Atom">  349  make publish</span>
+<span class="s s-Atom">  350  vim pelicanconf.py</span>
+<span class="s s-Atom">  351  make publish</span>
+<span class="s s-Atom">  352  vim pelicanconf.py</span>
+<span class="s s-Atom">  353  make publish</span>
+<span class="s s-Atom">  354  vim pelicanconf.py</span>
+<span class="s s-Atom">  355  make publish</span>
+<span class="s s-Atom">  356  make publish</span>
+<span class="s s-Atom">  357  vim pelicanconf.py</span>
+<span class="s s-Atom">  358  make publish</span>
+<span class="s s-Atom">  359  make serve</span>
+<span class="s s-Atom">  360  make github</span>
+<span class="s s-Atom">  361  make publish</span>
+<span class="s s-Atom">  362  make github</span>
+<span class="s s-Atom">  363  vim pelicanconf.py</span>
+<span class="s s-Atom">  364  make github</span>
+<span class="s s-Atom">  365  make publish</span>
+<span class="s s-Atom">  366  make publish</span>
+<span class="s s-Atom">  367  vim pelicanconf.py</span>
+<span class="s s-Atom">  368  make publish</span>
+<span class="s s-Atom">  369  vim pelicanconf.py</span>
+<span class="s s-Atom">  370  make publish</span>
+<span class="s s-Atom">  371  make publish</span>
+<span class="s s-Atom">  372  make github</span>
+<span class="s s-Atom">  373  vim pelicanconf.py</span>
+<span class="s s-Atom">  374  make publish</span>
+<span class="s s-Atom">  375  make github</span>
+<span class="s s-Atom">  376  vim pelicanconf.py</span>
+<span class="s s-Atom">  377  make publish</span>
+<span class="s s-Atom">  378  make github</span>
+<span class="s s-Atom">  379  make github</span>
+<span class="s s-Atom">  380  make publish</span>
+<span class="s s-Atom">  381  make github</span>
+<span class="s s-Atom">  382  ls</span>
+<span class="s s-Atom">  383  cd pelican-themes/s</span>
+<span class="s s-Atom">  384  ls</span>
+<span class="s s-Atom">  385  cd templates/</span>
+<span class="s s-Atom">  386  ls</span>
+<span class="s s-Atom">  387  vim about.html </span>
+<span class="s s-Atom">  388  cd../../..</span>
+<span class="s s-Atom">  389  ls</span>
+<span class="s s-Atom">  390  cd ../../..</span>
+<span class="s s-Atom">  391  ls</span>
+<span class="s s-Atom">  392  make github</span>
+<span class="s s-Atom">  393  history</span>
+<span class="s s-Atom">  394  make github</span>
+<span class="s s-Atom">  395  ls</span>
+<span class="s s-Atom">  396  vim pelicanconf.py</span>
+<span class="s s-Atom">  397  make publish</span>
+<span class="s s-Atom">  398  make github</span>
+<span class="s s-Atom">  399  make github</span>
+<span class="s s-Atom">  400  vim pelicanconf.py</span>
+<span class="s s-Atom">  401  make github</span>
+<span class="s s-Atom">  402  make publish</span>
+<span class="s s-Atom">  403  make github</span>
+<span class="s s-Atom">  404  ls</span>
+<span class="s s-Atom">  405  cd myBlogEnv/</span>
+<span class="s s-Atom">  406  ls</span>
+<span class="s s-Atom">  407  cd myBlog/</span>
+<span class="s s-Atom">  408  ls</span>
+<span class="s s-Atom">  409  cd content/</span>
+<span class="s s-Atom">  410  ls</span>
+<span class="s s-Atom">  411  cd archives/</span>
+<span class="s s-Atom">  412  git pull</span>
+<span class="s s-Atom">  413  git</span>
+<span class="s s-Atom">  414  git pull</span>
+<span class="s s-Atom">  415  pwd</span>
+<span class="s s-Atom">  416  cd ~</span>
+<span class="s s-Atom">  417  ls</span>
+<span class="s s-Atom">  418  git clone https://github.com/torikku/torikku.github.io.git</span>
+<span class="s s-Atom">  419  ls</span>
+<span class="s s-Atom">  420  cd torikku.github.io/</span>
+<span class="s s-Atom">  421  ls</span>
+<span class="s s-Atom">  422  ls ../myBlogEnv/</span>
+<span class="s s-Atom">  423  pwd</span>
+<span class="s s-Atom">  424  cd ..</span>
+<span class="s s-Atom">  425  virtualenv myBlogEnv</span>
+<span class="s s-Atom">  426  ls</span>
+<span class="s s-Atom">  427  cd myBlogEnv/</span>
+<span class="s s-Atom">  428  ls</span>
+<span class="s s-Atom">  429  source ./bin/activate</span>
+<span class="s s-Atom">  430  ls</span>
+<span class="s s-Atom">  431  cd myBlog/</span>
+<span class="s s-Atom">  432  ls</span>
+<span class="s s-Atom">  433  make github</span>
+<span class="s s-Atom">  434  make github</span>
+<span class="s s-Atom">  435  make github</span>
+<span class="s s-Atom">  436  make github</span>
+<span class="s s-Atom">  437  ls</span>
+<span class="s s-Atom">  438  ls Makefile </span>
+<span class="s s-Atom">  439  cd Makefile </span>
+<span class="s s-Atom">  440  ls</span>
+<span class="s s-Atom">  441  vim Makefile </span>
+<span class="s s-Atom">  442  cd ~</span>
+<span class="s s-Atom">  443  ls</span>
+<span class="s s-Atom">  444  rm -rf torikku.github.io/</span>
+<span class="s s-Atom">  445  python</span>
+<span class="s s-Atom">  446  cd myBlogEnv/</span>
+<span class="s s-Atom">  447  cd myBlog/</span>
+<span class="s s-Atom">  448  cd content/</span>
+<span class="s s-Atom">  449  ls</span>
+<span class="s s-Atom">  450  cd archives/</span>
+<span class="s s-Atom">  451  cd ..</span>
+<span class="s s-Atom">  452  cd ..</span>
+<span class="s s-Atom">  453  ls</span>
+<span class="s s-Atom">  454  make github</span>
+<span class="s s-Atom">  455  ls</span>
+<span class="s s-Atom">  456  cd ..</span>
+<span class="s s-Atom">  457  ls</span>
+<span class="s s-Atom">  458  ls /bin</span>
+<span class="s s-Atom">  459  cd ..</span>
+<span class="s s-Atom">  460  cd ..</span>
+<span class="s s-Atom">  461  ls</span>
+<span class="s s-Atom">  462  cd sean.zhao/</span>
+<span class="s s-Atom">  463  ls</span>
+<span class="s s-Atom">  464  cd myBlogEnv/</span>
+<span class="s s-Atom">  465  ls</span>
+<span class="s s-Atom">  466  ls bin/</span>
+<span class="s s-Atom">  467  . bin/activate</span>
+<span class="s s-Atom">  468  source ./bin/activate</span>
+<span class="s s-Atom">  469  ls</span>
+<span class="s s-Atom">  470  cd my</span>
+<span class="s s-Atom">  471  source  /bin/active</span>
+<span class="s s-Atom">  472  ls bin</span>
+<span class="s s-Atom">  473  ls</span>
+<span class="s s-Atom">  474  cd myBlogEnv/</span>
+<span class="s s-Atom">  475  ls</span>
+<span class="s s-Atom">  476  source bin/activate</span>
+<span class="s s-Atom">  477  ls</span>
+<span class="s s-Atom">  478  cd myBlog/</span>
+<span class="s s-Atom">  479  ls</span>
+<span class="s s-Atom">  480  make github </span>
+<span class="s s-Atom">  481  make github </span>
+<span class="s s-Atom">  482  make github </span>
+<span class="s s-Atom">  483  docker</span>
+<span class="s s-Atom">  484  docker --version</span>
+<span class="s s-Atom">  485  docker-compose --version</span>
+<span class="s s-Atom">  486  docker-machine --version </span>
+<span class="s s-Atom">  487  docker image</span>
+<span class="s s-Atom">  488  docker ps</span>
+<span class="s s-Atom">  489  docker run hello-world</span>
+<span class="s s-Atom">  490  docker run hello-world</span>
+<span class="s s-Atom">  491  cl</span>
+<span class="s s-Atom">  492  cls</span>
+<span class="s s-Atom">  493  clear</span>
+<span class="s s-Atom">  494  docker search image</span>
+<span class="s s-Atom">  495* </span>
+<span class="s s-Atom">  496  docker search image | grep nginx</span>
+<span class="s s-Atom">  497  docker search image</span>
+<span class="s s-Atom">  498  docker inspect image</span>
+<span class="s s-Atom">  499  docker inspect</span>
+<span class="s s-Atom">  500  clear</span>
+<span class="s s-Atom">  501  docker search redis</span>
+<span class="s s-Atom">  502  docker pull redis</span>
+<span class="s s-Atom">  503  docker info </span>
+<span class="s s-Atom">  504  docker info </span>
+<span class="s s-Atom">  505  docker images redis</span>
+<span class="s s-Atom">  506  docker run -d -P redis redis-server --appendonly yes</span>
+<span class="s s-Atom">  507  docker ps</span>
+<span class="s s-Atom">  508  docker exec -it edd8d01f7a8e redis-cli</span>
+<span class="s s-Atom">  509  docker stop redis </span>
+<span class="s s-Atom">  510  docker ps</span>
+<span class="s s-Atom">  511  docker stop tender_kilby</span>
+<span class="s s-Atom">  512  docker start tender_kilby</span>
+<span class="s s-Atom">  513  docker stop tender_kilby</span>
+<span class="s s-Atom">  514  docker login -u torikku -p Hryj99m7j@</span>
+<span class="s s-Atom">  515  docker images</span>
+<span class="s s-Atom">  516  docker logout</span>
+<span class="s s-Atom">  517  docker images</span>
+<span class="s s-Atom">  518  docker login -u torikku -p Hryj99m7j@</span>
+<span class="s s-Atom">  519  docker commit -a &quot;zsh&quot; -m &quot;test&quot;</span>
+<span class="s s-Atom">  520  docker logout</span>
+<span class="s s-Atom">  521  docker stop tender_kilby</span>
+<span class="s s-Atom">  522  docker search ansible </span>
+<span class="s s-Atom">  523  docker pull ansible/ansible</span>
+<span class="s s-Atom">  524  docker search redis</span>
+<span class="s s-Atom">  525  docker pull ansible</span>
+<span class="s s-Atom">  526  docker search ansible</span>
+<span class="s s-Atom">  527  docker pull centos</span>
+<span class="s s-Atom">  528  docker search centos</span>
+<span class="s s-Atom">  529  docker run -d -P centos</span>
+<span class="s s-Atom">  530  docker ps</span>
+<span class="s s-Atom">  531  docker search image</span>
+<span class="s s-Atom">  532  docker ps</span>
+<span class="s s-Atom">  533  docker image</span>
+<span class="s s-Atom">  534  docker images </span>
+<span class="s s-Atom">  535  docker run -d -P 5182e96772bf</span>
+<span class="s s-Atom">  536  docker ps</span>
+<span class="s s-Atom">  537  history</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ history |grep docker run</span>
+<span class="s s-Atom">grep: run: No such file or directory</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ history |grep &quot;docker run&quot;</span>
+<span class="s s-Atom">  489  docker run hello-world</span>
+<span class="s s-Atom">  490  docker run hello-world</span>
+<span class="s s-Atom">  506  docker run -d -P redis redis-server --appendonly yes</span>
+<span class="s s-Atom">  529  docker run -d -P centos</span>
+<span class="s s-Atom">  535  docker run -d -P 5182e96772bf</span>
+<span class="s s-Atom">  538  history |grep docker run</span>
+<span class="s s-Atom">  539  history |grep &quot;docker run&quot;</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker run -d -P centos</span>
+<span class="s s-Atom">b2e2b567d2c4af42a423e521a47cd679605473e28555a5a1733fd038645c59d2</span>
+<span class="s s-Atom">admindeMacBook-Pro:~ sean.zhao$ docker run -it 5182e96772bf /bin/bash</span>
+<span class="s s-Atom">[root@d9d0e20bf56a /]# ls</span>
+<span class="s s-Atom">anaconda-post.log  bin  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var</span>
+<span class="s s-Atom">[root@d9d0e20bf56a /]# whoami</span>
+<span class="s s-Atom">root</span>
+<span class="s s-Atom">[root@d9d0e20bf56a /]# uname -u</span>
+<span class="s s-Atom">uname: invalid option -- &#39;u&#39;</span>
+<span class="s s-Atom">Try &#39;uname</span> <span class="s s-Atom">--help</span><span class="err">&#39;</span> <span class="s s-Atom">for</span> <span class="s s-Atom">more</span> <span class="s s-Atom">information</span><span class="p">.</span>
+<span class="p">[</span><span class="s s-Atom">root@d9d0e20bf56a</span> <span class="s s-Atom">/</span><span class="p">]</span><span class="s s-Atom">#</span> <span class="s s-Atom">uname</span> <span class="o">-</span><span class="s s-Atom">a</span>
+<span class="nv">Linux</span> <span class="s s-Atom">d9d0e20bf56a</span> <span class="mf">4.9.93</span><span class="o">-</span><span class="s s-Atom">linuxkit</span><span class="o">-</span><span class="s s-Atom">aufs</span> <span class="s s-Atom">#</span><span class="mi">1</span> <span class="nv">SMP</span> <span class="nv">Wed</span> <span class="nv">Jun</span> <span class="mi">6</span> <span class="mi">16</span><span class="s s-Atom">:</span><span class="mi">55</span><span class="s s-Atom">:</span><span class="mi">56</span> <span class="nv">UTC</span> <span class="mi">2018</span> <span class="s s-Atom">x86_64</span> <span class="s s-Atom">x86_64</span> <span class="s s-Atom">x86_64</span> <span class="nv">GNU</span><span class="o">/</span><span class="nv">Linux</span>
+<span class="p">[</span><span class="s s-Atom">root@d9d0e20bf56a</span> <span class="s s-Atom">/</span><span class="p">]</span><span class="s s-Atom">#</span> <span class="s s-Atom">cat</span> <span class="o">/</span><span class="s s-Atom">etc</span><span class="o">/</span>  
+<span class="nv">Display</span> <span class="s s-Atom">all</span> <span class="mi">117</span> <span class="s s-Atom">possibilities?</span> <span class="p">(</span><span class="s s-Atom">y</span> <span class="s s-Atom">or</span> <span class="s s-Atom">n</span><span class="p">)</span>
+<span class="p">[</span><span class="s s-Atom">root@d9d0e20bf56a</span> <span class="s s-Atom">/</span><span class="p">]</span><span class="s s-Atom">#</span> <span class="s s-Atom">cat</span> <span class="o">/</span><span class="s s-Atom">etc</span><span class="o">/</span><span class="s s-Atom">redhat</span><span class="o">-</span><span class="s s-Atom">release</span> 
+<span class="nv">CentOS</span> <span class="nv">Linux</span> <span class="s s-Atom">release</span> <span class="mf">7.5.1804</span> <span class="p">(</span><span class="nv">Core</span><span class="p">)</span> 
+<span class="p">[</span><span class="s s-Atom">root@d9d0e20bf56a</span> <span class="s s-Atom">/</span><span class="p">]</span><span class="s s-Atom">#</span> 
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

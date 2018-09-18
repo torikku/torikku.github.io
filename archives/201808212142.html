@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Docker hello world | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Docker hello world Last login: Sun Sep 2 23:08:26 on ttys000 admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ docker Usage: docker [OPTIONS] COMMAND A self-sufficient runtime for containers Options: --config string Location of client config files (default "/Users/sean.zhao/.docker") -D, --debug Enable debug mode …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201808212142.html">Docker hello world</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月21日(星期二)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Docker hello world</h1>
+<div class="highlight"><pre><span></span>Last login: Sun Sep  <span class="m">2</span> <span class="m">23</span>:08:26 on ttys000
+admindeMacBook-Pro:~ sean.zhao$ 
+admindeMacBook-Pro:~ sean.zhao$ 
+admindeMacBook-Pro:~ sean.zhao$ docker
+
+Usage:  docker <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND
+
+A self-sufficient runtime <span class="k">for</span> containers
+
+Options:
+      --config string      Location of client config files <span class="o">(</span>default
+                           <span class="s2">&quot;/Users/sean.zhao/.docker&quot;</span><span class="o">)</span>
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket<span class="o">(</span>s<span class="o">)</span> to connect to
+  -l, --log-level string   Set the logging level
+                           <span class="o">(</span><span class="s2">&quot;debug&quot;</span><span class="p">|</span><span class="s2">&quot;info&quot;</span><span class="p">|</span><span class="s2">&quot;warn&quot;</span><span class="p">|</span><span class="s2">&quot;error&quot;</span><span class="p">|</span><span class="s2">&quot;fatal&quot;</span><span class="o">)</span>
+                           <span class="o">(</span>default <span class="s2">&quot;info&quot;</span><span class="o">)</span>
+      --tls                Use TLS<span class="p">;</span> implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA <span class="o">(</span>default
+                           <span class="s2">&quot;/Users/sean.zhao/.docker/ca.pem&quot;</span><span class="o">)</span>
+      --tlscert string     Path to TLS certificate file <span class="o">(</span>default
+                           <span class="s2">&quot;/Users/sean.zhao/.docker/cert.pem&quot;</span><span class="o">)</span>
+      --tlskey string      Path to TLS key file <span class="o">(</span>default
+                           <span class="s2">&quot;/Users/sean.zhao/.docker/key.pem&quot;</span><span class="o">)</span>
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  checkpoint  Manage checkpoints
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach <span class="nb">local</span> standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container<span class="s1">&#39;s changes</span>
+<span class="s1">  cp          Copy files/folders between a container and the local filesystem</span>
+<span class="s1">  create      Create a new container</span>
+<span class="s1">  deploy      Deploy a new stack or update an existing stack</span>
+<span class="s1">  diff        Inspect changes to files or directories on a container&#39;</span>s filesystem
+  events      Get real <span class="nb">time</span> events from the server
+  <span class="nb">exec</span>        Run a <span class="nb">command</span> in a running container
+  <span class="nb">export</span>      Export a container<span class="s1">&#39;s filesystem as a tar archive</span>
+<span class="s1">  history     Show the history of an image</span>
+<span class="s1">  images      List images</span>
+<span class="s1">  import      Import the contents from a tarball to create a filesystem image</span>
+<span class="s1">  info        Display system-wide information</span>
+<span class="s1">  inspect     Return low-level information on Docker objects</span>
+<span class="s1">  kill        Kill one or more running containers</span>
+<span class="s1">  load        Load an image from a tar archive or STDIN</span>
+<span class="s1">  login       Log in to a Docker registry</span>
+<span class="s1">  logout      Log out from a Docker registry</span>
+<span class="s1">  logs        Fetch the logs of a container</span>
+<span class="s1">  pause       Pause all processes within one or more containers</span>
+<span class="s1">  port        List port mappings or a specific mapping for the container</span>
+<span class="s1">  ps          List containers</span>
+<span class="s1">  pull        Pull an image or a repository from a registry</span>
+<span class="s1">  push        Push an image or a repository to a registry</span>
+<span class="s1">  rename      Rename a container</span>
+<span class="s1">  restart     Restart one or more containers</span>
+<span class="s1">  rm          Remove one or more containers</span>
+<span class="s1">  rmi         Remove one or more images</span>
+<span class="s1">  run         Run a command in a new container</span>
+<span class="s1">  save        Save one or more images to a tar archive (streamed to STDOUT by default)</span>
+<span class="s1">  search      Search the Docker Hub for images</span>
+<span class="s1">  start       Start one or more stopped containers</span>
+<span class="s1">  stats       Display a live stream of container(s) resource usage statistics</span>
+<span class="s1">  stop        Stop one or more running containers</span>
+<span class="s1">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE</span>
+<span class="s1">  top         Display the running processes of a container</span>
+<span class="s1">  unpause     Unpause all processes within one or more containers</span>
+<span class="s1">  update      Update configuration of one or more containers</span>
+<span class="s1">  version     Show the Docker version information</span>
+<span class="s1">  wait        Block until one or more containers stop, then print their exit codes</span>
+
+<span class="s1">Run &#39;</span>docker COMMAND --help<span class="s1">&#39; for more information on a command.</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker --version</span>
+<span class="s1">Docker version 18.06.1-ce, build e68fc7a</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker-compose --version</span>
+<span class="s1">docker-compose version 1.22.0, build f46880f</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker-machine --version </span>
+<span class="s1">docker-machine version 0.15.0, build b48dc28d</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker image</span>
+
+<span class="s1">Usage:  docker image COMMAND</span>
+
+<span class="s1">Manage images</span>
+
+<span class="s1">Commands:</span>
+<span class="s1">  build       Build an image from a Dockerfile</span>
+<span class="s1">  history     Show the history of an image</span>
+<span class="s1">  import      Import the contents from a tarball to create a filesystem image</span>
+<span class="s1">  inspect     Display detailed information on one or more images</span>
+<span class="s1">  load        Load an image from a tar archive or STDIN</span>
+<span class="s1">  ls          List images</span>
+<span class="s1">  prune       Remove unused images</span>
+<span class="s1">  pull        Pull an image or a repository from a registry</span>
+<span class="s1">  push        Push an image or a repository to a registry</span>
+<span class="s1">  rm          Remove one or more images</span>
+<span class="s1">  save        Save one or more images to a tar archive (streamed to STDOUT by default)</span>
+<span class="s1">  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE</span>
+
+<span class="s1">Run &#39;</span>docker image COMMAND --help<span class="s1">&#39; for more information on a command.</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker ps</span>
+<span class="s1">CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES</span>
+<span class="s1">admindeMacBook-Pro:~ sean.zhao$ docker run hello-world</span>
+<span class="s1">Unable to find image &#39;</span>hello-world:latest<span class="err">&#39;</span> locally
+latest: Pulling from library/hello-world
+d1725b59e92d: Pull <span class="nb">complete</span> 
+Digest: sha256:0add3ace90ecb4adbf7777e9aacf18357296e799f81cabc9fde470971e499788
+Status: Downloaded newer image <span class="k">for</span> hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ <span class="m">1</span>. The Docker client contacted the Docker daemon.
+ <span class="m">2</span>. The Docker daemon pulled the <span class="s2">&quot;hello-world&quot;</span> image from the Docker Hub.
+    <span class="o">(</span>amd64<span class="o">)</span>
+ <span class="m">3</span>. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ <span class="m">4</span>. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+admindeMacBook-Pro:~ sean.zhao$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ <span class="m">1</span>. The Docker client contacted the Docker daemon.
+ <span class="m">2</span>. The Docker daemon pulled the <span class="s2">&quot;hello-world&quot;</span> image from the Docker Hub.
+    <span class="o">(</span>amd64<span class="o">)</span>
+ <span class="m">3</span>. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ <span class="m">4</span>. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+admindeMacBook-Pro:~ sean.zhao$ 
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

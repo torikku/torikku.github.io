@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Meta description is the home page"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201801280139.html">博客回顾－－－pelican</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+博客回顾－－－pelican virtualenv 篇中介绍啦virtualenv这个工具的使用，它实际上就是开辟一个虚拟环境，把其中的环境变量改掉，使你输入命令的时候直接调用虚拟环境中的位置，而不用系统中的，所以新建出来的环境是非常干净的，所以我们在开辟了这个虚拟环境中，直接安装我们想要的软件，就是今天要使用的pelican //进入虚拟环境不再赘述，直接安装pelican，源码安装，在我们的虚拟环境目录中 cd myBlogEnv //下载源码 git clone git://github.com/getpelican/pelican.git //进入源码目录 cd pelican //执行安装 python setup.py install 完成上面的操作，pelican就安装完啦，可以直接使用pelican来快速创建一个框架 //创建博客目录 mkdir myblog //进入 cd myblog //创建框架 pelican-quickstart 可以看到目录树如下： . |-- content # 所有文章放于此目录 │ └── (pages …
+<h2><a href="https://torikku.github.io/archives/201801280331.html">博客回顾－－－MarkDown</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+博客回顾－－－MarkDown 前面文章已经讲了怎么搭建静态页面网站，这里主要是介绍一下怎么写文章，当前用的是markdown解析器－－－MacDown工具 首先需要安装MarkDown //pip安装MarkDown sudo pip install MarkDown 安装完成后，就可以使用MarkDown语法了 安装MacDown工具，这个是免费的，用的还不错，如果有其他的工具也可以使用 该工具可以在github找到，直接下载应用包添加到电脑的application里面就可以了 比如用该工具创建个about.md 页面 在myBlog/content／pages里面用MacDown工具创建一个about.md文件，编辑内容如下 Title: About Me Date: 2018-01-28 随便写点什么都可以！ 然后保存，直接发布，调测，就可以在127.0.0.1:8000看到效果啦。 make publish make serve 如果要发布到github，则 …
+<h2><a href="https://torikku.github.io/archives/201801280347.html">博客回顾－－－安装主题</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+博客回顾－－－安装主题 之前已经写了怎么把一个基本的站点搞出来了，但是基本就是一个页面，什么都没有，甚至主题也没有，接下来讲下主题的安装 这里以主题bootstrap2为例，同样还在myBlog目录下： //进入到目录 cd myBlog //获取主题git git clone https://github.com/getpelican/pelican-themes.git //进入下载到主题目录 cd pelican-themes //使用主题，pelican的主题为一个主题一个目录，如果发现对应的主题的目录是空的，则直接去github里面找到相应主题，git下来，然后执行 pelican-themes -i bootstrap2 对应在在pelicanconf.py中添加主题选择条目： //文件中找到这个字段，如果没有就添加一个 THEME = 'bootstrap2' 在如下路径可以查看主题效果 http://www.pelicanthemes.com/ 对于使用主题后pelicanconf.py的配置可以参考官方文档 http://docs.getpelican.com …
+<h2><a href="https://torikku.github.io/archives/201801280401.html">阴</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月28日(星期日) </h5>
+随笔 听了一晚上的歌，似乎慢慢好了，不过缺少一些时间段还真有点不爽，被忽悠的感觉真糟糕！ Tonight, We are young !
+<h2><a href="https://torikku.github.io/archives/201801270140.html">博客Go on</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
+今日修改纪录 资源目录管理 //使用目录名作为文章的分类名 USE_FOLDER_AS_CATEGORY = True //使用文件名作为文章或页面的slug（url） FILENAME_METADATA = '(?P<slug>.*)' //页面的显示路径和保存路径 ARTICLE_URL = '{category}/{slug}.html' ARTICLE_SAVE_AS = ARTICLE_URL PAGE_URL = '{slug}.html' PAGE_SAVE_AS = PAGE_URL CATEGORY_URL = '{slug}/index.html' CATEGORY_SAVE_AS = CATEGORY_URL 主题替换为storm //Theme Storm configuration THEME = 'pelican-themes/storm' SITESUBTITLE = "Torikku's life" CSS_FILE = 'screen.css' METADATA = 'Meta description is the home page' //Pages …
+<h2><a href="https://torikku.github.io/archives/201801270210.html">雨</a></h2>
+<h5><i class="icon-feather"></i> 2018年01月27日(星期六) </h5>
+极度难受 听了一晚上的歌，似乎比较容易被带进去吧，
+<div class="pagination">
+        <a href="https://torikku.github.io/category/archives6.html">&larr;Prev</a>
+    page 7 of 8.
+        <a href="https://torikku.github.io/category/archives8.html">Next&rarr;</a>
+</div>    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

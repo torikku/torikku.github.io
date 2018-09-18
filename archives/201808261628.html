@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Docker redis | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Docker redis Last login: Tue Sep 18 21:36:41 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker search redis NAME DESCRIPTION STARS OFFICIAL AUTOMATED redis Redis is an open source key-value store that… 5756 [OK] bitnami/redis Bitnami Redis Docker Image 89 [OK] sameersbn/redis 71 [OK] hypriot/rpi-redis Raspberry Pi …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201808261628.html">Docker redis</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月26日(星期日)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Docker redis</h1>
+<div class="highlight"><pre><span></span>Last login: Tue Sep <span class="m">18</span> <span class="m">21</span>:36:41 on ttys000
+admindeMacBook-Pro:~ sean.zhao$ docker search redis
+NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+redis                             Redis is an open <span class="nb">source</span> key-value store that…   <span class="m">5756</span>                <span class="o">[</span>OK<span class="o">]</span>                
+bitnami/redis                     Bitnami Redis Docker Image                      <span class="m">89</span>                                      <span class="o">[</span>OK<span class="o">]</span>
+sameersbn/redis                                                                   <span class="m">71</span>                                      <span class="o">[</span>OK<span class="o">]</span>
+hypriot/rpi-redis                 Raspberry Pi compatible redis image             <span class="m">34</span>                                      
+kubeguide/redis-master            redis-master with <span class="s2">&quot;Hello World!&quot;</span>                <span class="m">26</span>                                      
+kubeguide/guestbook-redis-slave   Guestbook redis slave                           <span class="m">20</span>                                      
+redislabs/redis                   Clustered in-memory database engine compatib…   <span class="m">15</span>                                      
+webhippie/redis                   Docker images <span class="k">for</span> redis                         <span class="m">9</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+rediscommander/redis-commander    Alpine image <span class="k">for</span> redis-commander - Redis man…   <span class="m">9</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+arm32v7/redis                     Redis is an open <span class="nb">source</span> key-value store that…   <span class="m">8</span>                                       
+oliver006/redis_exporter           Prometheus Exporter <span class="k">for</span> Redis Metrics. Supp…   <span class="m">6</span>                                       
+rtoma/logspout-redis-logstash     Logspout including Redis adapter <span class="k">for</span> sending…   <span class="m">5</span>                                       
+centos/redis-32-centos7           Redis in-memory data structure store, used a…   <span class="m">3</span>                                       
+tomesar/redis-arm                 Redis <span class="k">for</span> ARM!                                  <span class="m">2</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+dynomitedb/redis                  Redis backend <span class="k">for</span> DynomiteDB.                   <span class="m">2</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+arm64v8/redis                     Redis is an open <span class="nb">source</span> key-value store that…   <span class="m">2</span>                                       
+frodenas/redis                    A Docker Image <span class="k">for</span> Redis                        <span class="m">2</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+google/guestbook-python-redis     A simple guestbook example written in Python…   <span class="m">1</span>                                       
+kilsoo75/redis-master             This image is <span class="k">for</span> the redis master of SK Clo…   <span class="m">1</span>                                       
+tiredofit/redis                   Redis Server w/ Zabbix monitoring and S6 Ove…   <span class="m">1</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+circleci/redis                    CircleCI images <span class="k">for</span> Redis                       <span class="m">1</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+wodby/redis                       Redis container image with orchestration        <span class="m">1</span>                                       <span class="o">[</span>OK<span class="o">]</span>
+anchorfree/redis                  redis cache server <span class="k">for</span> logging                  <span class="m">0</span>                                       
+iadvize/redis                                                                     <span class="m">0</span>                                       
+cflondonservices/redis            Docker image <span class="k">for</span> running redis                  <span class="m">0</span>                                       
+admindeMacBook-Pro:~ sean.zhao$ docker pull redis
+Using default tag: latest
+latest: Pulling from library/redis
+802b00ed6f79: Pull <span class="nb">complete</span> 
+8b4a21f633de: Pull <span class="nb">complete</span> 
+92e244f8ff14: Pull <span class="nb">complete</span> 
+fbf4770cd9d6: Pull <span class="nb">complete</span> 
+1479f3bcce09: Pull <span class="nb">complete</span> 
+b4020173179f: Pull <span class="nb">complete</span> 
+Digest: sha256:b77926b30ca2f126431e4c2055efcf2891ebd4b4c4a86a53cf85ec3d4c98a4c9
+Status: Downloaded newer image <span class="k">for</span> redis:latest
+admindeMacBook-Pro:~ sean.zhao$ docker info 
+Error response from daemon: Bad response from Docker engine
+admindeMacBook-Pro:~ sean.zhao$ docker info 
+Containers: <span class="m">2</span>
+ Running: <span class="m">0</span>
+ Paused: <span class="m">0</span>
+ Stopped: <span class="m">2</span>
+Images: <span class="m">2</span>
+Server Version: <span class="m">18</span>.06.1-ce
+Storage Driver: overlay2
+ Backing Filesystem: extfs
+ Supports d_type: <span class="nb">true</span>
+ Native Overlay Diff: <span class="nb">true</span>
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: <span class="nb">local</span>
+ Network: bridge host ipvlan macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 468a545b9edcd5932818eb9de8e72413e616e86e
+runc version: 69663f0bd4b60df09991c08812a60108003fa340
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: <span class="m">4</span>.9.93-linuxkit-aufs
+Operating System: Docker <span class="k">for</span> Mac
+OSType: linux
+Architecture: x86_64
+CPUs: <span class="m">2</span>
+Total Memory: <span class="m">1</span>.952GiB
+Name: linuxkit-025000000001
+ID: FZUZ:KIND:5V6G:64EO:KDEG:YQ5S:7M22:DFKN:DKSI:6OAZ:BSJZ:ELGV
+Docker Root Dir: /var/lib/docker
+Debug Mode <span class="o">(</span>client<span class="o">)</span>: <span class="nb">false</span>
+Debug Mode <span class="o">(</span>server<span class="o">)</span>: <span class="nb">true</span>
+ File Descriptors: <span class="m">24</span>
+ Goroutines: <span class="m">50</span>
+ System Time: <span class="m">2018</span>-09-18T14:20:47.069871637Z
+ EventsListeners: <span class="m">2</span>
+HTTP Proxy: gateway.docker.internal:3128
+HTTPS Proxy: gateway.docker.internal:3129
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: <span class="nb">true</span>
+Insecure Registries:
+ <span class="m">127</span>.0.0.0/8
+Registry Mirrors:
+ http://hub-mirror.c.163.com/
+Live Restore Enabled: <span class="nb">false</span>
+
+admindeMacBook-Pro:~ sean.zhao$ docker images redis
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+redis               latest              e1a73233e3be        <span class="m">13</span> days ago         <span class="m">83</span>.4MB
+admindeMacBook-Pro:~ sean.zhao$ docker run -d -P redis redis-server --appendonly yes
+edd8d01f7a8ec0f1ebafb2e947527cd9a612d31ffa690a71ce5243306bd51f31
+admindeMacBook-Pro:~ sean.zhao$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                     NAMES
+edd8d01f7a8e        redis               <span class="s2">&quot;docker-entrypoint.s…&quot;</span>   <span class="m">7</span> seconds ago       Up <span class="m">6</span> seconds        <span class="m">0</span>.0.0.0:32768-&gt;6379/tcp   tender_kilby
+admindeMacBook-Pro:~ sean.zhao$ docker <span class="nb">exec</span> -it edd8d01f7a8e redis-cli
+<span class="m">127</span>.0.0.1:6379&gt; info 
+<span class="c1"># Server</span>
+redis_version:4.0.11
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:7ea3906e8169550b
+redis_mode:standalone
+os:Linux <span class="m">4</span>.9.93-linuxkit-aufs x86_64
+arch_bits:64
+multiplexing_api:epoll
+atomicvar_api:atomic-builtin
+gcc_version:6.3.0
+process_id:1
+run_id:20d49a99b260f387f8855ccd5c64d29f154990f9
+tcp_port:6379
+uptime_in_seconds:55
+uptime_in_days:0
+hz:10
+lru_clock:10554011
+executable:/data/redis-server
+config_file:
+
+<span class="c1"># Clients</span>
+connected_clients:1
+client_longest_output_list:0
+client_biggest_input_buf:0
+blocked_clients:0
+
+<span class="c1"># Memory</span>
+used_memory:849312
+used_memory_human:829.41K
+used_memory_rss:3481600
+used_memory_rss_human:3.32M
+used_memory_peak:849312
+used_memory_peak_human:829.41K
+used_memory_peak_perc:100.12%
+used_memory_overhead:836078
+used_memory_startup:786448
+used_memory_dataset:13234
+used_memory_dataset_perc:21.05%
+total_system_memory:2096058368
+total_system_memory_human:1.95G
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+mem_fragmentation_ratio:4.10
+mem_allocator:jemalloc-4.0.3
+active_defrag_running:0
+lazyfree_pending_objects:0
+
+<span class="c1"># Persistence</span>
+loading:0
+rdb_changes_since_last_save:0
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1537280612
+rdb_last_bgsave_status:ok
+rdb_last_bgsave_time_sec:-1
+rdb_current_bgsave_time_sec:-1
+rdb_last_cow_size:0
+aof_enabled:1
+aof_rewrite_in_progress:0
+aof_rewrite_scheduled:0
+aof_last_rewrite_time_sec:-1
+aof_current_rewrite_time_sec:-1
+aof_last_bgrewrite_status:ok
+aof_last_write_status:ok
+aof_last_cow_size:0
+aof_current_size:0
+aof_base_size:0
+aof_pending_rewrite:0
+aof_buffer_length:0
+aof_rewrite_buffer_length:0
+aof_pending_bio_fsync:0
+aof_delayed_fsync:0
+
+<span class="c1"># Stats</span>
+total_connections_received:1
+total_commands_processed:1
+instantaneous_ops_per_sec:0
+total_net_input_bytes:31
+total_net_output_bytes:10163
+instantaneous_input_kbps:0.00
+instantaneous_output_kbps:0.00
+rejected_connections:0
+sync_full:0
+sync_partial_ok:0
+sync_partial_err:0
+expired_keys:0
+expired_stale_perc:0.00
+expired_time_cap_reached_count:0
+evicted_keys:0
+keyspace_hits:0
+keyspace_misses:0
+pubsub_channels:0
+pubsub_patterns:0
+latest_fork_usec:0
+migrate_cached_sockets:0
+slave_expires_tracked_keys:0
+active_defrag_hits:0
+active_defrag_misses:0
+active_defrag_key_hits:0
+active_defrag_key_misses:0
+
+<span class="c1"># Replication</span>
+role:master
+connected_slaves:0
+master_replid:6718f51e8d592437bc0bf282401e49640c627787
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:0
+second_repl_offset:-1
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+
+<span class="c1"># CPU</span>
+used_cpu_sys:0.02
+used_cpu_user:0.09
+used_cpu_sys_children:0.00
+used_cpu_user_children:0.00
+
+<span class="c1"># Cluster</span>
+cluster_enabled:0
+
+<span class="c1"># Keyspace</span>
+<span class="m">127</span>.0.0.1:6379&gt; <span class="nb">exit</span>
+admindeMacBook-Pro:~ sean.zhao$ 
+</pre></div>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

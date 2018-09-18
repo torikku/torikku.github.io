@@ -20,26 +20,26 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
-<h2><a href="https://torikku.github.io/archives/201807131744.html">SQL and NoSQL 2</a></h2>
-<h5><i class="icon-feather"></i> 2018年07月13日(星期五) </h5>
-SQL and NoSQL 2 对比 SQL数据库 关系数据库的特点是： 数据关系模型基于关系模型，结构化存储，完整性约束。 基于二维表及其之间的联系，需要连接、并、交、差、除等数据操作。 采用结构化的查询语言（SQL）做数据读写。 操作需要数据的一致性，需要事务甚至是强一致性。 优点： 保持数据的一致性（事务处理） 可以进行join等复杂查询。 通用化，技术成熟。 缺点: 数据读写必须经过sql解析，大量数据、高并发下读写性能不足。 对数据做读写，或修改数据结构时需要加锁，影响并发操作。 无法适应非结构化存储。 扩展困难。 昂贵、复杂。 NoSQL数据库 NoSQL数据库的特点是： 非结构化的存储。 基于多维关系模型。 具有特有的使用场景。 优点： 高并发，大数据下读写能力较强。 基本支持分布式，易于扩展，可伸缩。 简单 …
-<h2><a href="https://torikku.github.io/archives/201807061854.html">SQL and NoSQL 1</a></h2>
-<h5><i class="icon-feather"></i> 2018年07月06日(星期五) </h5>
-SQL and NoSQL 1 SQL and NoSQL 初探 概念 SQL (Structured Query Language) 数据库，指关系型数据库。主要代表：SQL Server，Oracle，MySQL(开源)，PostgreSQL(开源)。 NoSQL（Not Only SQL）泛指非关系型数据库。主要代表：MongoDB，Redis，CouchDB。 区别 存储方式 SQL数据存在特定结构的表中； 学号 姓名 书名 时间 001 张三 《活着》 20180404 002 李四 《意义》 20180304 而NoSQL则更加灵活和可扩展，存储方式可以是类JSON、哈希表或者其他方式 …
-<h2><a href="https://torikku.github.io/archives/201806301830.html">Python Class</a></h2>
-<h5><i class="icon-feather"></i> 2018年06月30日(星期六) </h5>
-Python Class Demo: #!/usr/bin/python # -*- coding: UTF-8 -*- class Parent: # 定义父类 parentAttr = 100 def __init__(self): print "调用父类构造函数" def parentMethod(self): print '调用父类方法' def setAttr(self, attr): Parent.parentAttr = attr def getAttr(self): print "父类属性 :", Parent.parentAttr class Child(Parent): # 定义子类 def __init__(self): print "调用子类构造方法" def childMethod(self): print …
-<h2><a href="https://torikku.github.io/archives/201806231823.html">Python File ADV</a></h2>
-<h5><i class="icon-feather"></i> 2018年06月23日(星期六) </h5>
-Python File ADV MARK!!! file.close() 关闭文件。关闭后文件不能再进行读写操作。 file.flush() 刷新文件内部缓冲，直接把内部缓冲区的数据立刻写入文件, 而不是被动的等待输出缓冲区写入。 file.fileno() 返回一个整型的文件描述符(file descriptor FD 整型), 可以用在如os模块的read方法等一些底层操作上。 file.isatty() 如果文件连接到一个终端设备返回 True，否则返回 False。 file.next() 返回文件下一行。 file.read([size]) 从文件读取指定的字节数，如果未给定或为负则读取所有。 file.readline([size]) 读取整行，包括 "\n" 字符。 file.readlines([sizehint]) 读取所有行并返回列表，若给定sizeint>0，则是设置一次读多少字节，这是为了减轻读取压力 …
-<h2><a href="https://torikku.github.io/archives/201806161843.html">Python File</a></h2>
-<h5><i class="icon-feather"></i> 2018年06月16日(星期六) </h5>
-Python File open()方法 语法： file object = open(file_name [, access_mode][, buffering]) 不同模式打开文件的完全列表： 模式 r r+ w w+ a a+ 读 + + + + 写 + + + + + 创建 + + + + 覆盖 + + 指针在开始 + + + + 指针在结尾 + + 如下实例： #!/usr/bin/python # -*- coding: UTF-8 -*- # 打开一个文件 fo = open("foo.txt", "w") print "文件名: ", fo.name print "是否已关闭 : ", fo.closed print "访问模式 : ", fo.mode print …
-<h2><a href="https://torikku.github.io/archives/201806091805.html">Python Exception</a></h2>
-<h5><i class="icon-feather"></i> 2018年06月09日(星期六) </h5>
-Python Exception 简单的try....except...else的语法： try: <语句> #运行别的代码 except <名字>： <语句> #如果在try部份引发了'name'异常 except <名字>，<数据>: <语句> #如果引发了'name'异常，获得附加的数据 else: <语句> #如果没有异常发生 finally: <语句> #无论是否异常，最后都执行 Demo: #!/usr/bin/python # -*- coding: UTF-8 -*- try: 1 / 0 except Exception as e: '''异常的父类，可以捕获所有的异常''' print "0不能被除" else: '''保护不抛出异常的代码''' print "没有异常 …
+<h2><a href="https://torikku.github.io/archives/201809031808.html">Docker centos ifconfig</a></h2>
+<h5><i class="icon-feather"></i> 2018年09月03日(星期一) </h5>
+Docker centos ifconfig Last login: Tue Sep 18 22:15:33 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker run -it 5182e96772bf /bin/bash [root@d5562fe68b3b /]# systemctl Failed to get D-Bus connection: Operation not permitted [root@d5562fe68b3b /]# ifconfig bash: ifconfig: command not found [root@d5562fe68b3b /]# yum install ifconfig Loaded …
+<h2><a href="https://torikku.github.io/archives/201808310831.html">Docker centos</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月31日(星期五) </h5>
+Docker centos Last login: Tue Sep 18 21:36:41 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker search redis NAME DESCRIPTION STARS OFFICIAL AUTOMATED redis Redis is an open source key-value store that… 5756 [OK] bitnami/redis Bitnami Redis Docker Image 89 [OK] sameersbn/redis 71 [OK] hypriot/rpi …
+<h2><a href="https://torikku.github.io/archives/201808261628.html">Docker redis</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月26日(星期日) </h5>
+Docker redis Last login: Tue Sep 18 21:36:41 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker search redis NAME DESCRIPTION STARS OFFICIAL AUTOMATED redis Redis is an open source key-value store that… 5756 [OK] bitnami/redis Bitnami Redis Docker Image 89 [OK] sameersbn/redis 71 [OK] hypriot/rpi-redis Raspberry Pi …
+<h2><a href="https://torikku.github.io/archives/201808212142.html">Docker hello world</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月21日(星期二) </h5>
+Docker hello world Last login: Sun Sep 2 23:08:26 on ttys000 admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ docker Usage: docker [OPTIONS] COMMAND A self-sufficient runtime for containers Options: --config string Location of client config files (default "/Users/sean.zhao/.docker") -D, --debug Enable debug mode …
+<h2><a href="https://torikku.github.io/archives/201808150815.html">Git log</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月15日(星期三) </h5>
+Git log # 显示有变更的文件 $ git status # 显示当前分支的版本历史 $ git log # 显示commit历史，以及每次commit发生变更的文件 $ git log --stat # 搜索提交历史，根据关键词 $ git log -S [keyword] # 显示某个commit之后的所有变动，每个commit占据一行 $ git log [tag] HEAD --pretty=format:%s # 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件 $ git log [tag] HEAD --grep feature # 显示某个文件的版本历史，包括文件改名 $ git log --follow [file] $ git whatchanged [file] # 显示指定文件相关的每一次diff $ git log …
+<h2><a href="https://torikku.github.io/archives/201808110845.html">Git reset</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月11日(星期六) </h5>
+Git reset # 恢复暂存区的指定文件到工作区 $ git checkout [file] # 恢复某个commit的指定文件到暂存区和工作区 $ git checkout [commit] [file] # 恢复暂存区的所有文件到工作区 $ git checkout . # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变 $ git reset [file] # 重置暂存区与工作区，与上一次commit保持一致 $ git reset --hard # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变 $ git reset [commit] # 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致 $ git reset --hard [commit] # 重置当前HEAD为指定commit，但保持暂存区和工作区不变 $ git reset --keep [commit] # 新建一个commit，用来撤销指定commit # 后者的所有变化都将被前者抵消，并且应用到当前分支 $ git revert …
 <div class="pagination">
-    page 1 of 6.
+    page 1 of 8.
         <a href="https://torikku.github.io/category/archives2.html">Next&rarr;</a>
 </div>    </div>
 </div>
