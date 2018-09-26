@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minikube complete | 我有一瓶酒，只想跟你喝</title>
+  <meta charset="utf-8">
+<meta name="description" content="Minikube complete Minikube终于正常了，dashboard正常启动，可以正常看到纪录 Last login: Wed Sep 26 02:13:42 on ttys000 admindeMacBook-Pro:~ sean.zhao$ minikube dashboard Opening kubernetes dashboard in default browser... admindeMacBook-Pro:~ sean.zhao$ minikube dashboard --url http://192.168.99.100:30000 admindeMacBook-Pro:~ sean.zhao$ 花了我5个小时，终于在mac上把这该死的玩意搞起来啦，中间遇到各种问题 1、kubectl一直killed 9 ：该问题触发应该是在未关闭minikube的情况下，重新安装了kubectl导致，重新把各种服务都关闭后 …"><meta name="author" content="Torikku">  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="https://torikku.github.io/theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://torikku.github.io/favicon.ico" type="image/x-icon">
+  <link href="https://torikku.github.io/" type="application/atom+xml" rel="alternate" title="我有一瓶酒，只想跟你喝 ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝</a></div>
+  <div class="small">Torikku's life</div>
+    <div class="nav">
+  <li><a href="https://torikku.github.io/archives/">那一天</a></li>
+  <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
+    </div>
+</div>    <div id="main">
+<h2><a href="category/{slug}.html/archives/201809242323.html">Minikube complete</a></h2>
+<h5><i class="icon-feather"></i> 2018年09月24日(星期一)
+<i class="icon-bookmarks"></i>
+</h5>
+
+<h1>Minikube complete</h1>
+<p>Minikube终于正常了，dashboard正常启动，可以正常看到纪录</p>
+<div class="highlight"><pre><span></span>Last login: Wed Sep 26 02:13:42 on ttys000
+admindeMacBook-Pro:~ sean.zhao$ minikube dashboard 
+Opening kubernetes dashboard in default browser...
+admindeMacBook-Pro:~ sean.zhao$ minikube dashboard --url
+http://192.168.99.100:30000
+admindeMacBook-Pro:~ sean.zhao$ 
+</pre></div>
+
+
+<p>花了我5个小时，终于在mac上把这该死的玩意搞起来啦，中间遇到各种问题
+1、kubectl一直killed 9 ：该问题触发应该是在未关闭minikube的情况下，重新安装了kubectl导致，重新把各种服务都关闭后，重新安装一次kubectl就可以好了</p>
+<p>2、各种镜像无法下载导致各种报错（ErrImagePull，ImagePullBackOff）：minikube logs是个好东西，grep PullImage一下，可以看到当前需要哪些镜像，哪些是下载失败的，然后上猫云上找吧，最终tag一下日志中的路径，让服务直接能使用当前在猫云上下的本地镜像，否则在大天朝局域网，得下一辈子！！！
+猫云：https://dev.aliyun.com/search.html</p>
+<p>3、由于刚开始没经验，下载各个组件的版本不一致导致了好几个组件重新安装：最好从minikube开始装起，到使用哪个组件到时候，它会提示当前minikube使用的组件的版本，要不换的很痛苦</p>
+<p>4、自己装了docker的童鞋需要在准备镜像的时候需要确认清楚当前操作的是本机的镜像还是minikube的镜像，否则，在第二点你就会一脸萌逼！！！eval $(minikube docker-env)</p>
+<p>5、其他的忘记了，在其他的文章里，自己去研究下，未做裁剪，撞墙全景放送～～</p>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2014&nbsp;::</li>
+    <li class="footer"><a href="https://torikku.github.io">我有一瓶酒，只想跟你喝 </a>&nbsp;::</li>
+    <li class="footer">powered by <a href="https://github.com/getpelican">pelican</a>&nbsp;::</li>
+    <li class="footer"><a href="http://creativecommons.org/licenses/by-nc/3.0/deed.ru">CC BY-NC</a></li>
+</ul>
+</div></body>
+</html>

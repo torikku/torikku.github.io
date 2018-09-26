@@ -20,24 +20,24 @@
   <li><a href="https://torikku.github.io/about/">关于（建设中）</a></li>
     </div>
 </div>    <div id="main">
+<h2><a href="https://torikku.github.io/archives/201808261628.html">Docker redis</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月26日(星期日) </h5>
+Docker redis Last login: Tue Sep 18 21:36:41 on ttys000 admindeMacBook-Pro:~ sean.zhao$ docker search redis NAME DESCRIPTION STARS OFFICIAL AUTOMATED redis Redis is an open source key-value store that… 5756 [OK] bitnami/redis Bitnami Redis Docker Image 89 [OK] sameersbn/redis 71 [OK] hypriot/rpi-redis Raspberry Pi …
+<h2><a href="https://torikku.github.io/archives/201808212142.html">Docker hello world</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月21日(星期二) </h5>
+Docker hello world Last login: Sun Sep 2 23:08:26 on ttys000 admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ admindeMacBook-Pro:~ sean.zhao$ docker Usage: docker [OPTIONS] COMMAND A self-sufficient runtime for containers Options: --config string Location of client config files (default "/Users/sean.zhao/.docker") -D, --debug Enable debug mode …
+<h2><a href="https://torikku.github.io/archives/201808150815.html">Git log</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月15日(星期三) </h5>
+Git log # 显示有变更的文件 $ git status # 显示当前分支的版本历史 $ git log # 显示commit历史，以及每次commit发生变更的文件 $ git log --stat # 搜索提交历史，根据关键词 $ git log -S [keyword] # 显示某个commit之后的所有变动，每个commit占据一行 $ git log [tag] HEAD --pretty=format:%s # 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件 $ git log [tag] HEAD --grep feature # 显示某个文件的版本历史，包括文件改名 $ git log --follow [file] $ git whatchanged [file] # 显示指定文件相关的每一次diff $ git log …
+<h2><a href="https://torikku.github.io/archives/201808110845.html">Git reset</a></h2>
+<h5><i class="icon-feather"></i> 2018年08月11日(星期六) </h5>
+Git reset # 恢复暂存区的指定文件到工作区 $ git checkout [file] # 恢复某个commit的指定文件到暂存区和工作区 $ git checkout [commit] [file] # 恢复暂存区的所有文件到工作区 $ git checkout . # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变 $ git reset [file] # 重置暂存区与工作区，与上一次commit保持一致 $ git reset --hard # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变 $ git reset [commit] # 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致 $ git reset --hard [commit] # 重置当前HEAD为指定commit，但保持暂存区和工作区不变 $ git reset --keep [commit] # 新建一个commit，用来撤销指定commit # 后者的所有变化都将被前者抵消，并且应用到当前分支 $ git revert …
 <h2><a href="https://torikku.github.io/archives/201808040404.html">Git remote</a></h2>
 <h5><i class="icon-feather"></i> 2018年08月04日(星期六) </h5>
 Git remote # 下载远程仓库的所有变动 $ git fetch [remote] # 显示所有远程仓库 $ git remote -v # 显示某个远程仓库的信息 $ git remote show [remote] # 增加一个新的远程仓库，并命名 $ git remote add [shortname] [url] # 取回远程仓库的变化，并与本地分支合并 $ git pull [remote] [branch] # 上传本地指定分支到远程仓库 $ git push [remote] [branch] # 强行推送当前分支到远程仓库，即使有冲突 $ git push [remote] --force # 推送所有分支到远程仓库 $ git push [remote] --all
 <h2><a href="https://torikku.github.io/archives/201807271745.html">Git branch</a></h2>
 <h5><i class="icon-feather"></i> 2018年07月27日(星期五) </h5>
 Git branch # 列出所有本地分支 $ git branch # 列出所有远程分支 $ git branch -r # 列出所有本地分支和远程分支 $ git branch -a # 新建一个分支，但依然停留在当前分支 $ git branch [branch-name] # 新建一个分支，并切换到该分支 $ git checkout -b [branch] # 新建一个分支，指向指定commit $ git branch [branch] [commit] # 新建一个分支，与指定的远程分支建立追踪关系 $ git branch --track [branch] [remote-branch] # 切换到指定分支，并更新工作区 $ git checkout [branch-name] # 切换到上一个分支 $ git checkout - # 建立追踪关系，在现有分支与指定的远程分支之间 $ git branch --set-upstream …
-<h2><a href="https://torikku.github.io/archives/201807210824.html">Git</a></h2>
-<h5><i class="icon-feather"></i> 2018年07月21日(星期六) </h5>
-Git 公司配置管理项目需要维护二次开发代码，当前人拉肩扛，费时费力，引入gitlab，学习笔记 获取和创建项目 git init 创建新的git仓库 git clone 拷贝一个git仓库到本地 快照 git add 添加文件到缓存 git status 查看提交状态 git diff 查询缓存中和当前文件的区别 git commit 将缓存内容提交到本地仓库 git reset HEAD 取消已经缓存的内容 git rm 从工作目录中手工删除文件 git mv 从工作目录中移动，重命名文件
-<h2><a href="https://torikku.github.io/archives/201807131744.html">SQL and NoSQL 2</a></h2>
-<h5><i class="icon-feather"></i> 2018年07月13日(星期五) </h5>
-SQL and NoSQL 2 对比 SQL数据库 关系数据库的特点是： 数据关系模型基于关系模型，结构化存储，完整性约束。 基于二维表及其之间的联系，需要连接、并、交、差、除等数据操作。 采用结构化的查询语言（SQL）做数据读写。 操作需要数据的一致性，需要事务甚至是强一致性。 优点： 保持数据的一致性（事务处理） 可以进行join等复杂查询。 通用化，技术成熟。 缺点: 数据读写必须经过sql解析，大量数据、高并发下读写性能不足。 对数据做读写，或修改数据结构时需要加锁，影响并发操作。 无法适应非结构化存储。 扩展困难。 昂贵、复杂。 NoSQL数据库 NoSQL数据库的特点是： 非结构化的存储。 基于多维关系模型。 具有特有的使用场景。 优点： 高并发，大数据下读写能力较强。 基本支持分布式，易于扩展，可伸缩。 简单 …
-<h2><a href="https://torikku.github.io/archives/201807061854.html">SQL and NoSQL 1</a></h2>
-<h5><i class="icon-feather"></i> 2018年07月06日(星期五) </h5>
-SQL and NoSQL 1 SQL and NoSQL 初探 概念 SQL (Structured Query Language) 数据库，指关系型数据库。主要代表：SQL Server，Oracle，MySQL(开源)，PostgreSQL(开源)。 NoSQL（Not Only SQL）泛指非关系型数据库。主要代表：MongoDB，Redis，CouchDB。 区别 存储方式 SQL数据存在特定结构的表中； 学号 姓名 书名 时间 001 张三 《活着》 20180404 002 李四 《意义》 20180304 而NoSQL则更加灵活和可扩展，存储方式可以是类JSON、哈希表或者其他方式 …
-<h2><a href="https://torikku.github.io/archives/201806301830.html">Python Class</a></h2>
-<h5><i class="icon-feather"></i> 2018年06月30日(星期六) </h5>
-Python Class Demo: #!/usr/bin/python # -*- coding: UTF-8 -*- class Parent: # 定义父类 parentAttr = 100 def __init__(self): print "调用父类构造函数" def parentMethod(self): print '调用父类方法' def setAttr(self, attr): Parent.parentAttr = attr def getAttr(self): print "父类属性 :", Parent.parentAttr class Child(Parent): # 定义子类 def __init__(self): print "调用子类构造方法" def childMethod(self): print …
 <div class="pagination">
         <a href="https://torikku.github.io/category/archives.html">&larr;Prev</a>
     page 2 of 8.
